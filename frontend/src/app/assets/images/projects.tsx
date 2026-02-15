@@ -1,0 +1,25 @@
+import { ReactElement } from "react";
+
+export default function ProjectsSVG({
+  height = 40,
+  width = 40,
+}: {
+  height?: number;
+  width?: number;
+}): ReactElement {
+  return (
+    <svg
+      height={`${height}`}
+      width={`${width}`}
+      viewBox="0 0 44 44"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="22" cy="22" r="22" fill="#110C24" />
+      <path
+        d="M14 30C13.45 30 12.9792 29.8042 12.5875 29.4125C12.1958 29.0208 12 28.55 12 28V16C12 15.45 12.1958 14.9792 12.5875 14.5875C12.9792 14.1958 13.45 14 14 14H20L22 16H30C30.55 16 31.0208 16.1958 31.4125 16.5875C31.8042 16.9792 32 17.45 32 18H21.175L19.175 16H14V28L16.4 20H33.5L30.925 28.575C30.7917 29.0083 30.5458 29.3542 30.1875 29.6125C29.8292 29.8708 29.4333 30 29 30H14ZM16.1 28H29L30.8 22H17.9L16.1 28Z"
+        fill="#F5C144"
+      />
+    </svg>
+  );
+}

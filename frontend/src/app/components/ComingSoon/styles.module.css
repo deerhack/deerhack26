@@ -1,0 +1,20 @@
+.muted_color {
+  background-color: rgba(17, 12, 36, 0.6);
+}
+
+.outer_div {
+  padding: 1px;
+}
+
+.glassmorphic {
+  background: rgba(255, 255, 255, 0.15);
+  /* Example glassmorphic background */
+  backdrop-filter: blur(10px);
+  /* Blurring the background */
+  border-radius: 10px;
+  /* Adjust as needed */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* Example border */
+  padding: 20px;
+  /* Adjust padding as needed */
+}

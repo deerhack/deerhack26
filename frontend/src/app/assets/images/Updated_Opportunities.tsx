@@ -1,0 +1,39 @@
+import { ReactElement } from "react";
+
+export default function UpdatedOpportunitiesSVG({
+  width = 106,
+  height = 85,
+}: {
+  width?: number;
+  height?: number;
+}): ReactElement {
+  return (
+    <svg
+      width={`${width}`}
+      height={`${height}`}
+      viewBox="0 0 106 85"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M105.989 0L86.686 4.0639L93.7106 7.44326L62.5955 40.2925L40.2057 35.966L39.4851 35.8249L39.0213 36.3571L0 81.0656L40.3449 38.936L62.8396 44.4724L63.7224 44.6903L64.466 43.9736L97.4938 12.2015L99.5559 20.3167L105.989 0ZM10.5576 76.007V84.5916H26.0634V59.8171L10.5576 76.007ZM33.8148 51.7232L40.345 44.9044L49.3206 47.1131V84.592H33.8148V51.7232ZM64.4661 49.9406L63.7225 50.6558L62.8396 50.4393L57.0722 49.0199V84.592H72.5767V42.1383L64.4661 49.9406ZM80.3297 84.5916V34.6821L95.8342 19.7662V84.5916H80.3297Z"
+        fill="url(#paint0_linear_1642_399)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_1642_399"
+          x1="-5.58852e-05"
+          y1="170.081"
+          x2="159.451"
+          y2="54.8511"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#6633CC" />
+          <stop offset="1" stopColor="#F5C144" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}

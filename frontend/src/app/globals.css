@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .from-1\% {
+    --tw-gradient-from-position: 1%;
+  }
+
+  .primary-gradient-background {
+    background: linear-gradient(140.3deg, #6633cc -15.9%, #f5c144 72.56%);
+  }
+  
+  .new-gradient-background {
+    background: linear-gradient(288.92deg, rgba(23, 16, 46, 0) 5.97%, rgba(74, 51, 148, 0.44) 115.22%),
+    linear-gradient(0deg, rgba(36, 26, 74, 0.15), rgba(36, 26, 74, 0.15));
+    
+  }
+
+  .secondary-gradient-background {
+    background: linear-gradient(468.92deg, rgba(23, 16, 46, 0) 5.97%, rgba(74, 51, 148, 0.44) 115.22%),
+    linear-gradient(0deg, rgba(36, 26, 74, 0.15), rgba(36, 26, 74, 0.15));    
+  }
+
+  .primary-border-background{
+    background: #110C24;
+ 
+  }
+
+  .text-main-title {
+    @apply bg-gradient-to-l from-[#F5C144] from-0% to-[#6633CC] to-100% bg-clip-text text-transparent;
+  }
+
+  .primary-aboutpage-background{
+    background: linear-gradient(180deg, #6633cc -15.9%, #f5c144 72.56%);
+  }
+
+  .exp-gradient-background {
+  background: linear-gradient(270deg, #F5C144 0%, #6633CC 100%);
+  }
+
+  .text-primary-gradient-color {
+    @apply bg-gradient-to-r from-primary from-1% to-secondary bg-clip-text text-transparent;
+  }
+
+  .text-primary-gradient-color-reverse {
+    @apply bg-gradient-to-bl from-primary from-1% to-secondary bg-clip-text text-transparent;
+  }
+
+  .text-secondary-gradient-color-reverse {
+    @apply bg-gradient-to-tl from-secondary from-1% to-primary bg-clip-text text-transparent;
+  }
+  .card-background-gradient{
+    background: linear-gradient(288.92deg, rgba(74, 51, 148, 0.44) 5.97%, rgba(23, 16, 46, 0) 115.22%),
+  linear-gradient(270deg, rgba(36, 26, 74, 0.15) 0%, rgba(36, 26, 74, 0) 95.92%);
+
+  }
+  /* .text-third-gradient-color {
+    @apply bg-gradient-to-br from-[#F5C144] from-0% to-[#6633CC] text-transparent bg-clip-text;
+} */
+
+.text-third-gradient-color {
+  background: linear-gradient(270deg, #F5C144 0%, #6633CC 100%);
+  @apply text-transparent bg-clip-text;
+}
+
+.gradient-bg {
+  background: linear-gradient(105.53deg, #6633CC 20.77%, #823FBD 60.21%, #9D4BAD 99.65%);
+}
+
+  .font-cabinet-light {
+    font-family: var(--font-cabinet-light);
+  }
+
+  .font-cabinet-bold {
+    font-family: var(--font-cabinet-bold);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .text-heropage-gradient{
+    @apply bg-gradient-to-br from-[#6633CC] from-[-15.9%] to-[#F5C144] to-[72.56%] bg-clip-text text-transparent;
+   
+
+  }
+
+  .headings {
+    @apply text-center text-3xl lg:text-6xl text-main-title w-fit mx-auto px-4 md:px-0;
+  }
+  .track-heading{
+    @apply text-center text-3xl lg:text-6xl text-third-gradient-color w-fit mx-auto px-4 md:px-0;
+  }
+}
+

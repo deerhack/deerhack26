@@ -1,0 +1,30 @@
+{
+  "title": "Judging Criteria",
+  "sections": [
+    {
+      "title": "Social Impact",
+      "paragraphs": [
+        "Enabling long-term sustainability entails a multifaceted evaluation from social, environmental, and economic perspectives, emphasizing the project's responsibility and impact beyond immediate implementation. This holistic approach underscores the importance of considering broader societal implications, environmental footprints, and economic viability in the project's design and implementation phases, ensuring that it aligns with sustainable development goals and fosters positive long-term outcomes."
+      ]
+    },
+    {
+      "title":"Uniqueness of Idea",
+      "paragraphs": [
+        "The project is primarily marked on its creativity and uniqueness, as these elements serve as the cornerstone of innovation. How the end-result properly justifies the technologies used in the project heavily decides the marking for innovation, demonstrating not only a mastery of tools but also a deep understanding of their application to solve real-world problems. The project is primarily marked on its creativity and uniqueness, as these elements serve as the cornerstone of innovation. How the end-result properly justifies the technologies used in the project heavily decides the marking for innovation, demonstrating not only a mastery of tools but also a deep understanding of their application to solve real-world problems."
+      ]
+    },
+    {
+      "title" : "Relevance to Track",
+      "paragraphs": [
+        "The alignment of the project with the selected hackathon track is crucial in evaluating its purpose and direction. This criterion assesses how well the project's goals, problem statement, and solution fit within the thematic boundaries of the track. A strong relevance indicates a clear understanding of the track's intent, showing that the team has identified a genuine problem within that domain and crafted a targeted solution. Judges will consider whether the project meaningfully addresses key challenges specific to the track and demonstrates depth in exploring the theme."
+      ]
+    },
+    {
+      "title": "Market Study",
+      "paragraphs": [
+        "This criterion evaluates the clarity and feasibility of the project's intended user base and the plan for transitioning the solution into practical use. Teams should demonstrate a well-defined understanding of who the end-users are—be it individuals, organizations, or communities—and how the system addresses their specific needs. Additionally, the handover strategy should outline how the project will be deployed, adopted, or integrated after completion. Judges will assess how realistic and actionable the implementation pathway is, including documentation, onboarding support, scalability considerations, and readiness for real-world use."
+      ]
+    }
+    
+  ]
+}

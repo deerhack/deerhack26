@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsor_types",
+  "info": {
+    "singularName": "sponsor-type",
+    "pluralName": "sponsor-types",
+    "displayName": "Sponsor Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sponsors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sponsor.sponsor",
+      "mappedBy": "sponsor_type"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

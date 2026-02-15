@@ -1,0 +1,25 @@
+import { ReactElement } from "react";
+
+export default function WorkshopSVG({
+  height = 37,
+  width = 37,
+}: {
+  height?: number;
+  width?: number;
+}): ReactElement {
+  return (
+    <svg
+      width={`${width}`}
+      height={`${height}`}
+      viewBox="0 0 37 37"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="18.5" cy="18.5" r="18.5" fill="#F5C144" />
+      <path
+        d="M9 27V17C9 16.45 9.19583 15.9792 9.5875 15.5875C9.97917 15.1958 10.45 15 11 15H14V13C14 12.45 14.1958 11.9792 14.5875 11.5875C14.9792 11.1958 15.45 11 16 11H22C22.55 11 23.0208 11.1958 23.4125 11.5875C23.8042 11.9792 24 12.45 24 13V15H27C27.55 15 28.0208 15.1958 28.4125 15.5875C28.8042 15.9792 29 16.45 29 17V27H9ZM15 22V23H13V22H11V25H27V22H25V23H23V22H15ZM11 17V20H13V19H15V20H23V19H25V20H27V17H11ZM16 15H22V13H16V15Z"
+        fill="black"
+      />
+    </svg>
+  );
+}

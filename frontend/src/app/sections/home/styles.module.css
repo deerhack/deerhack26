@@ -1,0 +1,28 @@
+.hero_background_container {
+  background-image: url("../../assets/icons/HeroPage25.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+  background-position:bottom;
+}
+
+@media screen and (max-width: 500px) {
+  .hero_background_container {
+    background-image: url("../../assets/icons/HeroMobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .hero_background_container {
+    height:100vh;
+    background-image: url("../../assets/icons/TabletHero.svg");
+    background-size: fit-content;
+    background-repeat: no-repeat;
+    background-position:bottom;
+
+  }
+}
+.muted_color {
+  background-color: rgba(17, 12, 36, 0.6);
+}

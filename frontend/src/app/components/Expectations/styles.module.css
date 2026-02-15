@@ -1,0 +1,7 @@
+.expectation_root:hover .expectation_description {
+  display: block;
+}
+
+.expectation_description {
+  display: none;
+}
