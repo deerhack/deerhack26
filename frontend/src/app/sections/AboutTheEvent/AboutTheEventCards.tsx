@@ -11,8 +11,8 @@ const AboutTheEventCards = () => {
       />
       <AboutCard
         svg={CodeSVG({ height: 30, width: 30 })}
-        title="DeerHack 2025"
-        description="DeerHack 2025 is a 48-hour hackathon where developers, designers, students, entrepreneurs, educators, and mentors work together to build ideas that solve real-world complications. DeerHack provides an opportunity for individuals to sharpen their teamwork, communication, leadership skills, and networking in a risk-free and comfortable environment."
+        title="DeerHack 2026"
+        description="DeerHack 2026 is a 48-hour hackathon where developers, designers, students, entrepreneurs, educators, and mentors work together to build ideas that solve real-world complications. DeerHack provides an opportunity for individuals to sharpen their teamwork, communication, leadership skills, and networking in a risk-free and comfortable environment."
       />
     </div>
   );

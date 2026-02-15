@@ -168,13 +168,14 @@ const Navbar = () => {
 
               {/* Register Button */}
               <div className="flex justify-start mt-6 ">
-                <Link href="https://deerhack-25.devfolio.co/" target="_blank">
+                {/* <Link href="https://deerhack-25.devfolio.co/" target="_blank">
                   <button
                     className={`${satoshiBlack.className} font-[20px] bg-secondary text-dark-purple text-[16px] p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[13rem]`}
                   >
                     Registration Closed 
                   </button>
-                </Link>
+                </Link> */}
+                <Counter_wrapper/>
               </div>
             </div>
           )}
@@ -236,13 +237,14 @@ const Navbar = () => {
             </div>
 
             <div>
-              <Link href="https://deerhack-25.devfolio.co/" target="_blank">
+              {/* <Link href="https://deerhack-25.devfolio.co/" target="_blank">
                 <button
                   className={`${satoshiBlack.className} font-[20px] bg-secondary text-dark-purple text-[18px]   p-3 rounded bg-opacity-90 hover:bg-opacity-100 transition duration-300 ease-in-out w-[13rem] `}
                 >
                   Registration Closed
                 </button>
-              </Link>
+              </Link> */}
+               <Counter_wrapper/>
             </div>
           </div>
         </nav>
