@@ -88,7 +88,7 @@ const COD = () => {
 
 
 
-      {/* <Timer_wrapper targetDate="July 13 ,2025 5:00:00"/> */}
+      {/* <Timer_wrapper targetDate="July 11 ,2026 5:00:00"/> */}
       </div>
       {/* <Footer/> */}
     </>

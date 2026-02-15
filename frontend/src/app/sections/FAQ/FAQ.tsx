@@ -35,7 +35,7 @@ const Faq = () => {
         {
           question: "How long will DeerHack last?",
           answer:
-            "While DeerHack is a 48-Hour program, DeerHack also has a lot of other fun, team-building events lined up for the participants which will take place from 11th to 13th July 2025 making DeerHack a 3-Day event collectively.",
+            "While DeerHack is a 48-Hour program, DeerHack also has a lot of other fun, team-building events lined up for the participants which will take place from 11th to 13th June 6 making DeerHack a 3-Day event collectively.",
         },
         {
           question: "Who can Participate in DeerHack?",

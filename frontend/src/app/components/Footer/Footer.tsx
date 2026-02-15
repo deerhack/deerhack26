@@ -128,14 +128,14 @@ export default function   Footer(): ReactElement {
               Venue: Deerwalk Complex
             </p>
             <p className={`text-[16px] ${cabinetRegular.className}`}>
-              Date: 11th-13th July, 2025
+              Date: 11th-13th June, 2026
             </p>
           </div>
         </div>
         <span
           className={`text-white flex text-xs/[24px] md:text-sm/[24px] font-[500] ${cabinetRegular.className}`}
         >
-          All Rights Reserved © DWIT Software Club 2025
+          All Rights Reserved © DWIT Software Club 2026
         </span>
       </div>
       <div className="w-full">
