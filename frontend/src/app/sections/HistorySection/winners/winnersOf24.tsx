@@ -2,24 +2,24 @@
 import { useState } from "react";
 import { cabinetExtraBold } from "@/app/utils/fonts";
 import QuotesCard from "@/app/components/Quotes/QuotesCard";
-import DeerHack23Legacy from "@/app/components/Legacy/DeerHack23Legacy";
+import DeerHack24Legacy from "@/app/components/Legacy/DeerHack24Legacy";
 import CarouselImage from "@/app/components/Legacy/CarouselImage";
 import Winners23SVG from "@/app/assets/images/legacyWinners23SVG";
-import LegacyDemoSVG from "../../assets/images/legacyWinners23SVG";
+import LegacyDemoSVG from "../../../assets/images/legacyWinners23SVG";
 import IdeaSVG from "@/app/assets/images/idea";
-import { data } from "./data";
+import { data } from "../data";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 
-export default function WinnersOf23() {
+export default function WinnersOf24() {
 
     const quotes = [
         {
             id: 1,
-            titleFront: "“We wanted Deehack to be the ",
-            titleHighlight: "Best Hackathon in Nepal ",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
+            titleFront: "“The legacy set last year must be ",
+            titleHighlight: "rightfully fulfilled",
+            description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
             titleBack:
-                " and we made it possible”",
+                "”",
             name: "John Doe",
             position: "CEO, ABC",
             photo: <LegacyDemoSVG width={261.03} height={190} />,
@@ -27,10 +27,10 @@ export default function WinnersOf23() {
         {
             id: 2,
             titleFront: "“This is dummy text 2 ",
-            titleHighlight: "Best Hackathon in Nepal",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi...",
+            titleHighlight: "Best Hackathon in Nepal ",
+            description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
             titleBack:
-                " and we made it possible” ",
+                "and we made it possible”",
             name: "Jane Doe",
             position: "CTO, XYZ",
             photo: <IdeaSVG />,
@@ -56,7 +56,7 @@ export default function WinnersOf23() {
             <h1
                 className={`headings ${cabinetExtraBold.className} text-5xl mb-16 pt-32`}
             >
-                Deerhack 2023
+                Deerhack 2024
             </h1>
 
             <div className="flex flex-row justify-center items-center">
@@ -123,10 +123,10 @@ export default function WinnersOf23() {
                     </div>
                 </div>
 
-                <DeerHack23Legacy
+                <DeerHack24Legacy
                     logo={<Winners23SVG width={261.03} height={190} />}
-                    title="Contrivers"
-                    description="DeerHack 2023 Overall Winners"
+                    title="Team Solo"
+                    description="DeerHack 2024 Overall Winners"
                 />
             </div>
             </div>
