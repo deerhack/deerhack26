@@ -5,6 +5,7 @@ import MobileLegacyFlowerCard from "@/app/components/Legacy/MobileLegacyFlowerCa
 import Deerhack24 from "@/app/assets/icons/MainLogo";
 import Deerhack25 from "@/app/assets/icons/Deerhack25";
 import Deerhack23 from "@/app/assets/icons/Deerhack23";
+import Deerhack23_Fix from "@/app/assets/icons/Deerhack23_Fix";
 
 const LegacySection = () => {
     return (
@@ -16,7 +17,7 @@ const LegacySection = () => {
                 </h1>
                 <div className="lg:flex justify-start items-center ">
                     <LegacyCard 
-                        logo={<Deerhack24 className="w-[200px] h-[75px] lg:w-[208px] lg:h-[92px] md:h-[92px] sm:[88px] "/>}
+                        logo={<Deerhack23_Fix className="w-[200px] h-[75px] lg:w-[208px] lg:h-[92px] md:h-[92px] sm:[88px] "/>}
                         eventLead="Prayatna Mishra"
                         eventColead="Bipashree Aryal"
                         date="May 5, 6, 7: 2023"
