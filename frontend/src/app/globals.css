@@ -91,5 +91,19 @@
   .track-heading{
     @apply text-center text-3xl lg:text-6xl text-third-gradient-color w-fit mx-auto px-4 md:px-0;
   }
+
+  .legacy-gradient{
+    background: linear-gradient(180deg, rgba(17, 12, 36, 0.77) 0%, rgba(43, 24, 54, 0.77) 122.03%);
+
+  }
+
+  .legacy-gradient-background {
+    background: linear-gradient(116.3deg, #6633CC 3.83%, #110C24 78.88%);
+  }
+
+  .carousel-gradient{
+    background: linear-gradient(270deg, #140E2B 100%, rgba(20, 14, 43, 0.15) -745.2%);
+  }
+
 }
 
