@@ -4,11 +4,9 @@ import { cabinetExtraBold } from "@/app/utils/fonts";
 import QuotesCard from "@/app/components/Quotes/QuotesCard";
 import DeerHack23Legacy from "@/app/components/Legacy/DeerHack23Legacy";
 import CarouselImage from "@/app/components/Legacy/CarouselImage";
-import Winners23SVG from "@/app/assets/images/legacyWinners23SVG";
-import LegacyDemoSVG from "../../../assets/images/legacyWinners23SVG";
-import IdeaSVG from "@/app/assets/images/idea";
 import { data } from "../data";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
+import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 
 export default function WinnersOf25() {
 
@@ -20,9 +18,9 @@ export default function WinnersOf25() {
             description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
             titleBack:
                 " and we made it possible”",
-            name: "John Doe",
-            position: "CEO, ABC",
-            photo: "https://enkoki.github.io/static_images/deerhack25/dipan_silwal.jpg",
+            name: "Dipan Silwal",
+            position: "President, Software Club",
+            photo: "/legacy/deerhack25/dipan_silwal.jpg",
         },
         {
             id: 2,
@@ -31,9 +29,9 @@ export default function WinnersOf25() {
             description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi...",
             titleBack:
                 " and we made it possible” ",
-            name: "Jane Doe",
-            position: "CTO, XYZ",
-            photo: <IdeaSVG />,
+            name: "Pragalva Sapkota",
+            position: "Vice President, Software Club",
+            photo: "/legacy/deerhack25/pragalva_sapkota.png",
         },
     ];
 
@@ -124,7 +122,7 @@ export default function WinnersOf25() {
                 </div>
 
                 <DeerHack23Legacy
-                    logo={<Winners23SVG width={261.03} height={190} />}
+                    logo={<DeerhackLogo width="138" height="138" />}
                     title="Contrivers"
                     description="DeerHack 2025 Overall Winners"
                 />
