@@ -5,36 +5,11 @@ import QuotesCard from "@/app/components/Quotes/QuotesCard";
 import DeerHack23Legacy from "@/app/components/Legacy/DeerHack23Legacy";
 import CarouselImage from "@/app/components/Legacy/CarouselImage";
 import { data } from "../data";
+import {quotes25 as quotes} from "../quotes"
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 
 export default function WinnersOf25() {
-
-    const quotes = [
-        {
-            id: 1,
-            titleFront: "“We wanted Deehack to be the ",
-            titleHighlight: "Best Hackathon in Nepal ",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
-            titleBack:
-                " and we made it possible”",
-            name: "Dipan Silwal",
-            position: "President, Software Club",
-            photo: "/legacy/deerhack25/dipan_silwal.jpg",
-        },
-        {
-            id: 2,
-            titleFront: "“This is dummy text 2 ",
-            titleHighlight: "Best Hackathon in Nepal",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi...",
-            titleBack:
-                " and we made it possible” ",
-            name: "Pragalva Sapkota",
-            position: "Vice President, Software Club",
-            photo: "/legacy/deerhack25/pragalva_sapkota.png",
-        },
-    ];
-
     const [index, setIndex] = useState(0);
     const quotesData = quotes[index];
 

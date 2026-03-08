@@ -4,39 +4,12 @@ import { cabinetExtraBold } from "@/app/utils/fonts";
 import QuotesCard from "@/app/components/Quotes/QuotesCard";
 import DeerHack23Legacy from "@/app/components/Legacy/DeerHack23Legacy";
 import CarouselImage from "@/app/components/Legacy/CarouselImage";
-import Winners23SVG from "@/app/assets/images/legacyWinners23SVG";
 import { data } from "../data";
+import {quotes23 as quotes} from "../quotes"
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
-import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 import Deerhack23Legacy from "@/app/assets/icons/Deerhack23Legacy";
 
 export default function WinnersOf23() {
-
-    const quotes = [
-        {
-            id: 1,
-            titleFront: "“We wanted Deehack to be the ",
-            titleHighlight: "Best Hackathon in Nepal ",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
-            titleBack:
-                " and we made it possible”",
-            name: "Prayatna Mishra",
-            position: "President, Software Club",
-            photo: "legacy/deerhack23/prayatna_mishra.png",
-        },
-        {
-            id: 2,
-            titleFront: "“This is dummy text 2 ",
-            titleHighlight: "Best Hackathon in Nepal",
-            description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi...",
-            titleBack:
-                " and we made it possible” ",
-            name: "Bipashree Aryal",
-            position: "Vice President, Software Club",
-            photo: "legacy/deerhack23/bipashree_aryal.jpeg",
-        },
-    ];
-
     const [index, setIndex] = useState(0);
     const quotesData = quotes[index];
 
