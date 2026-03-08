@@ -10,7 +10,6 @@ import IdeaSVG from "@/app/assets/images/idea";
 import { data } from "../data";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
-import WinnerTrophy from "@/app/assets/images/WinnerTrophy";
 
 export default function WinnersOf24() {
 
