@@ -9,6 +9,8 @@ import LegacyDemoSVG from "../../../assets/images/legacyWinners23SVG";
 import IdeaSVG from "@/app/assets/images/idea";
 import { data } from "../data";
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
+import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
+import WinnerTrophy from "@/app/assets/images/WinnerTrophy";
 
 export default function WinnersOf24() {
 
@@ -20,9 +22,9 @@ export default function WinnersOf24() {
             description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
             titleBack:
                 "”",
-            name: "John Doe",
-            position: "CEO, ABC",
-            photo: <LegacyDemoSVG width={261.03} height={190} />,
+            name: "Aashutosh Pudasaini",
+            position: "President, Software Club",
+            photo: "/legacy/deerhack24/aashutosh_pudasaini.jpg",
         },
         {
             id: 2,
@@ -32,8 +34,8 @@ export default function WinnersOf24() {
             titleBack:
                 "and we made it possible”",
             name: "Jane Doe",
-            position: "CTO, XYZ",
-            photo: <IdeaSVG />,
+            position: "Vice President, Software Club",
+            photo: "/legacy/deerhack24/sampanna_gautam.png",
         },
     ];
 
@@ -124,7 +126,7 @@ export default function WinnersOf24() {
                 </div>
 
                 <DeerHack24Legacy
-                    logo={<Winners23SVG width={261.03} height={190} />}
+                    logo={<DeerhackLogo width="138" height="138" />}
                     title="Team Solo"
                     description="DeerHack 2024 Overall Winners"
                 />
