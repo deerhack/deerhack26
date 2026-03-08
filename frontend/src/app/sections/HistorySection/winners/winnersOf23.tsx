@@ -4,7 +4,7 @@ import { cabinetExtraBold } from "@/app/utils/fonts";
 import QuotesCard from "@/app/components/Quotes/QuotesCard";
 import DeerHack23Legacy from "@/app/components/Legacy/DeerHack23Legacy";
 import CarouselImage from "@/app/components/Legacy/CarouselImage";
-import { data } from "../data";
+import { deerhack23 as data } from "../teams";
 import {quotes23 as quotes} from "../quotes"
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import Deerhack23Legacy from "@/app/assets/icons/Deerhack23Legacy";
