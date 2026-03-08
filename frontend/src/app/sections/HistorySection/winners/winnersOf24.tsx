@@ -4,40 +4,12 @@ import { cabinetExtraBold } from "@/app/utils/fonts";
 import QuotesCard from "@/app/components/Quotes/QuotesCard";
 import DeerHack24Legacy from "@/app/components/Legacy/DeerHack24Legacy";
 import CarouselImage from "@/app/components/Legacy/CarouselImage";
-import Winners23SVG from "@/app/assets/images/legacyWinners23SVG";
-import LegacyDemoSVG from "../../../assets/images/legacyWinners23SVG";
-import IdeaSVG from "@/app/assets/images/idea";
 import { data } from "../data";
+import {quotes24 as quotes} from "../quotes"
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 
 export default function WinnersOf24() {
-
-    const quotes = [
-        {
-            id: 1,
-            titleFront: "“The legacy set last year must be ",
-            titleHighlight: "rightfully fulfilled",
-            description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
-            titleBack:
-                "”",
-            name: "Aashutosh Pudasaini",
-            position: "President, Software Club",
-            photo: "/legacy/deerhack24/aashutosh_pudasaini.jpg",
-        },
-        {
-            id: 2,
-            titleFront: "“This is dummy text 2 ",
-            titleHighlight: "Best Hackathon in Nepal ",
-            description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
-            titleBack:
-                "and we made it possible”",
-            name: "Jane Doe",
-            position: "Vice President, Software Club",
-            photo: "/legacy/deerhack24/sampanna_gautam.png",
-        },
-    ];
-
     const [index, setIndex] = useState(0);
     const quotesData = quotes[index];
 
