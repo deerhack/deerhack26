@@ -19,7 +19,7 @@ export default function ExperienceCard({ activeIndex = 0 }) {
       description:
         "Everything was pretty smooth. For the students to be able to organize something as amazing as this is pretty remarkable. So, take your time and pat yourself on the back maybe.",
       bottomText: "Mentor",
-      finBottomText: "DeerHack 2024",
+      finBottomText: "DeerHack 2025",
       svg: <MentorReviewSVG />,
     },
     {
@@ -27,7 +27,7 @@ export default function ExperienceCard({ activeIndex = 0 }) {
       description:
         "Nice learning experience. Workshops were mind refreshing. Had fun communicating with participants and mentors, was a great learning and networking experience.",
       bottomText: "Volunteer",
-      finBottomText: "DeerHack 2024",
+      finBottomText: "DeerHack 2025",
       svg: <VolunteerReviewSVG />,
     },
     {
@@ -35,7 +35,7 @@ export default function ExperienceCard({ activeIndex = 0 }) {
       description:
         "Everything was as well managed as it could be! From amazing coffee and food to the awesome group of motivating mentors and super helpful volunteers and the organizers. Thank you for an amazing experience!",
       bottomText: "Participant",
-      finBottomText: "DeerHack 2024",
+      finBottomText: "DeerHack 2025",
       svg: <MentorReviewSVG />,
     },
   ]

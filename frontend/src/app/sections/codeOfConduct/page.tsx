@@ -57,11 +57,11 @@ const codeOfConduct = () => {
           <h2 className={`text-3xl headings ${cabinetExtraBold.className} mb-5`}>Rules for Participants:</h2>
           <ul className="mb-20 leading-loose list-disc">
             <li>
-              Participants of all ages, genders, and geographies are welcome.
-            </li>
-            <li>
               To attend DeerHack, the age is limited to students who are between
               18 and 25 years old.
+            </li>
+            <li>
+              Participants of all genders, and geographies are welcome.
             </li>
             <li>
               Members of the organizing committee or Deerwalk Institute of
@@ -204,8 +204,8 @@ const codeOfConduct = () => {
 
           <p className="leading-loose">
           If you have questions regarding your application, contact:<br/>
-          Dipan Silwal : <a href="tel:">9742827007 </a> <br/>
-          Pragalva Sapkota :  <a href = "tel:">9741860722</a>
+          Drsihya Karki : <a href="tel:">9863832524</a> <br/>
+          Shreyansh Pokharel :  <a href = "tel:">9865365714</a>
           </p>
       </div>
 

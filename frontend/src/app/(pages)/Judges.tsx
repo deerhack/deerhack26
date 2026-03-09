@@ -5,6 +5,8 @@ import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
 
 const Judges = () => {
   return (
+    <>
+    {/*
     <div
       key="JudgeContainer"
       className="relative w-full m-auto py-10 bg-dark-purple"
@@ -23,6 +25,8 @@ const Judges = () => {
         <JudgesSection />
       </div>
     </div>
+*/}
+    </>
   );
 };
 
