@@ -5,6 +5,7 @@ import LightBulbSVG from "@/app/assets/images/lightbulb";
 import DataLogoSVG from "@/app/assets/images/dataLogo";
 import BlockChainSVG from "@/app/assets/images/blockChainLogo";
 import InteractiveLogoSVG from "@/app/assets/images/interactiveTechLogo";
+import EdTechGradient from "@/app/assets/icons/EdTechGradient";
 
 type listContent = {
     id: number
@@ -30,9 +31,9 @@ export default function OtherWinners24() {
         },
         {
             id: 3,
-            title: "DUMMY",
-            description: "DeerHack 2025 Blockchain Track Winner",
-            svg: <BlockChainSVG />,
+            title: "Syntax",
+            description: "DeerHack 2025 Ed Tech Track Winner",
+            svg: <EdTechGradient />,
 
         },
         {
