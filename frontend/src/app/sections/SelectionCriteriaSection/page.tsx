@@ -76,7 +76,7 @@ const page = () => {
           <ul className={`list-disc ml-5 md:ml-6 mb-6 leading-7 md:leading-8 text-base md:text-xl space-y-2 mt-10 text-gray-300 ${satoshiRegular.className} `}>
             <li>A selection committee will review and evaluate all applications based on the above criteria.</li>
             <li>Each candidate will be scored and ranked based on their qualifications, experience, responses, and profiles.</li>
-            <li>The top candidates who best meet the selection criteria will be selected to participate in DeerHack 2024.</li>
+            <li>The top candidates who best meet the selection criteria will be selected to participate in DeerHack 2026.</li>
           </ul>
         </div>
         <br></br>
