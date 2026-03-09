@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react";
 import { cabinetBold, cabinetExtraBold } from "../../utils/fonts";
+import { satoshiRegular } from "../../utils/fonts";
 import LegacyFlower from "@/app/assets/images/LegacyFlower.svg";
 import LegacyLeafLeft from "@/app/assets/images/LegacyLeafLeft.svg";
 import LegacyLeafRight from "@/app/assets/images/LegacyLeafRight.svg";
@@ -33,23 +34,23 @@ const LegacyCard: React.FC<LegacyCardDetails> = ({
          <div className="flex justify-between mb-4 mt-3 sm:mt-7 sm:mb-6">
            <div>
              <h2 className={`text-[16px] sm:text-2xl headings ${cabinetExtraBold.className} lg:ml-[0px] md:ml-0 ml-[-15px]`}>Event Leads</h2>
-             <p className="text-[12px] sm:text-[16px] py-1 sm:py-2">{eventLead}</p>
-             <p className="text-[12px] sm:text-[16px]">{eventColead}</p>
+             <p className={`text-[12px] sm:text-[16px] py-1 sm:py-2 ${satoshiRegular.className}`}>{eventLead}</p>
+             <p className={`text-[12px] sm:text-[16px] ${satoshiRegular.className}`}>{eventColead}</p>
            </div>
            <div className="ml-2 sm:ml-3">
              <h2 className={`text-[16px] sm:text-2xl headings ml-[-15px] md:ml-0 lg:ml-0 ${cabinetExtraBold.className}`}>Dates</h2>
-             <p className="text-[12px] sm:text-[16px] py-1 sm:py-2">{date}</p>
+             <p className={`text-[12px] sm:text-[16px] py-1 sm:py-2 ${satoshiRegular.className}`}>{date}</p>
            </div>
          </div>
        
          <div className="mb-3 sm:mb-6 text-left"> 
            <h2 className={`text-[16px] sm:text-2xl headings ${cabinetExtraBold.className} lg:ml-[0px] md:ml-0 ml-[-15px]`}>Applications</h2>
-           <p className="text-[12px] sm:text-[16px] py-1 sm:py-2">{application}</p>
+           <p className={`text-[12px] sm:text-[16px] py-1 sm:py-2 ${satoshiRegular.className}`}>{application}</p>
          </div>
        
          <div className="text-left"> 
            <h2 className={`text-[16px] sm:text-2xl headings ${cabinetExtraBold.className} lg:ml-[0px] md:ml-0 ml-[-15px]`}>Participation</h2>
-           <p className="text-[12px] sm:text-[16px] py-1 sm:py-2">{participation}</p>
+           <p className={`text-[12px] sm:text-[16px] py-1 sm:py-2 ${satoshiRegular.className}`}>{participation}</p>
          </div>
        </div>
         

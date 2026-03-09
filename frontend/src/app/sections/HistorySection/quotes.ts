@@ -2,7 +2,7 @@
 export const quotes23 = [
     {
         id: 1,
-        titleFront: "“We wanted Deehack to be the ",
+        titleFront: "“We wanted Deerhack to be the ",
         titleHighlight: "Best Hackathon in Nepal ",
         description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
         titleBack:
