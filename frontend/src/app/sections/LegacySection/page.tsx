@@ -30,7 +30,7 @@ const LegacySection = () => {
                         eventLead="Aasutosh Pudasaini"
                         eventColead="Sampanna Gautam"
                         date="May 8, 9, 10: 2024" 
-                        application={1050}
+                        application={786}
                         participation={75}
                     />
 
@@ -39,7 +39,7 @@ const LegacySection = () => {
                         eventLead="Dipan Silwal"
                         eventColead="Pragalva Sapkota"
                         date="June 5, 6, 7: 2025"
-                        application={1050}
+                        application={1487}
                         participation={75}
                     />
                 </div>

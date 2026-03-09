@@ -4,7 +4,7 @@ export const quotes23 = [
         id: 1,
         titleFront: "“We wanted Deerhack to be the ",
         titleHighlight: "Best Hackathon in Nepal ",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
+        description: "As the pioneers of the first edition, we aimed to set the gold standard so that future generations could build upon our foundation.",
         titleBack:
             " and we made it possible”",
         name: "Prayatna Mishra",
@@ -13,11 +13,11 @@ export const quotes23 = [
     },
     {
         id: 2,
-        titleFront: "“This is dummy text 2 ",
-        titleHighlight: "Best Hackathon in Nepal",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi...",
+        titleFront: "“Deerhack is more than an event; it is a ",
+        titleHighlight: "community-driven platform ",
+        description: "We launched this initiative to create a space where students could innovate, ensuring a lasting culture of excellence for years to come.",
         titleBack:
-            " and we made it possible” ",
+            " for every aspiring developer” ",
         name: "Bipashree Aryal",
         position: "Vice President, Software Club",
         photo: "legacy/deerhack23/bipashree_aryal.jpeg",
@@ -30,7 +30,7 @@ export const quotes24 = [
         id: 1,
         titleFront: "“The legacy set last year must be ",
         titleHighlight: "rightfully fulfilled",
-        description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
+        description: "Our core mission was to honor the vision of the founders by maintaining the high standards and impact they established at the start.",
         titleBack:
             "”",
         name: "Aashutosh Pudasaini",
@@ -39,12 +39,12 @@ export const quotes24 = [
     },
     {
         id: 2,
-        titleFront: "“This is dummy text 2 ",
-        titleHighlight: "Best Hackathon in Nepal ",
-        description: " Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
+        titleFront: "“We transformed Deerhack into an ",
+        titleHighlight: "immersive ecosystem ",
+        description: "Building on the initial momentum, we focused on deepening the participant experience to effectively carry forward the established legacy.",
         titleBack:
-            "and we made it possible”",
-        name: "Jane Doe",
+            "for innovation to thrive”",
+        name: "Sampanna Gautam",
         position: "Vice President, Software Club",
         photo: "/legacy/deerhack24/sampanna_gautam.png",
     },
@@ -54,22 +54,22 @@ export const quotes24 = [
 export const quotes25 = [
     {
         id: 1,
-        titleFront: "“We wanted Deehack to be the ",
-        titleHighlight: "Best Hackathon in Nepal ",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi... ",
+        titleFront: "“Our team pushed to ",
+        titleHighlight: "Redefine Collaboration ",
+        description: "We took the existing benchmarks and elevated them further, fostering a culture of teamwork to reach new heights of success.",
         titleBack:
-            " and we made it possible”",
+            " in every line of code at Deerhack”",
         name: "Dipan Silwal",
         position: "President, Software Club",
         photo: "/legacy/deerhack25/dipan_silwal.jpg",
     },
     {
         id: 2,
-        titleFront: "“This is dummy text 2 ",
-        titleHighlight: "Best Hackathon in Nepal",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi...",
+        titleFront: "“Deerhack 25 is dedicated to ",
+        titleHighlight: "Empowering the next generation ",
+        description: "By refining our processes and working as a unified team, we managed to outperform previous editions and set a new bar for the future.",
         titleBack:
-            " and we made it possible” ",
+            " of digital problem solvers” ",
         name: "Pragalva Sapkota",
         position: "Vice President, Software Club",
         photo: "/legacy/deerhack25/pragalva_sapkota.png",
