@@ -17,7 +17,7 @@ const Counter = () => {
     minutes: number;
     seconds: number;
   } => {
-    const countDownDate = new Date("June 11, 2026 14:00:00").getTime();
+    const countDownDate = new Date("June 12, 2026 14:00:00").getTime();
     const now = new Date().getTime();
     const timeLeft = countDownDate - now;
     return {

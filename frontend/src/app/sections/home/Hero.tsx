@@ -18,7 +18,7 @@ const Hero = () => {
       <p
           className={`  text-2xl md:text-4xl lg:text-3xl font-bold text-center text-heropage-gradient ${cabinetBold.className}`}
         >
-          11th - 13th June
+          12th - 14th June
         </p>
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
         {/* <div
@@ -32,12 +32,12 @@ const Hero = () => {
           className="w-fit mx-auto"
           target="_blank"
         >
-          <div className="flex flex-row justify-center items-center gap-2 py-3 px-5 bg-[#3670FF] w-[228px] h-[46px] md:w-[350px] md:h-[60px] lg:w-[321px] lg:h-[61px] rounded-md text-white mx-auto mt-9 transform transition-transform duration-300 hover:scale-105">
+          {/* <div className="flex flex-row justify-center items-center gap-2 py-3 px-5 bg-[#3670FF] w-[228px] h-[46px] md:w-[350px] md:h-[60px] lg:w-[321px] lg:h-[61px] rounded-md text-white mx-auto mt-9 transform transition-transform duration-300 hover:scale-105">
             <Devfolio />
             <p className={`text-white ${cabinetMedium.className}  text-[15px] md:text-xl lg:text-[23px] text-bold  `}>
               Explore With Devfolio
             </p>
-          </div>
+          </div> */}
             {/* <div className="flex flex-row w-[182px] h-[47px] lg:w-[256px] lg:h-[67px]  md:w-[280px] md:h-[60px] justify-center items-center gap-2 p-4 rounded-xl text-black mx-auto mt-7 hover:bg-[#FACA16] bg-[#FFBF00] transition-ease in out duration-200 transform transition-transform hover:scale-105">
             <p className={`text-black ${satoshiBlack.className} text-bold text-xs md:text-xl lg:text-xl `}>
               Pre-Register Now
@@ -47,7 +47,7 @@ const Hero = () => {
         </Link>
 
         <Link
-          href="https://discord.gg/Y4HZYsSQ"
+          href="https://discord.com/invite/56PAU7sBgZ"
           className="inline-block"
           target="_blank"
         >
