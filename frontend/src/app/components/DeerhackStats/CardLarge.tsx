@@ -39,7 +39,7 @@ export default function CardLarge(): ReactElement {
             <div
               className={`${cabinetRegular.className} text-4xl text-white w-full text-center `}
             >
-              80%
+              75%
             </div>
             {/* Decrease Stat */}
             {/* <div className="flex items-center gap-1 self-start">
@@ -62,13 +62,13 @@ export default function CardLarge(): ReactElement {
             <div
               className={`${cabinetRegular.className} text-4xl text-white w-full text-center `}
             >
-              20%
+              25%
             </div>
             {/* Increase Stat */}
             <div className="flex items-center gap-1 self-start">
               <IncreaseStatSVG height={16} width={16} />
               <p className={`${cabinetRegular.className} text-white text-sm`}>
-                5%
+                10% 
               </p>
             </div>
           </div>

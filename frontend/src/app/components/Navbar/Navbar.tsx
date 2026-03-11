@@ -127,7 +127,7 @@ const Navbar = () => {
                             Selection Criteria
                           </a>
                         </li>
-                        <li>
+                        {/*                        <li>
                           <a
                             href="/judging-criteria"
                             className="hover:text-secondary text-xl"
@@ -137,6 +137,8 @@ const Navbar = () => {
                             Judging Criteria
                           </a>
                         </li>
+                        */}
+
                         {/* Hidden Judging Criteria */}
                         <li>
                           <a
@@ -198,13 +200,15 @@ const Navbar = () => {
                 {isResourceOpen && (
                   <div className="fixed bg-violet/50 backdrop-blur-md shadow-lg transition-all ease-in-out duration-500 z-20 text-white rounded-br-xl rounded-bl-xl border-sm top-20 mt-[1rem] ">
                     <ul className={`w-[18.6rem] mt-0.5 text-left list-none ${cabinetMedium.className}`}>
-                      <li className="p-5 mb-2">
+                    {/*                      <li className="p-5 mb-2">
                         <a href="/judging-criteria" className="hover:text-secondary" 
                         // target="_blank"
                          rel="noreferrer">
                           Judging Criteria
                         </a>
                       </li>
+                    */}
+
                       <li className="pt-4 px-6 mb-4">
                         <a
                           href="/selection-criteria"
