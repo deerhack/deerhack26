@@ -92,7 +92,7 @@ const TracksCard = () => {
           : "bg-violet hover:gradient-bg hover:text-magnolia hover:invert transition-all duration-300",
       bodyStyling: "gradient-bg text-magnolia invert transition-all duration-300",
       description:
-        "Enter the World of IoT with DeerHack. Explore connectivity, innovation, and the future of global interaction.",
+        "Think Green, Code Clean at DeerHack. Dive into the world of climate-positive innovation. Turn environmental challenges into elegant, scalable, and sustainable tech solutions.",
     },
   ];
 
@@ -106,7 +106,7 @@ const TracksCard = () => {
     <div className="lg:w-[70.36rem]  mx-5 lg:mx-auto transition-all duration-300 ease-in">
      
       <div
-        className={`flex  lg:justify-center items-start text-magnolia  lg:gap-[12px] md:gap-6 gap-3 overflow-x-hidden no-scrollbar justify-evenly px-3`}
+        className={`flex  lg:justify-center items-start text-magnolia  lg:gap-[12px] md:gap-6 gap-3 overflow-x-auto no-scrollbar justify-evenly px-3`}
         ref={containerRef}
       >
         {trackData.map((track, index) => (
