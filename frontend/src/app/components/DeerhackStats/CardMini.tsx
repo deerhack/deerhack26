@@ -1,5 +1,6 @@
 import { cabinetBold, cabinetRegular } from "@/app/utils/fonts";
 import { ReactElement } from "react";
+import CountUpAnimation from "../CountUp/CountUpAnimation";
 
 export default function CardMini({
   svg,
@@ -18,9 +19,10 @@ export default function CardMini({
           {title}
         </p>
       </div>
-      <p className={`${cabinetRegular.className} text-[45px] text-white`}>
+      {/* <p className={`${cabinetRegular.className} text-[45px] text-white`}>
         {numbers}
-      </p>
+      </p> */}
+      <CountUpAnimation target={numbers} isExtra={false} className="text-[45px] text-white" time={4}/>
     </div>
   );
 }
