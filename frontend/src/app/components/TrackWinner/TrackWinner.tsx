@@ -66,7 +66,7 @@ export default function TrackWinner({ scrollProgress }: { scrollProgress: number
   }, [scrollProgress]);
 
   return (
-    <div className="primary-gradient-background w-[19.985rem] sm:w-[19.985rem] md:w-[23.985rem] lg:w-[26.313rem] h-[18.369rem] sm:h-[18.369rem] md:h-[18.369rem] lg:h-[29.063rem] p-[2px] rounded-[2rem]">
+    <div className="primary-gradient-background w-[19.985rem] sm:w-[19.985rem] md:w-[23.985rem] lg:w-[26.313rem] h-[20.369rem] sm:h-[20.369rem] md:h-[23.369rem] lg:h-[29.063rem] p-[2px] rounded-[2rem]">
       <div className="bg-[#110C24] flex flex-col h-full w-full rounded-[2rem] justify-between py-8">
        <div className="flex flex-col justify-center gap-4 items-center">
   <div style={{ width: 120, height: 120, marginBottom: "-30px" }}>
