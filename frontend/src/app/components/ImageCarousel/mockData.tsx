@@ -23,4 +23,8 @@ export const data = [
     id: 6,
     img: "/carousel/processed/sized/6.webp",
   },
+  {
+    id: 7,
+    img: "/carousel/processed/sized/7.webp",
+  },
 ];
