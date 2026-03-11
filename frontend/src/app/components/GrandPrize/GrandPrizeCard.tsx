@@ -62,7 +62,7 @@ export default function GrandPrizeCard({ scrollProgress }: GrandPrizeCardProps):
   }, [scrollProgress]);
 
   return (
-    <div className="flex flex-col justify-evenly grow lg:h-[43.448rem] h-[29.448rem] sm:h-[29.448rem] md:h-[32.448rem] rounded-[2rem] primary-aboutpage-background w-[19.966rem] sm:w-[19.966rem] md:w-[23.966rem] lg:w-[29.348rem]">
+    <div className="flex flex-col justify-evenly grow lg:h-[43.448rem] h-[29.448rem] sm:h-[27.448rem] md:h-[32.448rem] rounded-[2rem] primary-aboutpage-background w-[19.966rem] sm:w-[19.966rem] md:w-[23.966rem] lg:w-[29.348rem]">
       <div className="flex flex-col text-left ml-[2rem]">
         <div className="flex w-[160px] h-[160px]">
           <Lottie
