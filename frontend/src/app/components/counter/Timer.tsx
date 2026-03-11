@@ -82,7 +82,7 @@ const Counter = ({targetDate,className}:CounterProp) => {
             Minutes
           </span>
         </div>
-        <div className="flex flex-col items-center lg:w-48 xl:w-64 md:min-w-16">
+        <div className="flex flex-col items-center lg:w-48 md:min-w-16">
           <p
             className={`text-4xl lg:text-9xl xl:text-[10rem] md:text-7xl tracking-[0.25rem] lg:tracking-[1.25rem] lg:ml-[15px]   font-bold ${cabinetBold.className}`}
           >

@@ -46,7 +46,7 @@ export default function   Footer(): ReactElement {
                   <span
                     className={`px-2 md:text-[17px] lg:text-[20px] ${cabinetRegular.className}`}
                   >
-                    9742827007/9741860722
+                    9863832524/9865365714
                   </span>
                 </div>
               </Link>
@@ -71,7 +71,7 @@ export default function   Footer(): ReactElement {
                 </span>
                 <span className="w-[25px]">
                   <Link
-                    href="https://www.instagram.com/deerhack2025/"
+                    href="https://www.instagram.com/deerhack2026/"
                     target="_blank"
                   >
                     <InstagramSVG />
@@ -128,7 +128,7 @@ export default function   Footer(): ReactElement {
               Venue: Deerwalk Complex
             </p>
             <p className={`text-[16px] ${cabinetRegular.className}`}>
-              Date: 11th-13th June, 2026
+              Date: 12th-14th June, 2026
             </p>
           </div>
         </div>

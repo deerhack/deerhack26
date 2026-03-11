@@ -5,6 +5,8 @@ import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
 
 const Mentors = () => {
   return (
+    <>
+    {/*
     <div key="MentorContainer" className="w-full m-auto py-10 bg-dark-purple">
       <div
         key="MentorContainer"
@@ -22,6 +24,8 @@ const Mentors = () => {
         <MentorsSection />
       </div>
     </div>
+    */}
+    </>
   );
 };
 

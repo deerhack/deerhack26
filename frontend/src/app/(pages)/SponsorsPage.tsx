@@ -4,7 +4,11 @@ import SponsorsSection from "../sections/Sponsors/SponsorsSection";
 import Image from "next/image";
 import { ReactElement } from "react";
 export default function SponsorPage(): ReactElement {
+ 
+ 
   return (
+     <>
+     {/*
     <div className="overflow-hidden py-20">
       <div className="relative">
         <Image
@@ -18,5 +22,8 @@ export default function SponsorPage(): ReactElement {
         <SponsorsSection />
       </div>
     </div>
+    */}
+     </>
   );
+
 }
