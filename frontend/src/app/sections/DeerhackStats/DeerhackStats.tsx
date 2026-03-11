@@ -9,8 +9,8 @@ export default function DeerHackStats() {
     <div className="flex-wrap flex gap-4 justify-center">
       <div className="flex flex-col gap-4">
         <CardMedium />
-        <CardMini svg={<HackersSVG />} title="Hackers" numbers={147} />
-        <CardMini svg={<ProjectsSVG />} title=" Total Projects" numbers={36} />
+        <CardMini svg={<HackersSVG />} title="Hackers" numbers={215} />
+        <CardMini svg={<ProjectsSVG />} title=" Total Projects" numbers={33} />
       </div>
       <CardLarge />
     </div>
