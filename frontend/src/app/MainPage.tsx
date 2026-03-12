@@ -22,8 +22,8 @@ export default function Home() {
       <Hero />
       <AboutTheEventPage />
       <BenefitsPage />
-      <TrackPage />
       <PrizesPage />
+      <TrackPage />
       <ExpectationsPage />
       <DeerhackStatsPage />
       <ImageCarouselPage />

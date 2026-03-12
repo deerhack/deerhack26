@@ -13,6 +13,8 @@ import DataScienceNew from "@/app/assets/icons/DataScienceNew";
 import BlockchainNew from "@/app/assets/icons/BlockChainNew";
 import OpenInnovationNew from "@/app/assets/icons/OpenInnovationNew";
 import EdTechNew from "@/app/assets/icons/EdTechNew";
+import EnvironmentTrackSVG from "@/app/assets/icons/EnvironmentTrack";
+import EnvironmentTrackBodySVG from "@/app/assets/icons/EnvironmentTrackBody";
 
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
@@ -27,22 +29,22 @@ const TracksCard = () => {
       headStyling:
         selectedTrack === "Interactive Technology"
           ? "bg-grape text-magnolia active"
-          : "bg-violet hover:bg-grape hover:text-magnolia",
+          : "bg-violet hover:bg-grape hover:text-magnolia transition-all duration-300",
       bodyStyling: "bg-grape text-magnolia",
       description:
         "Enter the World of IoT with DeerHack. Explore connectivity, innovation, and the future of global interaction.",
     },
     {
-      title: "Data Science / Machine Learning",
+      title: "Machine Learning / AI",
       svg: <DataScienceSVG height={25} width={25} />,
       svgBody: <DataScienceNew height={50} width={50} />,
       headStyling:
-        selectedTrack === "Data Science / Machine Learning"
+        selectedTrack === "Machine Learning / AI"
           ? "bg-purpures text-magnolia active"
-          : "bg-violet hover:bg-purpures hover:text-magnolia",
+          : "bg-violet hover:bg-purpures hover:text-magnolia transition-all duration-300",
       bodyStyling: "bg-purpures text-magnolia",
       description:
-        "Dive deep into the captivating realm of Data Analysis and Predictive Modeling, Leveraging algorithms ",
+        "Dive deep into the captivating realm of Data Analysis and Predictive Modeling, Leveraging algorithms and Artificial Intellignce.",
     },
     {
       title: "Blockchain",
@@ -51,7 +53,7 @@ const TracksCard = () => {
       headStyling:
         selectedTrack === "Blockchain"
           ? "bg-magnolia text-dark-purple active"
-          : "bg-violet hover:bg-magnolia hover:text-dark-purple",
+          : "bg-violet hover:bg-magnolia hover:text-dark-purple transition-all duration-300",
       bodyStyling: "bg-magnolia text-dark-purple",
       description:
         "Embrace Decentralization with DeerHack. Explore smart contracts, secure transactions, and reshape industries at the forefront of innovation.",
@@ -63,7 +65,7 @@ const TracksCard = () => {
       headStyling:
         selectedTrack === "Open Innovation"
           ? "bg-secondary text-dark-purple active"
-          : "bg-violet hover:bg-secondary hover:text-dark-purple",
+          : "bg-violet hover:bg-secondary hover:text-dark-purple transition-all duration-300",
       bodyStyling: "bg-secondary text-dark-purple",
       description:
         "Transforming Challenges into Opportunities at DeerHack. Be part of the solution, forging a brighter future for all.",
@@ -75,12 +77,23 @@ const TracksCard = () => {
       headStyling:
         selectedTrack === "Ed-Tech"
           ? "gradient-bg text-magnolia active"
-          : "bg-violet hover:gradient-bg hover:text-magnolia",
+          : "bg-violet hover:gradient-bg hover:text-magnolia transition-all duration-300",
       bodyStyling: "gradient-bg text-magnolia",
       description:
         "Reimagining education at DeerHack through smart, interactive, and personalized tech",
     },
-    
+    {
+      title: "Environment",
+      svg: <EnvironmentTrackSVG height={25} width={25} />,
+      svgBody: <EnvironmentTrackBodySVG height={50} width={50} />,
+      headStyling:
+        selectedTrack === "Environment"
+          ? "gradient-bg text-magnolia active invert "
+          : "bg-violet hover:gradient-bg hover:text-magnolia hover:invert transition-all duration-300",
+      bodyStyling: "gradient-bg text-magnolia invert transition-all duration-300",
+      description:
+        "Think Green, Code Clean at DeerHack. Dive into the world of climate-positive innovation. Turn environmental challenges into elegant, scalable, and sustainable tech solutions.",
+    },
   ];
 
   const handleTrackSelection = (title: string) => {
@@ -90,10 +103,10 @@ const TracksCard = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="lg:w-[69.25rem]  mx-5 lg:mx-auto">
+    <div className="lg:w-[70.36rem]  mx-5 lg:mx-auto transition-all duration-300 ease-in">
      
       <div
-        className={`flex  lg:justify-center items-start text-magnolia  lg:gap-3 md:gap-6 gap-3 overflow-x-auto  no-scrollbar justify-evenly px-3`}
+        className={`flex  lg:justify-center items-start text-magnolia  lg:gap-[12px] md:gap-6 gap-3 overflow-x-auto no-scrollbar justify-evenly px-3`}
         ref={containerRef}
       >
         {trackData.map((track, index) => (
