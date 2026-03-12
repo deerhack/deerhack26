@@ -35,16 +35,16 @@ const TracksCard = () => {
         "Enter the World of IoT with DeerHack. Explore connectivity, innovation, and the future of global interaction.",
     },
     {
-      title: "Data Science / ML",
+      title: "Machine Learning / AI",
       svg: <DataScienceSVG height={25} width={25} />,
       svgBody: <DataScienceNew height={50} width={50} />,
       headStyling:
-        selectedTrack === "Data Science / ML"
+        selectedTrack === "Machine Learning / AI"
           ? "bg-purpures text-magnolia active"
           : "bg-violet hover:bg-purpures hover:text-magnolia transition-all duration-300",
       bodyStyling: "bg-purpures text-magnolia",
       description:
-        "Dive deep into the captivating realm of Data Analysis and Predictive Modeling, Leveraging algorithms ",
+        "Dive deep into the captivating realm of Data Analysis and Predictive Modeling, Leveraging algorithms and Artificial Intellignce.",
     },
     {
       title: "Blockchain",

@@ -85,10 +85,10 @@ export default function TrackWinner({ scrollProgress }: { scrollProgress: number
   </div>
 </div>
         <div className="flex flex-col items-start gap-1 lg:gap-2 px-6">
-          <p className={`${cabinetRegular.className} text-white text-xs sm:text-xs md:text-xl lg:text-2xl tracking-wide w-full`}>
-            New Track Added !
+          <p className={`${cabinetRegular.className} text-white  text-xs sm:text-xs md:text-xl lg:text-2xl tracking-wide w-full`}>
+            Environment Track Added !
           </p>
-          <p className={`${cabinetBlack.className} text-4xl sm:text-4xl md:text-5xl lg:text-7xl text-[#F5C144]`}>
+          <p className={`${cabinetBlack.className} text-4xl sm:text-4xl md:text-5xl lg:text-7xl text-[#F5C144] `}>
             Rs. 15,000
           </p>
           <p className={`${cabinetRegular.className} text-white text-xs sm:text-xs md:text-xl lg:text-2xl italic tracking-wide w-full`}>
