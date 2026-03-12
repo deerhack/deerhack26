@@ -121,7 +121,7 @@ const Navbar = () => {
                           <a
                             href="/selection-criteria"
                             className="hover:text-secondary text-xl"
-                            // target="_blank"
+                            target="_blank"
                             rel="noreferrer"
                           >
                             Selection Criteria
@@ -131,7 +131,7 @@ const Navbar = () => {
                           <a
                             href="/judging-criteria"
                             className="hover:text-secondary text-xl"
-                            // target="_blank"
+                             target="_blank"
                             rel="noreferrer"
                           >
                             Judging Criteria
@@ -144,7 +144,7 @@ const Navbar = () => {
                           <a
                             href="/code-of-conduct"
                             className="hover:text-secondary text-xl"
-                            // target="_blank"
+                            target="_blank"
                             rel="noreferrer"
                           >
                             Code Of Conduct
@@ -202,7 +202,7 @@ const Navbar = () => {
                     <ul className={`w-[18.6rem] mt-0.5 text-left list-none ${cabinetMedium.className}`}>
                     {/*                      <li className="p-5 mb-2">
                         <a href="/judging-criteria" className="hover:text-secondary" 
-                        // target="_blank"
+                         target="_blank"
                          rel="noreferrer">
                           Judging Criteria
                         </a>
@@ -213,7 +213,7 @@ const Navbar = () => {
                         <a
                           href="/selection-criteria"
                           className="hover:text-secondary"
-                          // target="_blank"
+                          target="_blank"
                           rel="noreferrer"
                         >
                           Selection Criteria
@@ -221,7 +221,7 @@ const Navbar = () => {
                       </li>
                       <li className="pt-4 px-6 mb-4">
                         <a href="/code-of-conduct" className="hover:text-secondary" 
-                        // target="_blank"
+                        target="_blank"
                          rel="noreferrer">
                           Code Of Conduct
                         </a>

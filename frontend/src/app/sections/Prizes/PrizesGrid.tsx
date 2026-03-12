@@ -20,7 +20,7 @@ export default function PrizesGrid(): ReactElement {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: sectionRef.current,
-        start: "top 70%",
+        start: "top 90%",
         end: "bottom 20%",
         scrub: true,
         onUpdate: (self) => {
