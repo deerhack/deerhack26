@@ -1,5 +1,6 @@
 import ApplicantsSVG from "@/app/assets/images/applicants"
 import { cabinetBold, cabinetRegular } from "@/app/utils/fonts"
+import CountUpAnimation from "../CountUp/CountUpAnimation"
 
 export default function CardMedium() {
   return (
@@ -9,14 +10,16 @@ export default function CardMedium() {
         {/* Mobile View */}
         <div className="flex justify-between items-center lg:hidden">
           <p className={`${cabinetBold.className} text-white text-2xl leading-tight`}>Total</p>
-          <p className={`${cabinetRegular.className} text-white text-4xl`}>3840+</p>
+          {/* <p className={`${cabinetRegular.className} text-white text-4xl`}>3840+</p> */}
+          <CountUpAnimation target={3840} isExtra={true} time={3} className=" text-white text-4xl"/>
         </div>
         <p className={`${cabinetBold.className} text-white text-2xl leading-tight lg:hidden`}>Applicants</p>
         {/* DeskTop View */}
         <div className="hidden lg:flex lg:flex-col lg:h-full lg:justify-between">
           <p className={`${cabinetBold.className} text-white text-2xl leading-tight`}>Total Applicants</p>
           <div className="flex justify-end">
-            <p className={`${cabinetRegular.className} text-white text-5xl`}>3840+</p>
+            {/* <p className={`${cabinetRegular.className} text-white text-5xl`}>3840+</p> */}
+            <CountUpAnimation target={3840} isExtra={true} time={3} className=" text-white text-5xl"/>
           </div>
         </div>
       </div>
