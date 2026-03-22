@@ -1,8 +1,8 @@
 const DiscordHero = () => {
   return (
     <svg
-      width="33"
-      height="26"
+      width="24"
+      height="17"
       viewBox="0 0 33 26"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
