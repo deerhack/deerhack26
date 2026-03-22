@@ -73,7 +73,7 @@ const AboutTheEventPageV2 = () => {
 		<div
 			ref={container}
 			id="trigger-zone"
-			className="pt-[100px] pb-[80px] bg-[#110C24] flex justify-center items-center relative"
+			className="py-20 2xl:py-0 pt-[100px] 2xl:pb-[80px] bg-[#110C24] flex justify-center items-center relative"
 		>
 			<img
 				src={about_right}
@@ -81,7 +81,7 @@ const AboutTheEventPageV2 = () => {
 				height={400}
 				className="absolute top-0 right-0 xl:block hidden"
 			/>
-			<div className="pb-80 pt-[100px] w-full flex flex-col justify-center items-center">
+			<div className="2xl:pb-80 pt-[100px] w-full flex flex-col justify-center items-center">
 				<h1
 					className={`${cabinetExtraBold.className} mb-[3rem] headings lg:text-[]`}
 				>

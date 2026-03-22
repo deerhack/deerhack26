@@ -32,7 +32,7 @@ const AboutCard = function() {
     }, {dependencies: [active], scope: container});
 
     return (
-        <div ref={container} className='about-card-container h-max w-full xl:w-[76.688rem] md:h-150.5 xl:h-[37.625rem] primary-aboutpage-background rounded-[20px] p-[4px] tems-center relative flex justify-center mx-4'>
+        <div ref={container} className='about-card-container h-max w-full md:w-[50rem] xl:w-[76.688rem] md:h-150.5 xl:h-[37.625rem] primary-aboutpage-background rounded-[20px] p-[4px] tems-center relative flex justify-center mx-4'>
             <div className='w-full h-full bg-[#130a2c] rounded-2xl p-10 2xl:p-15 flex flex-col justify-center items-start relative'>
                 {details.map((item, index) => (
                     <div key={item.id} className={`detail-content detail-${index} 2xl:pr-20`}>
@@ -50,7 +50,7 @@ const AboutCard = function() {
                     </div>
                 ))}
 
-                <div className='flex 2xl:hidden absolute bottom-5 left-0 w-full justify-center gap-3'>
+                <div className='flex 2xl:hidden absolute bottom-4 left-0 w-full justify-center gap-3'>
                     {details.map((_, index) => (
                         <button 
                             key={index}
