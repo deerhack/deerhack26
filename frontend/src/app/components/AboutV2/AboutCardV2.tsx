@@ -1,23 +1,50 @@
 import React, { useState, useRef } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import { details } from './data';
 import ImprovizedButton from '@/app/assets/icons/ImprovizedButton';
 import CoffeCup from '@/app/assets/icons/CoffeeCup';
 import Laptop from '@/app/assets/icons/Laptop';
 import Guitar from '@/app/assets/icons/Guitar';
+import { cabinetExtraBold, satoshiRegular } from '@/app/utils/fonts';
 
 const AboutCard = function() {
     const [active, setActive] = useState(0);
     const container = useRef<HTMLDivElement>(null);
 
+    useGSAP(() => {
+        gsap.killTweensOf(".detail-content");
+        gsap.set(".detail-content", {
+            display: "none",
+            opacity: 0,
+            y: 20
+        });
+
+        gsap.to(`.detail-${active}`, {
+            display: "block",
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            ease: "power3.out",
+            delay: 0.1
+        });
+
+    }, {dependencies: [active], scope: container});
+
     return (
-        <div ref={container} className='about-card-container h-max w-full md:w-200 xl:w-[76.688rem] md:h-150.5 bg-[linear-gradient(245deg,#6633CC_0%,#F5C144_100%)] rounded-[20px] p-[4px] flex justify-center items-center relative'>
+        <div ref={container} className='about-card-container h-max w-full xl:w-[76.688rem] md:h-150.5 xl:h-[37.625rem] primary-aboutpage-background rounded-[20px] p-[4px] tems-center relative flex justify-center mx-4'>
             <div className='w-full h-full bg-[#130a2c] rounded-2xl p-10 2xl:p-15 flex flex-col justify-center items-start relative'>
                 {details.map((item, index) => (
                     <div key={item.id} className={`detail-content detail-${index} 2xl:pr-20`}>
-                        <div className='text-[24px] md:text-[32px] lg:text-[48px] font-bold bg-clip-text text-transparent bg-[linear-gradient(180deg,#6633CC_0%,#F5C144_100%)] mb-2 sm:mb-5 lg:mb-10'>
-                            {item.title}
+                        <div className="bg-dark-purple rounded-full w-12 lg:w-20 h-12 mb-5 lg:h-20 flex items-center justify-center p-0">
+                            {item.svg && typeof item.svg !== 'string' ? (
+                                <item.svg />
+                            ) : null}
                         </div>
-                        <div className='mb-5 text-[14px] sm:text-[24px] 2xl:text-[28px] text-white leading-relaxed 2xl:pr-15 sm:mb-0'>
+                        <div className={`flex  justify-start items-center text-3xl lg:text-6xl text-main-title w-fit  ${cabinetExtraBold.className} text-start`}>
+                            <p className=''>{item.title}</p>
+                        </div>
+                        <div className={`text-magnolia text-base text-justify lg:text-[28px] ${satoshiRegular.className} leading-7 tracking-wide mt-10 pr-5`}>
                             {item.desc}
                         </div>
                     </div>
