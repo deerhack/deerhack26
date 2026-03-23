@@ -38,6 +38,9 @@
   .exp-gradient-background {
   background: linear-gradient(270deg, #F5C144 0%, #6633CC 100%);
   }
+  .blockchain-background {
+  background: linear-gradient(60deg, #6633CC 0%,#F5C144 150%);
+  }
 
   .text-primary-gradient-color {
     @apply bg-gradient-to-r from-primary from-1% to-secondary bg-clip-text text-transparent;
