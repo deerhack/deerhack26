@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      {/* <AboutTheEventPage /> */}
+      <AboutTheEventPage />
       <AboutTheEventPageV2/>
       <BenefitsPage />
       <PrizesPage />

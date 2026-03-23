@@ -1,8 +1,16 @@
-import React from 'react'
+import { ReactElement } from "react";
 
-const Laptop = ({className = ""}) => {
+export default function CoffeeCup({
+  height = 34,
+  width = 34,
+  className=" "
+}: {
+  height?: number;
+  width?: number;
+  className?:string;
+}): ReactElement {
   return (
-    <svg width="420" height="385" viewBox="0 0 420 385" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+   <svg width={width} height={height} className={className} viewBox="0 0 420 385" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M278.663 179.564C276.51 179.244 274.326 179.654 272.445 180.731L94.8691 282.436C87.8536 286.452 88.4361 296.918 95.8502 300.27L204.881 349.57C208.124 351.046 211.898 350.626 214.728 348.478L392.14 213.717C399.114 208.415 396.205 197.107 387.513 195.812L278.663 179.564Z" fill="url(#paint0_linear_38_382)"/>
 <path d="M346.007 199.603L274.978 187.038L118.563 279.418L190.694 306.414L346.007 199.603Z" fill="#543099"/>
 <path d="M312.908 226.354L250.671 270.327L275.439 282.342L341.912 231.983L312.908 226.354Z" fill="#543099"/>
@@ -10,21 +18,20 @@ const Laptop = ({className = ""}) => {
 <path d="M259.513 173.445L201.958 47.4269L21.7411 130.951L87.6534 272.807L259.513 173.445Z" fill="url(#paint2_linear_38_382)"/>
 <defs>
 <linearGradient id="paint0_linear_38_382" x1="920.988" y1="132.93" x2="82.4235" y2="310.122" gradientUnits="userSpaceOnUse">
-<stop stopColor="#B254EA"/>
-<stop offset="1" stopColor="#280E5C"/>
+<stop stop-color="#B254EA"/>
+<stop offset="1" stop-color="#280E5C"/>
 </linearGradient>
 <linearGradient id="paint1_linear_38_382" x1="373.427" y1="306.337" x2="73.7299" y2="95.075" gradientUnits="userSpaceOnUse">
-<stop stopColor="#B254EA"/>
-<stop offset="1" stopColor="#280E5C"/>
+<stop stop-color="#B254EA"/>
+<stop offset="1" stop-color="#280E5C"/>
 </linearGradient>
 <linearGradient id="paint2_linear_38_382" x1="308.58" y1="215.261" x2="32.4166" y2="208.167" gradientUnits="userSpaceOnUse">
-<stop stopColor="#FFA5A5"/>
-<stop offset="1" stopColor="#4A219B"/>
+<stop stop-color="#FFA5A5"/>
+<stop offset="1" stop-color="#4A219B"/>
 </linearGradient>
 </defs>
 </svg>
 
-  )
-}
 
-export default Laptop
+  );
+}
