@@ -78,7 +78,7 @@ export default function AboutCard({
           </div>
 
           <h1
-            className={`text-primary-gradient-color ${cabinetExtraBold.className} text-[32px] lg:text-[36px] leading-normal tracking-normal text-start`}
+            className={`text-3xl lg:text-6xl text-main-title w-fit px-4 md:px-0 text-primary-gradient-color ${cabinetExtraBold.className} text-[32px] lg:text-[36px] leading-normal tracking-normal text-start`}
           >
             {title}
           </h1>

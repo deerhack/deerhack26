@@ -8,31 +8,45 @@ import Laptop from "@/app/assets/icons/Laptop";
 import CoffeCup from "@/app/assets/icons/CoffeeCup";
 import DarinCup from "@/app/assets/icons/DarinCup";
 import Guitar from "@/app/assets/icons/Guitar";
+
 export default function Home() {
   return (
     <>
-      <div className="relative">
-
-    
-        <Laptop height={250} width={250} className="absolute left-[30px] bottom-[10%]" />
-        <CoffeCup height={100} width={100} className="absolute left-[120px] bottom-[40%]" />
-        <DarinCup height={600} width={420} className="absolute right-[-160px] bottom-[-200px]" />
-
+      <div className="relative overflow-x-hidden overflow-y-hidden">
         
+        <Laptop
+          height={306.0217203841847}
+          width={354.206822415178}
+          className="absolute -left-[5px] bottom-[8%]"
+        />
+        <CoffeCup
+          height={170.8614890732017}
+          width={124.23594985464511}
+          className="absolute left-[38px] bottom-[38%]"
+        />
         
+        <DarinCup
+          height={600}
+          width={420}
+          className="absolute right-[-160px] bottom-[-10px]"
+        />
 
-     
-        <div className="pb-20 pt-[100px]">
-          <h1 className={`${cabinetExtraBold.className} mb-[3rem] headings lg:text-[55px]`}>
+        <div className="pb-[280px] pt-[100px]">
+          <h1
+            className={`${cabinetExtraBold.className} mb-[3rem] headings lg:text-[55px]`}
+          >
             About The Event
           </h1>
 
           <AboutTheEventCards />
         </div>
 
-        <Guitar height={200} width={200} className="absolute bottom-0 left-[140px] z-100" />
-
+        <Guitar
+          height={381.94}
+          width={358.77}
+          className="absolute bottom-[-25px] left-[200px] z-50 pointer-events-none"
+        />
       </div>
     </>
   );
-};
+}
