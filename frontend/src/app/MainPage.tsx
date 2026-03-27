@@ -22,7 +22,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutTheEventPage />
-      <AboutTheEventPageV2/>
+      {/* <AboutTheEventPageV2/> */}
       <BenefitsPage />
       <PrizesPage />
       <TrackPage />
