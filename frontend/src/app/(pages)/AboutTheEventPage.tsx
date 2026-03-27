@@ -21,41 +21,27 @@ export default function Home() {
 
 	useGSAP(
 		() => {
-			const icons = gsap.utils.toArray<HTMLElement>(".event-icon");
-			const phoneIcons = gsap.utils.toArray<HTMLElement>(".phone-event-icon");
-			icons.forEach((icon) => {
-				gsap.fromTo(
-					icon,
-					{ x: -600, rotate: -180, opacity: 0 },
-					{
-						x: 0,
-						rotate: 0,
-						duration: 1,
-						opacity: 1,
-						ease: "expo.out",
-						scrollTrigger: {
-							trigger: icon,
-							start: "top 95%",
-							toggleActions: "play none none reverse",
-							invalidateOnRefresh: true,
-						},
-					},
-				);
-			});
+			const allIcons = gsap.utils.toArray<HTMLElement>(
+				".phone-event-icon, .event-icon",
+			);
 
-			phoneIcons.forEach((icon) => {
+			allIcons.forEach((icon) => {
+				const isMobile = window.innerWidth < 768;
+				const targetRotate =
+					isMobile && icon.classList.contains("phone-event-icon") ? -15 : 0;
+
 				gsap.fromTo(
 					icon,
 					{ x: -600, rotate: -180, opacity: 0 },
 					{
 						x: 0,
-						rotate: -15,
+						rotate: targetRotate,
 						duration: 1,
 						opacity: 1,
 						ease: "expo.out",
 						scrollTrigger: {
 							trigger: icon,
-							start: "top 90%",
+							start: isMobile ? "top 90%" : "top 95%",
 							toggleActions: "play none none reverse",
 							invalidateOnRefresh: true,
 						},
@@ -110,7 +96,7 @@ export default function Home() {
 			<Laptop
 				height={306}
 				width={354}
-				className="phone-event-icon md:event-icon absolute bottom-[120px] md:-left-[5px] md:bottom-[8%] w-[137px] h-[118px] md:w-[354px] md:h-[306px]" 
+				className="phone-event-icon md:event-icon absolute bottom-[120px] md:-left-[5px] md:bottom-[8%] w-[137px] h-[118px] md:w-[354px] md:h-[306px]"
 			/>
 			<CoffeCup
 				height={170}
@@ -122,12 +108,10 @@ export default function Home() {
 			<DarinCup
 				height={600}
 				width={420}
-				className="darin-anim absolute z-50 bottom-[-130px] right-[-160px] hidden md:block" 
+				className="darin-anim absolute z-50 bottom-[-130px] right-[-160px] hidden md:block"
 			/>
 			{/* For Phone  Screens */}
-			<DarinCupPhone
-				className="darin-anim-ph absolute z-50 right-0 bottom-[50px] block md:hidden" 
-			/>
+			<DarinCupPhone className="darin-anim-ph absolute z-50 right-0 bottom-[50px] block md:hidden" />
 
 			<div className="pb-[280px] pt-[100px]">
 				<h1
