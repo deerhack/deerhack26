@@ -37,11 +37,11 @@ export default function AboutCard({
   { key: "college", Icon: CollegeInfo },
 ];
   return (
-    <div className="primary-aboutpage-background max-w-[55rem] sm:h-full flex flex-col lg:h-[30rem] md:h-[35.75rem] h-fit rounded-2xl p-[0.2875rem] mx-6 mb-6">
-      <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 py-12 px-12">
+    <div className="primary-aboutpage-background w-[26rem] h-fit sm:w-auto md:max-w-[55rem] sm:h-full flex flex-col lg:h-[30rem] rounded-2xl p-[0.2875rem] mx-6 mb-6">
+      <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 px-20 py-16 xl:py-12 sm:px-12">
 
 
-        <div className="absolute top-1/2 right-[-105px] -translate-y-1/2 flex flex-col gap-5 z-20">
+        <div className="absolute top-[108px] right-[-10px] scale-x-[-1] -translate-y-1/2 flex flex-col gap-5 z-20">
           {buttons.map(({ key, Icon }) => {
   const isActive = activeTab === key;
 
@@ -50,10 +50,10 @@ export default function AboutCard({
       key={key}
       onClick={() => setActiveTab(key)}
       className={`
-        rounded-r-[40px] rounded-l-[6px] about-section-button
-        flex items-center justify-center shadow-lg
-        h-20
-        ${isActive ? "w-28 brightness-125" : "w-20"}
+        rounded-r-[40px] rounded-l-[6px] about-section-button p-1
+        flex items-center justify-end shadow-lg
+        h-10
+        ${isActive ? "w-20 brightness-125" : "w-12"}
       `}
       aria-label={`Show ${key} info`}
       aria-pressed={isActive}
@@ -61,9 +61,9 @@ export default function AboutCard({
       <Icon
         
         isActive={isActive}
-        width={50}
-        height={50}
-
+        width={32}
+        height={32}
+        className="w-8 h-8"
       />
     </button>
   );
@@ -73,19 +73,19 @@ export default function AboutCard({
 
        
         <div className="lg:h-[171px] h-fit">
-          <div className="bg-dark-purple rounded-full w-12 lg:w-20 h-12 mb-5 lg:h-20 flex items-center justify-center p-0">
+          <div className="hidden sm:flex bg-dark-purple rounded-full w-12 lg:w-20 h-12 mb-5 lg:h-20 items-center justify-center p-0">
             {svg}
           </div>
 
           <h1
-            className={`text-3xl lg:text-6xl text-main-title w-fit px-4 md:px-0 text-primary-gradient-color ${cabinetExtraBold.className} text-[32px] lg:text-[36px] leading-normal tracking-normal text-start`}
+            className={`text-[16px] sm:text-[32px] lg:text-6xl text-main-title w-fit  text-primary-gradient-color ${cabinetExtraBold.className} lg:text-[36px] leading-normal tracking-normal text-start`}
           >
             {title}
           </h1>
         </div>
 
         <p
-          className={`text-magnolia text-base text-justify lg:text-[20px] ${satoshiRegular.className} leading-7 tracking-wide pr-9`}
+          className={` text-magnolia text-[12px] sm:text-base text-justify lg:text-[20px] ${satoshiRegular.className} leading-7 tracking-wide sm:pr-9`}
         >
           {description}
         </p>

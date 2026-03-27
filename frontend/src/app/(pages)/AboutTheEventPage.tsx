@@ -10,6 +10,7 @@ import Guitar from "@/app/assets/icons/Guitar";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import DarinCupPhone from "../assets/icons/DarinCupPhone";
 
 if (typeof window !== "undefined") {
 	gsap.registerPlugin(ScrollTrigger);
@@ -21,6 +22,7 @@ export default function Home() {
 	useGSAP(
 		() => {
 			const icons = gsap.utils.toArray<HTMLElement>(".event-icon");
+			const phoneIcons = gsap.utils.toArray<HTMLElement>(".phone-event-icon");
 			icons.forEach((icon) => {
 				gsap.fromTo(
 					icon,
@@ -41,6 +43,26 @@ export default function Home() {
 				);
 			});
 
+			phoneIcons.forEach((icon) => {
+				gsap.fromTo(
+					icon,
+					{ x: -600, rotate: -180, opacity: 0 },
+					{
+						x: 0,
+						rotate: -15,
+						duration: 1,
+						opacity: 1,
+						ease: "expo.out",
+						scrollTrigger: {
+							trigger: icon,
+							start: "top 90%",
+							toggleActions: "play none none reverse",
+							invalidateOnRefresh: true,
+						},
+					},
+				);
+			});
+
 			const tl = gsap.timeline({
 				scrollTrigger: {
 					trigger: container.current,
@@ -49,6 +71,25 @@ export default function Home() {
 				},
 			});
 
+			const tl_ph = gsap.timeline({
+				scrollTrigger: {
+					trigger: container.current,
+					start: "top 40%",
+					toggleActions: "play none none reverse",
+				},
+			});
+
+			tl_ph.fromTo(
+				".darin-anim-ph",
+				{ yPercent: 100, rotate: 20, opacity: 0 },
+				{
+					yPercent: 0,
+					rotate: 0,
+					opacity: 1,
+					duration: 1.5,
+					ease: "power2.out",
+				},
+			);
 			tl.fromTo(
 				".darin-anim",
 				{ yPercent: 100, rotate: 20, opacity: 0 },
@@ -69,18 +110,23 @@ export default function Home() {
 			<Laptop
 				height={306}
 				width={354}
-				className="event-icon absolute -left-[5px] bottom-[8%]"
+				className="phone-event-icon md:event-icon absolute bottom-[120px] md:-left-[5px] md:bottom-[8%] w-[137px] h-[118px] md:w-[354px] md:h-[306px]" 
 			/>
 			<CoffeCup
 				height={170}
 				width={124}
-				className="event-icon absolute left-[38px] bottom-[38%]"
+				className="z-50 phone-event-icon md:event-icon absolute bottom-[230px] md:left-[38px] md:bottom-[38%] w-[48px] h-[56px] md:w-[124px] md:h-[170px]"
 			/>
 
+			{/* For Large Screens */}
 			<DarinCup
 				height={600}
 				width={420}
-				className="darin-anim absolute right-[-160px] bottom-[-10px]"
+				className="darin-anim absolute z-50 bottom-[-130px] right-[-160px] hidden md:block" 
+			/>
+			{/* For Phone  Screens */}
+			<DarinCupPhone
+				className="darin-anim-ph absolute z-50 right-0 bottom-[50px] block md:hidden" 
 			/>
 
 			<div className="pb-[280px] pt-[100px]">
@@ -95,7 +141,7 @@ export default function Home() {
 			<Guitar
 				height={381}
 				width={358}
-				className="event-icon absolute bottom-[-25px] left-[200px] z-50 pointer-events-none"
+				className="phone-event-icon md:event-icon absolute left-[95px] bottom-[110px] md:bottom-[-25px] md:left-[200px] z-50 pointer-events-none w-[138px] h-[147px] md:h-[381px] md:w-[358px]"
 			/>
 		</div>
 	);
