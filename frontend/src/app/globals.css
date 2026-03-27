@@ -70,6 +70,9 @@
 .gradient-bg {
   background: linear-gradient(105.53deg, #6633CC 20.77%, #823FBD 60.21%, #9D4BAD 99.65%);
 }
+.about-section-button{
+   background: linear-gradient(180deg, #6633CC 0%, #331A66 100%);
+}
 
   .font-cabinet-light {
     font-family: var(--font-cabinet-light);
