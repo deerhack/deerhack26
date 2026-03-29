@@ -94,26 +94,26 @@ export default function Home() {
 
   return (
     <div ref={container} className="relative overflow-hidden">
-      <AboutVine className="w-[102px] h-[232px] z-50 absolute top-[2px] lg:-top-[10%] lg:w-[189px] lg:h-[429px] right-0" />
+      <AboutVine className="w-[102px] h-[232px] z-30 absolute top-[2px] lg:-top-[10%] lg:w-[189px] lg:h-[429px] right-0" />
       <Laptop
         height={306}
         width={354}
-        className="phone-event-icon lg:event-icon absolute bottom-[120px] md:bottom-[7%] md:left-[28px] lg:-left-[5px] lg:bottom-[8%] w-[137px] h-[118px] md:w-[200px] md:h-[200px] lg:w-[354px] lg:h-[306px]"
+        className="phone-event-icon z-30 lg:event-icon absolute bottom-[120px] md:bottom-[7%] md:left-[28px] lg:-left-[5px] lg:bottom-[8%] w-[137px] h-[118px] md:w-[200px] md:h-[200px] lg:w-[354px] lg:h-[306px]"
       />
       <CoffeCup
         height={170}
         width={124}
-        className="z-50 md:z-0 lg:z-50 phone-event-icon md:event-icon absolute bottom-[230px] md:bottom-[22.5%] lg:left-[38px] lg:bottom-[38%] w-[48px] h-[56px] md:w-[80px] md:h-[100px] lg:w-[124px] lg:h-[170px]"
+        className="z-30 md:z-0 lg:z-30 phone-event-icon md:event-icon absolute bottom-[230px] md:bottom-[22.5%] lg:left-[38px] lg:bottom-[38%] w-[48px] h-[56px] md:w-[80px] md:h-[100px] lg:w-[124px] lg:h-[170px]"
       />
 
       {/* For Large Screens */}
       <DarinCup
         height={843}
         width={424}
-        className="darin-anim absolute z-50 -bottom-[100px] right-[-150px] hidden lg:block"
+        className="darin-anim absolute z-30 -bottom-[100px] right-[-150px] hidden lg:block"
       />
       {/* For Phone  Screens */}
-      <DarinCupPhone className="darin-anim-ph absolute z-50 right-0 bottom-[50px] block lg:hidden" />
+      <DarinCupPhone className="darin-anim-ph absolute z-30 right-0 bottom-[50px] block lg:hidden" />
 
       <div className="pb-[280px] pt-[100px]">
         <h1
@@ -127,7 +127,7 @@ export default function Home() {
       <Guitar
         height={381}
         width={358}
-        className="phone-event-icon lg:event-icon absolute left-[95px] bottom-[110px] md:bottom-[65px] md:left-[160px] lg:bottom-[-25px] lg:left-[200px] z-50 pointer-events-none w-[138px] h-[147px] lg:h-[381px] lg:w-[358px] md:h-[250px] md:w-[250px]"
+        className="phone-event-icon lg:event-icon absolute left-[95px] bottom-[110px] md:bottom-[65px] md:left-[160px] lg:bottom-[-25px] lg:left-[200px] z-30 pointer-events-none w-[138px] h-[147px] lg:h-[381px] lg:w-[358px] md:h-[250px] md:w-[250px]"
       />
     </div>
   );
