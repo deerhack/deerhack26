@@ -6,7 +6,7 @@ import CardLarge from "./CardLarge";
 
 export default function StatsSection() {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-4 justify-center">
       <div className="flex flex-col gap-4">
         <CardMedium />
         <CardMini svg={<HackersSVG />} title="Hackers" numbers={215} customClass="bg-[#532B6A]"/>
