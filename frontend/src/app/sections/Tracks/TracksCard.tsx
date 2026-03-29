@@ -51,12 +51,13 @@ const TracksCard = () => {
     {
       title: "Blockchain",
       svg: <BlockchainSVG height={25} width={25} />,
-      svgBody: <BlockchainSVG height={50} width={50} />,
+      // svgBody: <BlockchainSVG height={50} width={50} className="bg-dark-purple fill-magnolia"/>,
+      svgBody: <BlockchainNew height={50} width={50} />,
       headStyling:
         selectedTrack === "Blockchain"
-          ? "blockchain-background text-white active"
-          : "bg-violet hover:blockchain-background hover:text-white transition-all duration-300",
-      bodyStyling: "blockchain-background text-white",
+          ? "bg-magnolia text-dark-purple active"
+          : "bg-violet hover:bg-magnolia hover:text-dark-purple transition-all duration-300",
+      bodyStyling: "bg-magnolia text-dark-purple",
       description:
         "Embrace Decentralization with DeerHack. Explore smart contracts, secure transactions, and reshape industries at the forefront of innovation.",
     },

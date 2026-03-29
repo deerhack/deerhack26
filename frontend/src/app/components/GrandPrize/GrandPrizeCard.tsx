@@ -68,8 +68,8 @@ export default function GrandPrizeCard({ scrollProgress }: GrandPrizeCardProps):
           <Lottie
             lottieRef={lottieRef}
             animationData={trophyAnimation}
-            loop={false}
-            autoplay={false}
+            loop={true}
+            autoplay={true}
             style={{ width: 160, height: 160 }}
           />
         </div>
