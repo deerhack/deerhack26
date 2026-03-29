@@ -53,7 +53,7 @@ export default function Home() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: container.current,
-          start: "top 85%",
+          start: "top 75%",
           toggleActions: "play none none reverse",
         },
       });
