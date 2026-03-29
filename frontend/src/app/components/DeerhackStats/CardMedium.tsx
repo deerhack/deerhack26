@@ -4,7 +4,7 @@ import CountUpAnimation from "../CountUp/CountUpAnimation"
 
 export default function CardMedium() {
   return (
-    <div className="h-52 w-80 lg:w-[24rem] card-background-gradient rounded-2xl px-6 pt-8 flex flex-col justify-between">
+    <div className="h-52 w-80 lg:w-[24rem] card-background-gradient rounded-2xl px-6 pt-8 flex flex-col justify-between border border-[rgba(245,193,68,1)]">
       <div className="flex flex-col gap-2">
         <ApplicantsSVG height={60} width={45} />
         {/* Mobile View */}
