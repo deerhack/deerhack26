@@ -7,13 +7,13 @@ export default function CardMini({
   title,
   numbers,
   customClass,
-  noBorder,
+  border,
 }: {
   svg: ReactElement;
   title: string;
   numbers: number;
   customClass?: string;
-  noBorder?: boolean;
+  border?: boolean;
 }) {
   return (
     <div
@@ -22,8 +22,8 @@ export default function CardMini({
         rounded-2xl px-8 pt-4 pb-8
         flex flex-col justify-between
         ${customClass ?? 'card-background-gradient'}
+        ${border ? "border-[rgba(245,193,68,1)] border-solid border-2" : " "}
       `}
-      style={noBorder ? { border: 'none' } : { border: '1px solid rgba(245,193,68,1)' }}
     >
       <div>{svg}</div>
       <div className="flex justify-between items-baseline">

@@ -14,7 +14,7 @@ export default function CardMedium() {
         <div className="flex justify-between items-center lg:hidden">
           <p className={`${cabinetBold.className} text-[rgba(245,193,68,1)] text-2xl leading-tight`}>Total</p>
           {/* <p className={`${cabinetRegular.className} text-white text-4xl`}>3840+</p> */}
-          <CountUpAnimation target={3840} isExtra={true} time={3} className=" text-[rgba(245,193,68,1)] text-4xl"/>
+          <CountUpAnimation target={4000} isExtra={true} time={3} className=" text-[rgba(245,193,68,1)] text-4xl"/>
         </div>
         <p className={`${cabinetBold.className} text-[rgba(245,193,68,1)] text-2xl leading-tight lg:hidden`}>Applicants</p>
         {/* DeskTop View */}
@@ -22,7 +22,7 @@ export default function CardMedium() {
           <p className={`${cabinetBold.className} text-[rgba(245,193,68,1)] text-2xl leading-tight`}>Total Applicants</p>
           <div className="flex justify-end">
             {/* <p className={`${cabinetRegular.className} text-white text-5xl`}>3840+</p> */}
-            <CountUpAnimation target={3840} isExtra={true} time={3} className=" text-[rgba(245,193,68,1)] text-5xl"/>
+            <CountUpAnimation target={4000} isExtra={true} time={3} className=" text-[rgba(245,193,68,1)] text-5xl"/>
           </div>
         </div>
       </div>

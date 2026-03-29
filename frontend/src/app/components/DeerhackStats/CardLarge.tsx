@@ -24,7 +24,7 @@ export default function CardLarge(): ReactElement {
 
         
         <div className="flex justify-center">
-          <GenderEllipseSVG height={200} width={200} />
+          <GenderEllipseSVG height={200} width={200} className="rotate-90"/>
         </div>
 
        

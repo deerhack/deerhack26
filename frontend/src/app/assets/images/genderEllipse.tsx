@@ -3,9 +3,11 @@ import { ReactElement } from "react";
 export default function GenderEllipseSVG({
   height = 315,
   width = 315,
+  className= "",
 }: {
   height?: number;
   width?: number;
+  className?: string;
 }): ReactElement {
   return (
     <svg 
@@ -13,7 +15,9 @@ export default function GenderEllipseSVG({
     width={`${width}`}
      viewBox="0 0 315 315" 
      fill="none"
-      xmlns="http://www.w3.org/2000/svg">
+      xmlns="http://www.w3.org/2000/svg"
+      className = {className}
+    >
 <path
   d="M157.823 -0.221
      A157.87 157.87 0 1 1 -0.047 157.649
