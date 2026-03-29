@@ -65,7 +65,7 @@ export default function AboutCard({
   return (
     <div className="primary-aboutpage-background w-[26rem] h-fit sm:w-auto md:max-w-[55rem] sm:h-full flex flex-col lg:h-[30rem] rounded-2xl p-[0.2875rem] mx-6 mb-6">
       <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 px-20 py-16 xl:py-12 sm:px-12">
-        <div className="absolute flex lg:hidden top-[108px] right-[-10px] scale-x-[-1] -translate-y-1/2 flex-col gap-5 z-20">
+        <div className="absolute flex lg:hidden top-[108px] md:top-[150px] right-[-10px] scale-x-[-1] -translate-y-1/2 flex-col gap-5 z-20">
           {buttons.map(({ key, Icon }) => {
             const isActive = activeTab === key;
 
@@ -74,10 +74,10 @@ export default function AboutCard({
                 key={key}
                 onClick={() => setActiveTab(key)}
                 className={`
-                  rounded-r-[40px] rounded-l-[6px] about-section-button p-1
+                  rounded-r-[40px] rounded-l-[6px] about-section-button p-1 md:p-2
                   flex items-center justify-end shadow-lg
-                  h-10
-                  ${isActive ? "w-20 brightness-125" : "w-12"}
+                  h-10 md:h-16
+                  ${isActive ? "w-20 md:w-[140px] brightness-125" : "w-12 md:w-16"}
                 `}
                 aria-label={`Show ${key} info`}
                 aria-pressed={isActive}
@@ -86,7 +86,7 @@ export default function AboutCard({
                   isActive={isActive}
                   width={32}
                   height={32}
-                  className="w-8 h-8"
+                  className="w-8 h-8 md:w-12 md:h-12"
                 />
               </button>
             );
