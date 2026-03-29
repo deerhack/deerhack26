@@ -1,4 +1,12 @@
-export default function AboutVine({width = 215, height = 334, className = ""}) {
+export default function AboutVine({
+  width = 215,
+  height = 334,
+  className = "",
+}:{
+  width?: number;
+  height?: number;
+  className?: string;
+}) {
   return (
     <svg
       width={width}
