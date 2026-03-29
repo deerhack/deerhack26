@@ -9,7 +9,7 @@ import {
 
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 import Software from "@/app/assets/icons/SoftwareClub";
-import Test from "@/app/assets/icons/Test";
+import Test from "@/app/assets/icons/AboutSoftware";
 import CollegeInfo from "@/app/assets/icons/CollegeInfo";
 import AboutCollege from "@/app/assets/icons/AboutCollege";
 
