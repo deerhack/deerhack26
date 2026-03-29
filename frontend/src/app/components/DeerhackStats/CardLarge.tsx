@@ -8,7 +8,8 @@ import {
 } from "@/app/utils/fonts";
 import GenderEllipseSVG from "@/app/assets/images/genderEllipse";
 import IncreaseStatSVG from "@/app/assets/images/increaseStat";
-import DecreaseStatSVG from "@/app/assets/images/decreaseStat";
+
+
 export default function CardLarge(): ReactElement {
   return (
     <div className="bg-gradient-to-r from-[#6633CC] to-[#F5C144] p-[2px] rounded-xl">

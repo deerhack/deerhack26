@@ -9,7 +9,7 @@ export default function StatsSection() {
     <div className="flex flex-wrap border gap-4">
       <div className="flex flex-col gap-4">
         <CardMedium />
-        <CardMini svg={<HackersSVG />} title="Hackers" numbers={75} />
+        <CardMini svg={<HackersSVG />} title="Hackers" numbers={75} noBorder={true} customClass="card-background-gradient [&]:!border-none"/>
         <CardMini svg={<ProjectsSVG />} title="Projects" numbers={18} />
       </div>
       <CardLarge />
