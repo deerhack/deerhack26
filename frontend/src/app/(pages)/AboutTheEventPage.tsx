@@ -11,6 +11,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import DarinCupPhone from "../assets/icons/DarinCupPhone";
+import AboutVine from "../assets/icons/AboutVine";
 
 if (typeof window !== "undefined") {
 	gsap.registerPlugin(ScrollTrigger);
@@ -93,6 +94,7 @@ export default function Home() {
 
 	return (
 		<div ref={container} className="relative overflow-hidden">
+			<AboutVine className="absolute top-0 right-0"/>
 			<Laptop
 				height={306}
 				width={354}
@@ -108,7 +110,7 @@ export default function Home() {
 			<DarinCup
 				height={600}
 				width={420}
-				className="darin-anim absolute z-50 bottom-[-130px] right-[-160px] hidden md:block"
+				className="darin-anim absolute z-50 bottom-[-10px] right-[-160px] hidden md:block"
 			/>
 			{/* For Phone  Screens */}
 			<DarinCupPhone className="darin-anim-ph absolute z-50 right-0 bottom-[50px] block md:hidden" />

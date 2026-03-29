@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
 
-export default function CoffeeCup({
-  height = 50,
-  width = 50,
+export default function SoftwareClub({
+  height = 100,
+  width = 100,
   className=" "
 }: {
   height?: number;
