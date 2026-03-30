@@ -43,7 +43,8 @@ export default function BenefitsCards() {
            pgNo="4."
           svg={<BenefitsCardFourth/>}
         />
+        </div>
       </div>
-    </div>
+
   );
 }

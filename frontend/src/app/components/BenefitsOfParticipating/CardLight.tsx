@@ -27,7 +27,7 @@ export default function CardLight({
       <div className=" new-gradient-background w-full h-full rounded-[1.875rem] flex flex-col px-12 gap-7 justify-center items-start">
         <div>
           <div
-  className={`${cabinetExtraBold.className} text-transparent bg-clip-text lg:text-[2rem] text-[1.5rem] w-[10.69rem] md:w-[18.72rem] sm:leading-[2rem] md:leading-[2.75rem] pb-[1.5rem] md:pb-0 font-extrabold z-10 md:mb-[1.5rem]`}
+  className={`${cabinetExtraBold.className} text-transparent bg-clip-text lg:text-[2rem] text-[1.5rem] w-[10.69rem] md:w-[18.72rem] sm:leading-[2rem] md:leading-[2.75rem]  md:pb-0 font-extrabold z-10`}
   style={{
     background: "linear-gradient(155.54deg, #CEA33D 30.29%, #6633CC 97.7%)",
     WebkitBackgroundClip: "text",
@@ -36,9 +36,9 @@ export default function CardLight({
 >
   {title}
 </div>
-        <div className="flex flex-row items-left lg:gap-7 gap-10 h-[70%] md:h-auto  md:flex-row  md:items-center">
+        <div className="flex flex-row items-left lg:gap-7 gap-2 h-[70%] md:h-auto  md:flex-row  md:items-center">
           <div
-            className={`${satoshiRegular.className} text-white w-[16.72rem] md:w-[19.51rem] lg:w-[21rem] lg:h-[6rem] text-[1rem] font-medium md:text-justify pr-7 z-10 pt-[1.5rem] md:pt-0 lg:pt-0`}
+            className={`${satoshiRegular.className} text-white w-[16.72rem] md:w-[19.51rem] lg:w-[21rem] lg:h-[6rem] text-[1rem] font-medium md:text-justify pr-7 z-10 pt-[0.5rem] md:pt-0 lg:pt-0`}
           >
             {description}
           </div>
