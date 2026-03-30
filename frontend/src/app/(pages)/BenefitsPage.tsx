@@ -15,9 +15,16 @@ export default function BenefitsPage() {
           className="absolute right-3 top-46 hidden xl:block -rotate-12"
         />
       </div>
-      <div className={`${cabinetExtraBold.className} mb-[3rem] headings`}>
-        Benefits of Participating
-      </div>
+      <div 
+  className={`${cabinetExtraBold.className} mb-[3rem] headings bg-clip-text text-transparent`}
+  style={{
+    background: "linear-gradient(155.54deg, #CEA33D 30.29%, #6633CC 97.7%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+  }}
+>
+  Benefits of Participating
+</div>
       <div className="flex justify-center mx-4">
         <BenefitsCards />
       </div>
