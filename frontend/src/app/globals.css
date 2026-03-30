@@ -24,8 +24,28 @@
 
   .primary-border-background{
     background: #110C24;
+    border-radius: 2.34375rem;
  
   }
+
+  .secondary-border-background{
+    border: 5px solid transparent;
+
+  background: 
+    linear-gradient(#110C24, #110C24) padding-box, 
+    linear-gradient(249.27deg, #6633CC -0.57%, #F5C144 109.25%) border-box; 
+
+  border-radius: 2.34375rem;
+  }
+
+  .third-border-background {
+  border: 5px solid transparent;
+  background: 
+    linear-gradient(#110C24, #110C24) padding-box, 
+    linear-gradient(140.3deg, #6633CC -15.9%, #F5C144 72.56%) border-box; 
+
+  border-radius: 2.34375rem;
+}
 
   .text-main-title {
     @apply bg-gradient-to-l from-[#F5C144] from-0% to-[#6633CC] to-100% bg-clip-text text-transparent;

@@ -5,6 +5,7 @@ import {
   cabinetExtraBold,
   cabinetMedium,
   cabinetRegular,
+  satoshiRegular,
 } from "@/app/utils/fonts";
 
 export default function CardDark({
@@ -12,14 +13,20 @@ export default function CardDark({
   description,
   pgNo,
   svg,
+  bordercolour=false,
 }: {
   title: string;
   description: string;
   pgNo: string;
   svg: ReactElement;
+  bordercolour?:boolean;
 }) {
+
+const borderClass = bordercolour ? "secondary-border-background" : "primary-border-background";
+
   return (
-    <div className=" primary-border-background lg:w-[32.93rem] lg:h-[18.37rem] md:w-[36rem] min-h-[17.93rem] h-fit w-full  rounded-[1.875rem] p-[0.1875rem] relative ">
+    
+    <div className={`${borderClass} lg:w-[32.93rem] lg:h-[18.37rem] md:w-[36rem] min-h-[17.93rem] h-fit w-full relative`}>
       <div className=" new-gradient-background w-full h-full rounded-[1.875rem] flex flex-col px-12 gap-[21px] justify-center relative">
         <div>
           <div
@@ -29,7 +36,7 @@ export default function CardDark({
           </div>
           <div className="flex flex-row items-left gap-10 lg:gap-7 h-[70%] md:h-auto  md:flex-row  md:items-center">
             <div
-              className={`${cabinetRegular.className} text-white w-[16.72rem] md:w-[19rem] lg:w-[17.9rem] lg:h-[6rem] text-[1rem] font-medium md:text-justify pr-7 z-10 `}
+              className={`${satoshiRegular.className} text-white w-[16.72rem] md:w-[19rem] lg:w-[17.9rem] lg:h-[6rem] text-[1rem] font-medium md:text-justify pr-7 z-10 `}
             >
               {description}
             </div>
