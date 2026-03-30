@@ -87,7 +87,7 @@ export default function AboutCard({
                   isActive={isActive}
                   width={32}
                   height={32}
-                  className="w-8 h-8 md:w-12 md:h-12"
+                  className="w-8 h-8 md:w-12 md:h-12 scale-x-[-1]"
                 />
               </button>
             );
