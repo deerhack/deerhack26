@@ -12,15 +12,18 @@ export default function CardLight({
   description,
   pgNo,
   svg,
+  bordercolour=false,
 }: {
   title: string;
   description: string;
   pgNo: string;
   svg: ReactElement;
+  bordercolour?:boolean;
 }) {
+  const borderClass = bordercolour ? "third-border-background" : "primary-border-background";
   return (
-    <div className="secondary-gradient-background lg:w-[32.93rem] lg:h-[18.37rem] md:w-[36rem] w-full min-h-[17.93rem] h-fit rounded-[1.875rem] p-[0.1875rem] relative justify-start gap-5">
-      <div className=" w-full h-full rounded-[1.875rem] flex flex-col px-12 gap-7 justify-center items-start">
+    <div className={`${borderClass} lg:w-[32.93rem] lg:h-[18.37rem] md:w-[36rem] w-full min-h-[17.93rem] h-fit relative justify-start gap-5`}>
+      <div className=" new-gradient-background w-full h-full rounded-[1.875rem] flex flex-col px-12 gap-7 justify-center items-start">
         <div>
         <div
           className={`${cabinetExtraBold.className} text-primary-gradient-color lg:text-[2rem] text-[1.5rem] w-[12rem] md:w-[18.72rem] leading-0 md:leading-[2.75rem] pb-0 font-extrabold z-10  md:mb-[1.7rem]`}
