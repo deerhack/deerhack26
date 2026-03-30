@@ -2,19 +2,18 @@ import ExpectationCards from "@/app/sections/Expectations/ExpectationCards";
 import ExpectationImage from "@/app/components/Expectations/ExpectationImage";
 import { ReactElement } from "react";
 import Image from "next/image";
-import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
+import butterfly from "@/app/assets/images/butterfly.svg";
 import { cabinetExtraBold } from "../utils/fonts";
 
 export default function ExpectationPage(): ReactElement {
   return (
-    <div className="bg-dark-purple py-20">
+    <div className="bg-dark-purple py-20 relative overflow-hidden">
       <Image
-        src={leaf_prizes_right}
-        alt="leaf"
-        height={350}
-        style={{ transform: "scaleX(-1)" }}
-        className="absolute left-3 hidden xl:block"
-      />
+  src={butterfly}
+  alt="butterfly"
+  width={80}
+  className="absolute top-20 left-20 hidden md:block opacity-80"
+/>
       <div className={`${cabinetExtraBold.className} headings px-2 md:px-0 mb-[3rem]`}>
         What Else Can You Expect at<br></br> DeerHack?
       </div>

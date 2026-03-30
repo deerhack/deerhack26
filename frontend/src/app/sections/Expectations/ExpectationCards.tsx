@@ -1,84 +1,117 @@
 "use client";
-import ExpectationCard from "@/app/components/Expectations/ExpectationCard";
-import { ReactElement, useState } from "react";
+
+import { ReactElement, useState, useEffect } from "react";
 import FunGamesSVG from "@/app/assets/images/funGames";
 import WorkshopSVG from "@/app/assets/images/workshop";
 import MusicSVG from "@/app/assets/images/music";
 import ExpectationImage from "@/app/components/Expectations/ExpectationImage";
+
 import fun_games_image from "@/app/assets/images/fun_games.webp";
 import live_music_image from "@/app/assets/images/live_music_image.webp";
 import workshop_image from "@/app/assets/images/workshop_image.webp";
 
 export default function ExpectationCards(): ReactElement {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const data = [
+    {
+      title: "Fun Games",
+      desc: "Get ready to unleash your competitive spirit and bond with fellow participants.",
+      svg: <FunGamesSVG height={40} width={40} />,
+      image: fun_games_image,
+    },
+    {
+      title: "Live Music",
+      desc: "Take a break from coding and enjoy soulful melodies.",
+      svg: <MusicSVG height={40} width={40} />,
+      image: live_music_image,
+    },
+    {
+      title: "Workshops",
+      desc: "Learn cutting-edge tech from industry experts.",
+      svg: <WorkshopSVG height={40} width={40} />,
+      image: workshop_image,
+    },
+  ];
 
-  const toggleImageIndex = (index: number) => {
-    console.log("Expectation cards is triggered");
-    setCurrentIndex((prev) => (prev == index ? -1 : index));
-  };
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [transition, setTransition] = useState(true);
+
+  const slides = [data[data.length - 1], ...data, data[0]];
+
+  useEffect(() => {
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        setTransition(false);
+        setCurrentIndex(data.length);
+      }, 500);
+    }
+
+    if (currentIndex === data.length + 1) {
+      setTimeout(() => {
+        setTransition(false);
+        setCurrentIndex(1);
+      }, 500);
+    }
+  }, [currentIndex]);
+
+  useEffect(() => {
+    if (!transition) {
+      setTimeout(() => setTransition(true), 50);
+    }
+  }, [transition]);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center w-[90vw] lg:w-[80vw] lg:max-w-[60vw] mx-auto mt-10 items-center lg:items-start lg:gap-32 gap-5 ">
-      
+    <div className="w-full flex justify-center items-center mt-10">
+      <div className="relative w-[90vw] lg:w-[60vw] overflow-hidden">
+
+
+        <div
+          className={`flex ${transition ? "transition-transform duration-500" : ""}`}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {slides.map((item, index) => (
+            <div key={index} className="min-w-full flex justify-center">
+              
+              <div className="bg-[#2A0E4A] rounded-xl p-6 flex gap-6 items-center w-[500px]">
+
+                <div>
+                  <div className="flex items-center gap-2 mb-3">
+                    {item.svg}
+                    <h2 className="text-white text-lg font-bold">
+                      {item.title}
+                    </h2>
+                  </div>
+                  <p className="text-gray-300 text-sm">
+                    {item.desc}
+                  </p>
+                </div>
+
+              
+                <div className="border border-purple-400 rounded-lg p-2">
+                  <ExpectationImage imageSrc={item.image} />
+                </div>
+
+              </div>
+
+            </div>
+          ))}
+        </div>
+
     
-      <div className="lg:hidden w-[279px]  flex justify-center">
-        <ExpectationImage
-          imageSrc={
-            currentIndex === 0
-              ? fun_games_image
-              : currentIndex === 1
-              ? live_music_image
-              : currentIndex === 2
-              ? workshop_image
-              : fun_games_image
-          }
-        />
-      </div>
+        <button
+          onClick={() => setCurrentIndex((prev) => prev - 1)}
+          className="absolute left-5 top-1/2 -translate-y-1/2 text-white text-3xl"
+        >
+          ❮
+        </button>
 
-      
-      <div className="flex flex-col py-10 gap-5">
-        <div onClick={() => toggleImageIndex(0)}>
-          <ExpectationCard
-            svg={<FunGamesSVG height={40} width={40} />}
-            title="Fun Games"
-            description="Get ready to unleash your competitive spirit and bond with fellow participants in a series of exciting challenges and friendly competitions."
-            index={0}
-            isActive={currentIndex === 0}
-          />
-        </div>
-        <div onClick={() => toggleImageIndex(1)}>
-          <ExpectationCard
-            svg={<MusicSVG height={40} width={40} />}
-            title="Live Music"
-            description="Take a break from coding and immerse yourself in the soulful melodies and electrifying beats of live music performances, adding rhythm and energy to your DeerHack experience."
-            index={1}
-            isActive={currentIndex === 1}
-          />
-        </div>
-        <div onClick={() => toggleImageIndex(2)}>
-          <ExpectationCard
-            svg={<WorkshopSVG height={40} width={40} />}
-            title="Workshops"
-            description="Dive deep into cutting-edge technologies, sharpen your skills, and gain invaluable insights from industry experts through interactive workshops tailored to enhance your expertise and ignite your innovation."
-            index={2}
-            isActive={currentIndex === 2}
-          />
-        </div>
-      </div>
+  
+        <button
+          onClick={() => setCurrentIndex((prev) => prev + 1)}
+          className="absolute right-5 top-1/2 -translate-y-1/2 text-white text-3xl"
+        >
+          ❯
+        </button>
 
-     
-      <div className="hidden lg:block cursor-pointer">
-        <ExpectationImage
-          imageSrc={
-            currentIndex === 0
-              ? fun_games_image
-              : currentIndex === 1
-              ? live_music_image
-              : currentIndex === 2
-              ? workshop_image
-              : fun_games_image
-          }
-        />
       </div>
     </div>
   );
