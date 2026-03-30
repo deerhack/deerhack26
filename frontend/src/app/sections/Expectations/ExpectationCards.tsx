@@ -1,117 +1,141 @@
 "use client";
 
 import { ReactElement, useState, useEffect } from "react";
-import FunGamesSVG from "@/app/assets/images/funGames";
-import WorkshopSVG from "@/app/assets/images/workshop";
 import MusicSVG from "@/app/assets/images/music";
 import ExpectationImage from "@/app/components/Expectations/ExpectationImage";
 
-import fun_games_image from "@/app/assets/images/fun_games.webp";
 import live_music_image from "@/app/assets/images/live_music_image.webp";
+import fun_games_image from "@/app/assets/images/fun_games.webp";
 import workshop_image from "@/app/assets/images/workshop_image.webp";
 
-export default function ExpectationCards(): ReactElement {
+
+export default function ExpectationCards() {
+
   const data = [
-    {
-      title: "Fun Games",
-      desc: "Get ready to unleash your competitive spirit and bond with fellow participants.",
-      svg: <FunGamesSVG height={40} width={40} />,
-      image: fun_games_image,
-    },
     {
       title: "Live Music",
       desc: "Take a break from coding and enjoy soulful melodies.",
-      svg: <MusicSVG height={40} width={40} />,
       image: live_music_image,
+    },
+    {
+      title: "Fun Games",
+      desc: "Unleash your spirit and bond with fellow participants.",
+      image: fun_games_image,
     },
     {
       title: "Workshops",
       desc: "Learn cutting-edge tech from industry experts.",
-      svg: <WorkshopSVG height={40} width={40} />,
       image: workshop_image,
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const [transition, setTransition] = useState(true);
-
   const slides = [data[data.length - 1], ...data, data[0]];
 
+  const [index, setIndex] = useState(1);
+  const [transition, setTransition] = useState(true);
+
+  const CARD_WIDTH = 780; // exact visual width
+  const GAP = 60;
+
+  const next = () => {
+    if (!transition) return;
+    setIndex((i) => i + 1);
+  };
+
+  const prev = () => {
+    if (!transition) return;
+    setIndex((i) => i - 1);
+  };
+
+  // infinite loop fix
   useEffect(() => {
-    if (currentIndex === 0) {
+    if (index === slides.length - 1) {
       setTimeout(() => {
         setTransition(false);
-        setCurrentIndex(data.length);
+        setIndex(1);
       }, 500);
     }
 
-    if (currentIndex === data.length + 1) {
+    if (index === 0) {
       setTimeout(() => {
         setTransition(false);
-        setCurrentIndex(1);
+        setIndex(data.length);
       }, 500);
     }
-  }, [currentIndex]);
+  }, [index]);
 
   useEffect(() => {
     if (!transition) {
-      setTimeout(() => setTransition(true), 50);
+      setTimeout(() => setTransition(true), 20);
     }
   }, [transition]);
 
   return (
-    <div className="w-full flex justify-center items-center mt-10">
-      <div className="relative w-[90vw] lg:w-[60vw] overflow-hidden">
+    <div className="relative w-full flex justify-center items-center">
 
+      {/* LEFT ARROW */}
+      <button
+        onClick={prev}
+        className="absolute left-[5%] text-white text-[48px] z-50 opacity-60 hover:opacity-100 transition"
+      >
+        ❮
+      </button>
+
+      {/* RIGHT ARROW */}
+      <button
+        onClick={next}
+        className="absolute right-[5%] text-white text-[48px] z-50 opacity-60 hover:opacity-100 transition"
+      >
+        ❯
+      </button>
+
+      <div className="overflow-hidden w-full max-w-[1400px]">
 
         <div
-          className={`flex ${transition ? "transition-transform duration-500" : ""}`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          className={`flex items-center ${transition ? "transition-transform duration-500 ease-in-out" : ""}`}
+          style={{
+            transform: `translateX(calc(-${index * (CARD_WIDTH + GAP)}px))`,
+            gap: `${GAP}px`,
+            paddingLeft: `calc(50% - ${CARD_WIDTH / 2}px)`
+          }}
         >
-          {slides.map((item, index) => (
-            <div key={index} className="min-w-full flex justify-center">
-              
-              <div className="bg-[#2A0E4A] rounded-xl p-6 flex gap-6 items-center w-[500px]">
 
-                <div>
-                  <div className="flex items-center gap-2 mb-3">
-                    {item.svg}
-                    <h2 className="text-white text-lg font-bold">
-                      {item.title}
-                    </h2>
-                  </div>
-                  <p className="text-gray-300 text-sm">
+          {slides.map((item, i) => (
+            <div key={i} className="flex-shrink-0" style={{ width: CARD_WIDTH }}>
+
+              <div className="relative flex items-center">
+
+                {/* PURPLE CARD */}
+                <div
+                  className="z-10 flex flex-col justify-center"
+                  style={{
+                    width: "480px",
+                    height: "340px",
+                    borderRadius: "24px",
+                    background: "#4A219B",
+                    padding: "40px 120px 40px 40px",
+                    boxShadow: "0px 20px 60px rgba(0,0,0,0.5)",
+                  }}
+                >
+                  <h2 className="text-white text-[30px] font-bold mb-4">
+                    {item.title}
+                  </h2>
+
+                  <p className="text-white/80 text-[15px] leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
 
-              
-                <div className="border border-purple-400 rounded-lg p-2">
+                {/* IMAGE CARD (OVERLAP MAGIC) */}
+                <div className="absolute right-0 translate-x-[30%] z-20">
                   <ExpectationImage imageSrc={item.image} />
                 </div>
 
               </div>
-
             </div>
           ))}
+
         </div>
-
-    
-        <button
-          onClick={() => setCurrentIndex((prev) => prev - 1)}
-          className="absolute left-5 top-1/2 -translate-y-1/2 text-white text-3xl"
-        >
-          ❮
-        </button>
-
-  
-        <button
-          onClick={() => setCurrentIndex((prev) => prev + 1)}
-          className="absolute right-5 top-1/2 -translate-y-1/2 text-white text-3xl"
-        >
-          ❯
-        </button>
-
       </div>
     </div>
   );
