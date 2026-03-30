@@ -12,7 +12,8 @@ export default function BenefitsSecondCard({
 }): ReactElement {
 
   return (
-    <svg width={width} height={height} viewBox="0 0 233 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width={width} height={height} viewBox="0 0 233 312" fill="none" xmlns="http://www.w3.org/2000/svg"
+     className='w-[10.749rem] md:w-[auto] md:h-auto h-[9.764rem] hidden md:block'>
 <g opacity="0.16" clip-path="url(#clip0_98_1795)">
 <mask id="mask0_98_1795" style={{ maskType: 'luminance' }} maskUnits="userSpaceOnUse" x="-1" y="44" width="212" height="266">
 <path d="M-0.00390625 44.2119H210.608V309.911H-0.00390625V44.2119Z" fill="white"/>
