@@ -65,7 +65,7 @@ export default function AboutCard({
 
   return (
     <div className="primary-aboutpage-background w-[26rem] h-fit sm:w-auto md:max-w-[55rem] sm:h-full flex flex-col lg:h-[30rem] rounded-2xl p-[0.2875rem] mx-6 mb-6">
-      <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 px-20 py-16 xl:py-12 sm:px-12">
+      <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 px-20 py-[60px] xl:py-12 md:px-12">
         <div className="absolute flex lg:hidden top-[108px] md:top-[150px] right-[-10px] scale-x-[-1] -translate-y-1/2 flex-col gap-5 z-20">
           {buttons.map(({ key, Icon }) => {
             const isActive = activeTab === key;
@@ -78,7 +78,7 @@ export default function AboutCard({
                   rounded-r-[40px] rounded-l-[6px] about-section-button p-1 md:p-2
                   flex items-center justify-end shadow-lg
                   h-10 md:h-16
-                  ${isActive ? "w-20 md:w-[140px] brightness-125" : "w-12 md:w-16"}
+                  ${isActive ? "w-[72px] md:w-[140px] brightness-125" : "w-12 md:w-16"}
                 `}
                 aria-label={`Show ${key} info`}
                 aria-pressed={isActive}
@@ -121,19 +121,19 @@ export default function AboutCard({
               })}
             </div>
           </div>
-          <div className="hidden sm:flex bg-dark-purple rounded-full w-12 lg:w-20 h-12 mb-5 lg:h-20 items-center justify-center p-0">
+          <div className="hidden md:flex bg-dark-purple rounded-full w-12 lg:w-20 h-12 mb-5 lg:h-20 items-center justify-center p-0">
             {svg}
           </div>
 
           <h1
-            className={`text-[16px] sm:text-[32px] lg:text-6xl text-main-title w-fit  text-primary-gradient-color ${cabinetExtraBold.className} lg:text-[36px] leading-normal tracking-normal text-start`}
+            className={`text-[16px] md:text-[32px] lg:text-6xl text-main-title w-fit  text-primary-gradient-color ${cabinetExtraBold.className} lg:text-[36px] leading-normal tracking-normal text-start`}
           >
             {title}
           </h1>
         </div>
 
         <div
-          className={` text-magnolia text-[12px] sm:text-base text-justify lg:text-[20px] ${satoshiRegular.className} leading-7 tracking-wide sm:pr-24`}
+          className={` text-magnolia text-[12px] md:text-base text-justify lg:text-[20px] ${satoshiRegular.className} leading-5 tracking-tighter md:tracking-wide md:pr-24`}
         >
           <p>{description}</p>
         </div>
