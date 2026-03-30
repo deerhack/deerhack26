@@ -1,0 +1,83 @@
+export default function AboutCollege({
+    width = 109,
+    height = 113,
+    className = ""
+}:{
+    width?: number;
+    height?:number;
+    className?: string;
+
+}) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 109 113"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <g filter="url(#filter0_d_355_80)">
+        <circle
+          cx="54.5032"
+          cy="53.5364"
+          r="50.5017"
+          transform="rotate(-3.55551 54.5032 53.5364)"
+          fill="#241A4A"
+        />
+        <path
+          d="M30.9668 77.9981V41.4426H41.4112V30.9981H67.5224V51.887H77.9668V77.9981H57.0779V67.5537H51.8557V77.9981H30.9668ZM36.189 72.7759H41.4112V67.5537H36.189V72.7759ZM36.189 62.3315H41.4112V57.1093H36.189V62.3315ZM36.189 51.887H41.4112V46.6648H36.189V51.887ZM46.6335 62.3315H51.8557V57.1093H46.6335V62.3315ZM46.6335 51.887H51.8557V46.6648H46.6335V51.887ZM46.6335 41.4426H51.8557V36.2204H46.6335V41.4426ZM57.0779 62.3315H62.3001V57.1093H57.0779V62.3315ZM57.0779 51.887H62.3001V46.6648H57.0779V51.887ZM57.0779 41.4426H62.3001V36.2204H57.0779V41.4426ZM67.5224 72.7759H72.7446V67.5537H67.5224V72.7759ZM67.5224 62.3315H72.7446V57.1093H67.5224V62.3315Z"
+          fill="url(#paint0_linear_355_80)"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_355_80"
+          x="0"
+          y="3.03306"
+          width="109.006"
+          height="109.007"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_355_80"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_355_80"
+            result="shape"
+          />
+        </filter>
+        <linearGradient
+          id="paint0_linear_355_80"
+          x1="22.4742"
+          y1="24.374"
+          x2="59.8663"
+          y2="69.4183"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#6633CC" />
+          <stop offset="1" stop-color="#F5C144" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}

@@ -1,8 +1,8 @@
 import { ReactElement } from "react";
 
 export default function NewSupportIdeaSVG({
-    height = 124,
-    width = 113,
+    height = 200,
+    width = 210,
     className = "",
   }: {
     height?: number;

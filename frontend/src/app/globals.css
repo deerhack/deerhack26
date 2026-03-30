@@ -24,8 +24,28 @@
 
   .primary-border-background{
     background: #110C24;
+    border-radius: 2.34375rem;
  
   }
+
+  .secondary-border-background{
+    border: 5px solid transparent;
+
+  background: 
+    linear-gradient(#110C24, #110C24) padding-box, 
+    linear-gradient(249.27deg, #6633CC -0.57%, #F5C144 109.25%) border-box; 
+
+  border-radius: 2.34375rem;
+  }
+
+  .third-border-background {
+  border: 5px solid transparent;
+  background: 
+    linear-gradient(#110C24, #110C24) padding-box, 
+    linear-gradient(140.3deg, #6633CC -15.9%, #F5C144 72.56%) border-box; 
+
+  border-radius: 2.34375rem;
+}
 
   .text-main-title {
     @apply bg-gradient-to-l from-[#F5C144] from-0% to-[#6633CC] to-100% bg-clip-text text-transparent;
@@ -37,6 +57,9 @@
 
   .exp-gradient-background {
   background: linear-gradient(270deg, #F5C144 0%, #6633CC 100%);
+  }
+  .blockchain-background {
+  background: linear-gradient(60deg, #6633CC 0%,#F5C144 150%);
   }
 
   .text-primary-gradient-color {
@@ -66,6 +89,9 @@
 
 .gradient-bg {
   background: linear-gradient(105.53deg, #6633CC 20.77%, #823FBD 60.21%, #9D4BAD 99.65%);
+}
+.about-section-button{
+   background: linear-gradient(180deg, #6633CC 0%, #331A66 100%);
 }
 
   .font-cabinet-light {

@@ -1,12 +1,5 @@
 export const dataTwo = [
-  {
-    id: 7,
-    img: "/carousel/processed/sized/7.webp",
-  },
-  {
-    id: 8,
-    img: "/carousel/processed/sized/8.webp",
-  },
+  
   {
     id: 9,
     img: "/carousel/processed/sized/9.webp",
@@ -22,5 +15,13 @@ export const dataTwo = [
   {
     id: 12,
     img: "/carousel/processed/sized/12.webp",
+  },
+  {
+    id: 13,
+    img: "/carousel/processed/sized/13.webp",
+  },
+  {
+    id: 14,
+    img: "/carousel/processed/sized/14.webp",
   },
 ];
