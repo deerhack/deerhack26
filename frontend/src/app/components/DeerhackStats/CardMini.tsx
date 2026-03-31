@@ -1,4 +1,4 @@
-import { cabinetBold, cabinetRegular } from "@/app/utils/fonts";
+import { cabinetBold } from "@/app/utils/fonts";
 import { ReactElement } from "react";
 import CountUpAnimation from "../CountUp/CountUpAnimation";
 
@@ -6,23 +6,37 @@ export default function CardMini({
   svg,
   title,
   numbers,
+  customClass,
+  border,
 }: {
   svg: ReactElement;
   title: string;
   numbers: number;
+  customClass?: string;
+  border?: boolean;
 }) {
   return (
-    <div className=" card-background-gradient w-80 lg:w-[24rem] h-36 lg:h-[10.5rem]  rounded-2xl px-8 pt-4 pb-8 flex  justify-between items-end">
-      <div className="flex flex-col justify-between gap-5">
-        {svg}
-        <p className={`${cabinetBold.className} text-white text-2xl`}>
+    <div
+      className={`
+        w-80 lg:w-[24rem] h-36 lg:h-[10.5rem]
+        rounded-2xl px-8 pt-4 pb-8
+        flex flex-col justify-between
+        ${customClass ?? 'card-background-gradient'}
+        ${border ? "border-[rgba(245,193,68,1)] border-solid border-2" : " "}
+      `}
+    >
+      <div>{svg}</div>
+      <div className="flex justify-between items-baseline">
+        <p className={`${cabinetBold.className} text-[rgba(245,193,68,1)] text-2xl`}>
           {title}
         </p>
+        <CountUpAnimation
+          target={numbers}
+          isExtra={false}
+          className="text-[45px] text-[rgba(245,193,68,1)]"
+          time={4}
+        />
       </div>
-      {/* <p className={`${cabinetRegular.className} text-[45px] text-white`}>
-        {numbers}
-      </p> */}
-      <CountUpAnimation target={numbers} isExtra={false} className="text-[45px] text-white" time={4}/>
     </div>
   );
 }

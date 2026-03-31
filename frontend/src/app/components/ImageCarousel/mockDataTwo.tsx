@@ -1,8 +1,5 @@
 export const dataTwo = [
-    {
-    id: 8,
-    img: "/carousel/processed/sized/8.webp",
-  },
+  
   {
     id: 9,
     img: "/carousel/processed/sized/9.webp",

@@ -1,9 +1,11 @@
 export default function DeerhackLogo({
-  height = "40",
-  width = "40",
+  height = 40,
+  width = 40,
+  className = "",
 }: {
-  height?: string;
-  width?: string;
+  height?: number;
+  width?: number;
+  className?: string;
 }) {
   return (
     <svg
@@ -12,6 +14,7 @@ export default function DeerhackLogo({
       viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={className}
     >
       <g clipPath="url(#clip0_134_292)">
         <path

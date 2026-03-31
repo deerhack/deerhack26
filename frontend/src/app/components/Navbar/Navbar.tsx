@@ -74,7 +74,7 @@ const Navbar = () => {
           {/* Top bar with logo and hamburger */}
           <div className="flex justify-between items-center w-full lg:w-auto lg:gap-[7.5rem]">
             <a href="/" className="flex-shrink-0 flex items-center "> 
-              <DeerhackLogo width="50" height="50" />
+              <DeerhackLogo width={50}height={50} />
             </a>
             <button onClick={toggleMenu} className="lg:hidden text-secondary flex items-center justify-center ">
               {isMenuOpen ? (

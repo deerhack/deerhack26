@@ -1,77 +1,75 @@
 import { ReactElement } from "react";
 import GenderSVG from "@/app/assets/images/gender";
 import {
-  cabinetBlack,
   cabinetBold,
   cabinetMedium,
   cabinetRegular,
 } from "@/app/utils/fonts";
 import GenderEllipseSVG from "@/app/assets/images/genderEllipse";
 import IncreaseStatSVG from "@/app/assets/images/increaseStat";
-import DecreaseStatSVG from "@/app/assets/images/decreaseStat";
+
 export default function CardLarge(): ReactElement {
   return (
-    <div className="bg-gradient-to-r from-[#6633CC] to-[#F5C144] p-[2px] rounded-xl">
-      <div className="rounded-xl md:h-full sm:h-full h-[30rem] w-80 lg:w-[24rem] bg-dark-purple  flex flex-col px-6 pt-4 pb-16 justify-between">
-        
-        <div className="flex flex-col gap-2">
-          <GenderSVG height={50} width={50} />
-          <p className={`${cabinetBold.className} text-white text-2xl`}>
+    <div className="bg-gradient-to-b from-[#6633CC] to-[#F5C144] p-[2px] rounded-2xl overflow-hidden">
+
+      <div className="w-80 lg:w-[24rem] bg-dark-purple flex flex-col px-6 pt-4 pb-10 gap-10 md:gap-6 h-full rounded-[14px]">
+
+        {/* Header */}
+        <div className="flex flex-col gap-3 md:gap-2">
+          <GenderSVG height={40} width={40} />
+          <p className={`${cabinetBold.className} text-[rgba(245,193,68,1)] text-2xl`}>
             Gender Distribution
           </p>
         </div>
 
-        
-        <div className="flex justify-center">
-          <GenderEllipseSVG height={200} width={200} />
+        {/* Doughnut */}
+        <div className="flex justify-center my-5">
+          <GenderEllipseSVG
+            height={200}
+            width={200}
+            className="md:h-[250px] md:w-[250px]"
+          />
         </div>
 
-       
-        <div className="flex justify-center gap-8 ">
-          {/* Male Stats */}
-          <div className="flex flex-col gap-2 items-center">
-            <div className="flex items-center gap-2 self-start">
-              <div className="h-4 w-4 bg-cardgrape  rounded-full self-start"></div>
-              <p className={`${cabinetMedium.className} text-white text-sm`}>
+        {/* Stats layout */}
+        <div className="flex flex-col gap-6">
+
+          {/* Row 1 */}
+          <div className="grid grid-cols-2">
+            <div className="flex items-center gap-2 justify-self-start pl-10">
+              <div className="h-4 w-4 bg-[rgba(102,51,204,1)] rounded-full"></div>
+              <p className={`${cabinetMedium.className} text-[rgba(245,193,68,1)] text-sm`}>
                 Male
               </p>
             </div>
-            <div
-              className={`${cabinetRegular.className} text-4xl text-white w-full text-center `}
-            >
-              75%
-            </div>
-            {/* Decrease Stat */}
-            {/* <div className="flex items-center gap-1 self-start">
-              <DecreaseStatSVG height={16} width={16} />
-              <p className={`${cabinetRegular.className} text-white text-sm`}>
-                5%
-              </p>
-            </div> */}
-          </div>
-
-          {/* Female Stats */}
-          <div className="flex flex-col gap-2 items-center">
-            {/* Flex for Icon and Female Text */}
-            <div className="flex items-center gap-2">
-              <div className="h-4 w-4 bg-saffron rounded-full"></div>
-              <p className={`${cabinetMedium.className} text-white text-sm`}>
+            <div className="flex items-center gap-2 justify-self-start pl-6">
+              <div className="h-4 w-4 bg-[rgba(157,75,173,1)] rounded-full"></div>
+              <p className={`${cabinetMedium.className} text-[rgba(245,193,68,1)] text-sm`}>
                 Female
               </p>
             </div>
-            <div
-              className={`${cabinetRegular.className} text-4xl text-white w-full text-center `}
-            >
-              25%
+          </div>
+
+          {/* Row 2 */}
+          <div className="grid grid-cols-2">
+            <div className="flex flex-col items-start pl-10">
+              <div className={`${cabinetRegular.className} text-5xl text-[rgba(245,193,68,1)]`}>
+                75%
+              </div>
             </div>
-            {/* Increase Stat */}
-            <div className="flex items-center gap-1 self-start">
-              <IncreaseStatSVG height={16} width={16} />
-              <p className={`${cabinetRegular.className} text-white text-sm`}>
-                10% 
-              </p>
+            <div className="flex flex-col items-start pl-6">
+              <div className={`${cabinetRegular.className} text-5xl text-[rgba(245,193,68,1)]`}>
+                25%
+              </div>
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <IncreaseStatSVG height={16} width={16} />
+                <p className={`${cabinetRegular.className} text-white text-sm`}>
+                  10% since 2024
+                </p>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
