@@ -1,8 +1,6 @@
-// components/Expectations/ExpectationImage.tsx
 import Image, { StaticImageData } from "next/image";
 import { ReactElement } from "react";
 
-// Ensure the prop is typed as StaticImageData
 interface ExpectationImageProps {
   imageSrc: StaticImageData | string; 
 }
@@ -10,11 +8,12 @@ interface ExpectationImageProps {
 export default function ExpectationImage({ imageSrc }: ExpectationImageProps): ReactElement {
   return (
     <div
-      className="relative flex items-center justify-center shrink-0"
+      className="relative flex items-center justify-center shrink-0 shadow-2xl"
       style={{
         width: "456px",
         height: "528px",
         borderRadius: "15px",
+        // Gradient Border effect using padding + background
         background: "linear-gradient(180deg, #6633CC 0%, #9D4BAD 100%)",
         padding: "8px", 
       }}
@@ -31,7 +30,7 @@ export default function ExpectationImage({ imageSrc }: ExpectationImageProps): R
           alt="Expectation"
           fill
           className="object-cover"
-          priority // Helps with layout shift in sliders
+          priority
           sizes="456px"
         />
       </div>
