@@ -61,18 +61,20 @@ export default function ExpectationCards(): ReactElement {
       <div className="relative w-full lg:w-[65%] flex flex-col items-center justify-center overflow-hidden">
         <ExpectationsArrow
           onClick={prevSlide}
-          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -left-4 sm:bottom-[120px] sm:left-[90px] md:left-24 z-40 p-3 scale-x-[-1]"
+          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -left-4 sm:bottom-[120px] sm:left-[90px] md:left-24 z-40 p-3 scale-x-[-1] cursor-pointer hover:opacity-100 transition-opacity"
         />
         <ExpectationsArrow
           onClick={nextSlide}
-          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -right-4 sm:bottom-[120px] sm:right-[90px] md:right-24 z-40 p-3"
+          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -right-4 sm:bottom-[120px] sm:right-[90px] md:right-24 z-40 p-3 cursor-pointer hover:opacity-100 transition-opacity"
         />
 
         <div
-          className="absolute inset-0 z-30 pointer-events-none
-          before:absolute before:left-0 before:top-0 before:h-full before:w-16 before:md:w-40 before:bg-gradient-to-r before:from-dark-purple before:to-transparent
-          after:absolute after:right-0 after:top-0 after:h-full after:w-16 after:md:w-40 after:bg-gradient-to-l after:from-dark-purple after:to-transparent"
-        />
+          className="absolute inset-0 z-30 pointer-events-none transform-gpu"
+          style={{ backfaceVisibility: "hidden" }}
+        >
+          <div className="absolute -left-px top-0 h-full w-16 md:w-40 bg-gradient-to-r from-dark-purple to-transparent" />
+          <div className="absolute -right-px top-0 h-full w-16 md:w-40 bg-gradient-to-l from-dark-purple to-transparent" />
+        </div>
 
         <div
           onTransitionEnd={handleTransitionEnd}
@@ -82,6 +84,8 @@ export default function ExpectationCards(): ReactElement {
               ? "transform 500ms cubic-bezier(0.4, 0, 0.2, 1)"
               : "none",
             transform: `translateX(calc(50% - ${cardWidth / 2}px - ${currentIndex * (cardWidth + gap)}px))`,
+            willChange: "transform",
+            WebkitBackfaceVisibility: "hidden",
           }}
         >
           {cards.map((card, index) => {
