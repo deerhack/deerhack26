@@ -10,9 +10,9 @@ import IncreaseStatSVG from "@/app/assets/images/increaseStat";
 
 export default function CardLarge(): ReactElement {
   return (
-    <div className="bg-gradient-to-b from-[#6633CC] to-[#F5C144] p-[2px] rounded-2xl overflow-hidden">
+    <div className="bg-gradient-to-b from-[#6633CC] to-[#F5C144] p-[2px] rounded-2xl overflow-hidden w-full h-full">
 
-      <div className="w-80 lg:w-[24rem] bg-dark-purple flex flex-col px-6 pt-4 pb-10 gap-10 md:gap-6 h-full rounded-[14px]">
+      <div className="w-full bg-dark-purple flex flex-col px-6 pt-4 pb-10 gap-10 md:gap-6 h-full rounded-[14px] ">
 
         {/* Header */}
         <div className="flex flex-col gap-3 md:gap-2">
