@@ -65,7 +65,7 @@ export default function AboutCard({
 
   return (
     <div className="primary-aboutpage-background w-[26rem] h-fit sm:w-auto md:max-w-[55rem] sm:h-full flex flex-col lg:h-[30rem] rounded-2xl p-[0.2875rem] mx-6 mb-6">
-      <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-start gap-4 px-[72px] py-[55px] xl:py-12 md:px-12">
+      <div className="relative bg-[#110C24] flex flex-col h-full w-full rounded-[1rem] justify-center items-start gap-4 pr-[72px] pl-8 py-[55px] xl:py-12 md:px-12">
         <div className="absolute flex lg:hidden top-[108px] md:top-[150px] right-[-10px] scale-x-[-1] -translate-y-1/2 flex-col gap-5 z-20">
           {buttons.map(({ key, Icon }) => {
             const isActive = activeTab === key;
