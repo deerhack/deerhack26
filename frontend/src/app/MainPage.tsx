@@ -14,6 +14,7 @@ import Judges from "@/app/(pages)/Judges";
 import Mentors from "@/app/(pages)/Mentors";
 import Navbar from "@/app/components/Navbar/Navbar";
 import ExperiencePage from "./(pages)/DeerhackExperiencePage";
+import ExpectationPageV2 from "./(pages)/ExpectationsV2";
 
 export default function Home() {
   return (
@@ -24,7 +25,8 @@ export default function Home() {
       <BenefitsPage />
       <PrizesPage />
       <TrackPage />
-      <ExpectationsPage />
+      {/* <ExpectationsPage /> */}
+      <ExpectationPageV2 />
       <DeerhackStatsPage />
       <ImageCarouselPage />
       <ExperiencePage />
