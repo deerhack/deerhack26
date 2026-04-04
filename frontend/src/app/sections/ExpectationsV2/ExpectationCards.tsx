@@ -1,6 +1,6 @@
 "use client";
 import ExpectationCard from "@/app/components/ExpectationsV2/ExpectationCard";
-import { ReactElement, useState, useEffect } from "react";
+import { ReactElement, useState, useEffect, useRef } from "react";
 import ExpectationImage from "@/app/components/ExpectationsV2/ExpectationImage";
 import ExpectationsArrow from "@/app/assets/icons/ExpectationsArrow";
 import { originalCards } from "./data";
@@ -55,10 +55,37 @@ export default function ExpectationCards(): ReactElement {
       setCurrentIndex(currentIndex + originalCards.length);
     }
   };
+  
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    touchEndX.current = null;
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+    
+    const distance = touchStartX.current - touchEndX.current;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      nextSlide();
+    } else if (isRightSwipe) {
+      prevSlide();
+    }
+  };
 
   return (
     <div className="flex flex-col lg:flex-row justify-center w-full max-w-[1400px] mx-auto mt-10 items-center gap-10">
-      <div className="relative w-full lg:w-[65%] flex flex-col items-center justify-center overflow-hidden">
+      <div className="relative w-full lg:w-[65%] flex flex-col items-center justify-center overflow-hidden">        
         <ExpectationsArrow
           onClick={prevSlide}
           className="absolute opacity-30 sm:opacity-100 bottom-[180px] -left-4 sm:bottom-[120px] sm:left-[90px] md:left-24 z-40 p-3 scale-x-[-1] cursor-pointer hover:opacity-100 transition-opacity"
@@ -78,7 +105,10 @@ export default function ExpectationCards(): ReactElement {
 
         <div
           onTransitionEnd={handleTransitionEnd}
-          className="flex py-10"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+          className="flex py-10 cursor-grab active:cursor-grabbing"
           style={{
             transition: isTransitioning
               ? "transform 500ms cubic-bezier(0.4, 0, 0.2, 1)"
@@ -101,13 +131,13 @@ export default function ExpectationCards(): ReactElement {
                     ? "transform 500ms ease-in-out, opacity 500ms ease-in-out"
                     : "none",
                 }}
-                className={`flex items-center justify-center ${
+                className={`flex items-center justify-center select-none ${
                   isActive
                     ? "scale-[1.1] mb-4 md:mb-0 lg:scale-[1.3] opacity-100 z-20"
                     : "scale-[1] opacity-30 z-10"
                 }`}
               >
-                <div className="flex flex-col justify-center items-center gap-[25px]">
+                <div className="flex flex-col justify-center items-center gap-[25px] pointer-events-none">
                   <ExpectationImage
                     imageSrc={card.img}
                     className="block lg:hidden"
