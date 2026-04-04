@@ -6,6 +6,10 @@ import fun_games_image from "@/app/assets/images/fun_games.webp";
 import live_music_image from "@/app/assets/images/live_music_image.webp";
 import workshop_image from "@/app/assets/images/workshop_image.webp";
 
+// import fun_games_image from "@/app/assets/images/expectations/badminton.jpg";
+// import live_music_image from "@/app/assets/images/expectations/football.jpg";
+// import workshop_image from "@/app/assets/images/expectations/workshop_2.jpg";
+
 export const originalCards = [
   {
     svg: <FunGamesSVG height={40} width={40} />,
@@ -23,6 +27,6 @@ export const originalCards = [
     svg: <WorkshopSVG height={40} width={40} />,
     title: "Workshops",
     img: workshop_image,
-    desc: "Dive deep into cutting-edge technologies, sharpen your skills, and gain invaluable insights from industry experts through interactive workshops tailored to enhance your expertise and ignite your innovation.",
+    desc: "Dive deep into cutting-edge technologies, sharpen your skills, and gain invaluable insights from industry experts through interactive workshops tailored to enhance your expertise.",
   },
 ];
