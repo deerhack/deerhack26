@@ -25,8 +25,8 @@ export default function CardLarge(): ReactElement {
         {/* Doughnut */}
         <div className="flex justify-center my-5">
           <GenderEllipseSVG
-            height={200}
-            width={200}
+            height={250}
+            width={250}
             className="md:h-[250px] md:w-[250px]"
           />
         </div>

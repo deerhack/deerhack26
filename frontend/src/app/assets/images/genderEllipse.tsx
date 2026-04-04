@@ -1,26 +1,82 @@
+"use client"
 import { ReactElement } from "react";
+import { useState, useRef } from "react";
+import { ChartOptions, Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function GenderEllipseSVG({
   height = 315,
   width = 315,
-  className= "",
+  className = "",
 }: {
   height?: number;
   width?: number;
   className?: string;
 }): ReactElement {
+  const [visible, setVisible] = useState({ male: true, female: true });
+  const chartRef = useRef<ChartJS<"doughnut">>(null);
+
+  const handleToggle = (gender: "male" | "female") => {
+    const chart = chartRef.current;
+    if (!chart) return;
+
+    if (gender === "male") {
+      chart.toggleDataVisibility(0);
+      setVisible((prev) => ({ ...prev, male: !prev.male }));
+    } else {
+      chart.toggleDataVisibility(1);
+      chart.toggleDataVisibility(2);
+      setVisible((prev) => ({ ...prev, female: !prev.female }));
+    }
+    chart.update();
+  };
+
+  const data = {
+    labels: ["Male", "Female", "Female"],
+    datasets: [
+      {
+        data: [75, 15, 10],
+        backgroundColor: [
+          "rgba(117, 51, 204, 0.77)",
+          "rgba(157, 75, 173, 1)",
+          "rgba(235, 140, 253, 1)",
+        ],
+        hoverBackgroundColor: ["#3B267B", "#E08CF5", "#951AAD"],
+        borderWidth: 0,
+      },
+    ],
+  };
+
+  const options: ChartOptions<"doughnut"> = {
+    rotation: 90,
+    maintainAspectRatio: false,
+    cutout: "60%",
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        enabled: true,
+        backgroundColor: "#110C24",
+        titleColor: "#fff",
+        bodyColor: "#fff",
+        borderColor: "#D977F2",
+        borderWidth: 1,
+        displayColors: false,
+        callbacks: {
+          label: (context) => {
+            if (context.dataIndex === 1) return " Female: 25%";
+            if (context.dataIndex === 2) return "Female: 25%";
+            return ` ${context.label}: 75%`;
+          },
+        },
+      },
+    },
+  };
+
   return (
-    <svg 
-     height={`${height}`}
-    width={`${width}`}
-     viewBox="70 70 410 410" 
-     fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className = {className}
-    >
-<path d="M470.176 274.092C470.176 382.39 382.383 470.184 274.084 470.184C165.786 470.184 77.9922 382.39 77.9922 274.092C77.9922 165.793 165.786 78 274.084 78C382.383 78 470.176 165.793 470.176 274.092ZM156.429 274.092C156.429 339.071 209.105 391.747 274.084 391.747C339.063 391.747 391.739 339.071 391.739 274.092C391.739 209.113 339.063 156.437 274.084 156.437C209.105 156.437 156.429 209.113 156.429 274.092Z" fill="#7533CC" fill-opacity="0.77"/>
-<path d="M273.992 78C299.743 78 325.242 83.0721 349.033 92.9266C372.824 102.781 394.441 117.225 412.65 135.434C430.859 153.643 445.303 175.26 455.158 199.051C465.012 222.842 470.084 248.341 470.084 274.092L391.647 274.092C391.647 258.641 388.604 243.342 382.691 229.067C376.779 214.793 368.112 201.822 357.187 190.897C346.262 179.972 333.291 171.305 319.017 165.393C304.742 159.48 289.443 156.437 273.992 156.437L273.992 78Z" fill="#EB8CFD"/>
-<path d="M389.157 115.26C414.193 133.449 434.568 157.305 448.617 184.878C462.665 212.45 469.989 242.956 469.989 273.902L391.553 273.902C391.553 255.334 387.158 237.031 378.729 220.487C370.3 203.944 358.075 189.63 343.053 178.717L389.157 115.26Z" fill="#9D4BAD"/>
-</svg>
+    <div style={{ width, height }} className={className}>
+      <Doughnut ref={chartRef} data={data} options={options} />
+    </div>
   );
 }
