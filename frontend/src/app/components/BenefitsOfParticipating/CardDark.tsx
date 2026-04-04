@@ -30,7 +30,7 @@ const borderClass = bordercolour ? "secondary-border-background" : "primary-bord
       <div className=" new-gradient-background w-full h-full rounded-[1.875rem] flex flex-col px-12 gap-[21px] justify-center relative">
         <div>
           <div
-         className={`${cabinetExtraBold.className} text-transparent bg-clip-text lg:text-[2rem] text-[1.5rem] w-[10.69rem] md:w-[18.72rem] sm:leading-[2rem] md:leading-[2.75rem] pb-[1.5rem] md:pb-0 font-extrabold z-10 md:mb-[1.5rem]`}
+         className={`${cabinetExtraBold.className} text-transparent bg-clip-text lg:text-[2rem] text-[1.5rem] w-[10.69rem] md:w-[18.72rem] sm:leading-[2rem] md:leading-[2.75rem] md:pb-0 font-extrabold z-10`}
         style={{
           background: "linear-gradient(155.54deg, #CEA33D 30.29%, #6633CC 97.7%)",
               WebkitBackgroundClip: "text",
