@@ -66,11 +66,18 @@ export default function ExpectationCards(): ReactElement {
         >
           {cards.map((card, index) => {
             const isActive = index === currentIndex;
+
             return (
               <div
                 key={index}
-                style={{ minWidth: `${cardWidth}px`, marginRight: `${gap}px` }}
-                className={`transition-all duration-500 ease-in-out ${
+                style={{
+                  minWidth: `${cardWidth}px`,
+                  marginRight: `${gap}px`,
+                  transition: isTransitioning
+                    ? "transform 500ms ease-in-out, opacity 500ms ease-in-out"
+                    : "none",
+                }}
+                className={`flex items-center justify-center ${
                   isActive
                     ? "scale-[1.3] opacity-100 z-20"
                     : "scale-[1] opacity-30 z-10"

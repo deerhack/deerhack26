@@ -6,7 +6,7 @@ import ExpectationsVine from "../assets/icons/ExpectationsVine";
 export default function ExpectationPageV2(): ReactElement {
   return (
     <div className="relative bg-dark-purple py-20 flex flex-col gap-[20px]">
-      <ExpectationsVine className="absolute right-0 -top-8" />
+      <ExpectationsVine className="absolute right-0 -top-16" />
       <div
         className={`${cabinetExtraBold.className} headings px-2 md:px-0 mb-[3rem]`}
       >
