@@ -1,6 +1,6 @@
 "use client";
 import ExpectationCard from "@/app/components/ExpectationsV2/ExpectationCard";
-import { ReactElement, useState, useRef } from "react";
+import { ReactElement, useState, useEffect } from "react";
 import ExpectationImage from "@/app/components/ExpectationsV2/ExpectationImage";
 import ExpectationsArrow from "@/app/assets/icons/ExpectationsArrow";
 import { originalCards } from "./data";
@@ -11,8 +11,28 @@ export default function ExpectationCards(): ReactElement {
   const [currentIndex, setCurrentIndex] = useState(originalCards.length);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const cardWidth = 380;
-  const gap = 98;
+  const [gap, setGap] = useState(98);
+  const [cardWidth, setCardWidth] = useState(380);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width >= 1280) {
+        setGap(98);
+        setCardWidth(380);
+      } else if (width >= 768) {
+        setGap(50);
+        setCardWidth(320);
+      } else {
+        setGap(28);
+        setCardWidth(300);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const nextSlide = () => {
     if (isTransitioning) return;
@@ -38,20 +58,20 @@ export default function ExpectationCards(): ReactElement {
 
   return (
     <div className="flex flex-col lg:flex-row justify-center w-full max-w-[1400px] mx-auto mt-10 items-center gap-10">
-      <div className="relative w-full lg:w-[65%] flex items-center justify-center overflow-hidden">
+      <div className="relative w-full lg:w-[65%] flex flex-col items-center justify-center overflow-hidden">
         <ExpectationsArrow
           onClick={prevSlide}
-          className="absolute left-24 z-40 p-3 scale-x-[-1]"
+          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -left-4 sm:bottom-[120px] sm:left-[90px] md:left-24 z-40 p-3 scale-x-[-1]"
         />
         <ExpectationsArrow
           onClick={nextSlide}
-          className="absolute right-24 z-40 p-3"
+          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -right-4 sm:bottom-[120px] sm:right-[90px] md:right-24 z-40 p-3"
         />
 
         <div
           className="absolute inset-0 z-30 pointer-events-none
-          before:absolute before:left-0 before:top-0 before:h-full before:w-40 before:bg-gradient-to-r before:from-dark-purple before:to-transparent
-          after:absolute after:right-0 after:top-0 after:h-full after:w-40 after:bg-gradient-to-l after:from-dark-purple after:to-transparent"
+          before:absolute before:left-0 before:top-0 before:h-full before:w-16 before:md:w-40 before:bg-gradient-to-r before:from-dark-purple before:to-transparent
+          after:absolute after:right-0 after:top-0 after:h-full after:w-16 after:md:w-40 after:bg-gradient-to-l after:from-dark-purple after:to-transparent"
         />
 
         <div
@@ -79,17 +99,39 @@ export default function ExpectationCards(): ReactElement {
                 }}
                 className={`flex items-center justify-center ${
                   isActive
-                    ? "scale-[1.3] opacity-100 z-20"
+                    ? "scale-[1.1] mb-4 md:mb-0 lg:scale-[1.3] opacity-100 z-20"
                     : "scale-[1] opacity-30 z-10"
                 }`}
               >
-                <ExpectationCard
-                  svg={card.svg}
-                  title={card.title}
-                  description={card.desc}
-                  isActive={isActive}
-                />
+                <div className="flex flex-col justify-center items-center gap-[25px]">
+                  <ExpectationImage
+                    imageSrc={card.img}
+                    className="block lg:hidden"
+                  />
+                  <ExpectationCard
+                    svg={card.svg}
+                    title={card.title}
+                    description={card.desc}
+                    isActive={isActive}
+                  />
+                </div>
               </div>
+            );
+          })}
+        </div>
+
+        <div className="flex gap-4 md:mt-4 mb-6 lg:hidden z-40">
+          {originalCards.map((_, dotIndex) => {
+            const activeDotIndex = currentIndex % originalCards.length;
+            return (
+              <div
+                key={dotIndex}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  activeDotIndex === dotIndex
+                    ? "bg-white w-2 scale-[1.4]"
+                    : "bg-white/20 w-2 scale-100"
+                }`}
+              />
             );
           })}
         </div>
