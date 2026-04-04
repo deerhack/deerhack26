@@ -78,6 +78,7 @@ export default function AboutCard({
                   rounded-r-[40px] rounded-l-[6px] about-section-button p-1 md:p-2
                   flex items-center justify-end shadow-lg
                   h-10 md:h-16
+                  transition-all duration-300 ease-in-out
                   ${isActive ? "w-[72px] md:w-[140px] brightness-125" : "w-12 md:w-16"}
                 `}
                 aria-label={`Show ${key} info`}
