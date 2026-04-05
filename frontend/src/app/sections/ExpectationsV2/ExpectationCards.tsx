@@ -84,15 +84,15 @@ export default function ExpectationCards(): ReactElement {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center w-full max-w-[1400px] mx-auto mt-10 items-center gap-10">
+    <div className="flex flex-col lg:flex-row justify-center w-full max-w-[1400px] mx-auto mt-6 lg:mt-10 items-center gap-10">
       <div className="relative w-full lg:w-[65%] flex flex-col items-center justify-center overflow-hidden">        
         <ExpectationsArrow
           onClick={prevSlide}
-          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -left-4 sm:bottom-[120px] sm:left-[90px] md:left-24 z-40 p-3 scale-x-[-1] cursor-pointer hover:opacity-100 transition-opacity"
+          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -left-4 sm:bottom-[160px] sm:left-[70px] md:left-24 z-40 p-3 scale-x-[-1] cursor-pointer hover:opacity-100 transition-opacity"
         />
         <ExpectationsArrow
           onClick={nextSlide}
-          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -right-4 sm:bottom-[120px] sm:right-[90px] md:right-24 z-40 p-3 cursor-pointer hover:opacity-100 transition-opacity"
+          className="absolute opacity-30 sm:opacity-100 bottom-[180px] -right-4 sm:bottom-[160px] sm:right-[70px] md:right-24 z-40 p-3 cursor-pointer hover:opacity-100 transition-opacity"
         />
 
         <div
