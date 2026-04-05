@@ -25,17 +25,17 @@ export const metadata = {
     " why participate in hackathon",
   ],
   openGraph: {
-    title: "Deerhack 2026 - Fawning over Innovation",
+    title: "DeerHack 2026 - Fawning over Innovation",
     description:
       "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
     url: "https://deerhack.deerwalk.edu.np",
-    siteName: "Deerhack 2026 - Fawning Over Innovation",
+    siteName: "DeerHack 2026 - Fawning Over Innovation",
     images: [
       {
         url: "/banner.webp",
         width: 400,
         height: 250,
-        alt: "Deerhack 2026 Banner",
+        alt: "DeerHack 2026 Banner",
       },
     ],
     locale: "en_US",
@@ -43,7 +43,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deerhack 2026",
+    title: "DeerHack 2026",
     description:
       "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
     images: ["/banner.webp"],
