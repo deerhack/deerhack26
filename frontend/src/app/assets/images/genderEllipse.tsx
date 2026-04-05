@@ -16,6 +16,7 @@ export default function GenderEllipseSVG({
 }): ReactElement {
   const [visible, setVisible] = useState({ male: true, female: true });
   const [hasAnimated, setHasAnimated] = useState(false);
+  const [showChart, setShowChart] = useState(false);
   const chartRef = useRef<ChartJS<"doughnut">>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -31,6 +32,13 @@ export default function GenderEllipseSVG({
 
     if (containerRef.current) observer.observe(containerRef.current);
     return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  useEffect(() => {
+    if (hasAnimated) {
+      const id = setTimeout(() => setShowChart(true), 50);
+      return () => clearTimeout(id);
+    }
   }, [hasAnimated]);
 
   const handleToggle = (gender: "male" | "female") => {
@@ -66,41 +74,41 @@ export default function GenderEllipseSVG({
 
   const options: ChartOptions<"doughnut"> = {
     animation: {
-    duration: 2000, 
-  },
+      duration: 2000,
+    },
     rotation: 90,
     maintainAspectRatio: false,
     cutout: "60%",
     plugins: {
       legend: { display: false },
       tooltip: {
-  enabled: true,
-  backgroundColor: "#110C24",
-  titleColor: "#fff",
-  bodyColor: "#fff",
-  borderColor: "#D977F2",
-  borderWidth: 1,
-  displayColors: false,
-  callbacks: {
-    title: (context) => {
-      const index = context[0].dataIndex;
-      if (index === 1 || index === 2) return "Female"; 
-      return "Male";
-    },
-    label: (context) => {
-      if (context.dataIndex === 1 || context.dataIndex === 2) {
-        return "25%"; 
-      }
-      return `75%`;
-    },
-  },
-},
+        enabled: true,
+        backgroundColor: "#110C24",
+        titleColor: "#fff",
+        bodyColor: "#fff",
+        borderColor: "#D977F2",
+        borderWidth: 1,
+        displayColors: false,
+        callbacks: {
+          title: (context) => {
+            const index = context[0].dataIndex;
+            if (index === 1 || index === 2) return "Female";
+            return "Male";
+          },
+          label: (context) => {
+            if (context.dataIndex === 1 || context.dataIndex === 2) {
+              return "25%";
+            }
+            return `75%`;
+          },
+        },
+      },
     },
   };
 
   return (
     <div ref={containerRef} style={{ width, height }} className={className}>
-      {hasAnimated && (
+      {showChart && (
         <Doughnut key="animated" ref={chartRef} data={data} options={options} />
       )}
     </div>
