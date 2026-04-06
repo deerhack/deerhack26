@@ -15,7 +15,7 @@ export const originalCards = [
     svg: <FunGamesSVG height={40} width={40} />,
     title: "Fun Games",
     img: fun_games_image,
-    desc: "Take a break from coding and immerse yourself in the soulful melodies and electrifying beats of live music performances, adding rhythm and energy to your DeerHack experience.",
+    desc: "Get ready to unleash your competitive spirit and bond with fellow participants in a series of exciting challenges and friendly competitions.",
   },
   {
     svg: <MusicSVG height={40} width={40} />,
