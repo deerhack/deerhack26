@@ -9,3 +9,13 @@
   scrollbar-width: none;
   /* Firefox */
 }
+
+@keyframes green-blue-shift {
+  0%   { background-color: #6DB94C; }
+  50%  { background-color: #241A4A } 
+  100% { background-color: #6DB94C; } 
+}
+
+.envAnimate {
+  animation: green-blue-shift 3s ease-in-out infinite;
+}

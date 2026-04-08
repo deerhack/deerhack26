@@ -119,13 +119,3 @@
   }
 }
 
-@keyframes green-blue-shift {
-  0%   { background-color: #22c55e; }
-  50%  { background-color: violet } 
-  100% { background-color: #22c55e; } 
-}
-
-.env-animate {
-  animation: green-blue-shift 3s ease-in-out infinite;
-}
-

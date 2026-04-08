@@ -14,6 +14,7 @@ import EdTechSVG from "@/app/assets/icons/EdTech";
 import EdTechNew from "@/app/assets/icons/EdTechNew";
 import EnvironmentTrackSVG from "@/app/assets/icons/EnvironmentTrack";
 import EnvironmentTrackBodySVG from "@/app/assets/icons/EnvironmentTrackBody";
+import styles from "./styles.module.css"
 
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
@@ -90,8 +91,8 @@ const TracksCard = () => {
       svgBody: <EnvironmentTrackBodySVG height={50} width={50} />,
       headStyling:
     selectedTrack === "Environment"
-      ? "env-animate text-magnolia active"
-      : "env-animate text-magnolia hover:opacity-90 transition-opacity duration-300",
+      ? `${styles.envAnimate} text-magnolia active`
+      : `${styles.envAnimate} text-magnolia hover:opacity-90 transition-opacity duration-300`,
       bodyStyling: "gradient-bg text-magnolia invert transition-all duration-300",
       description:
         "Think Green, Code Clean at DeerHack. Dive into the world of climate-positive innovation. Turn environmental challenges into elegant, scalable, and sustainable tech solutions.",
