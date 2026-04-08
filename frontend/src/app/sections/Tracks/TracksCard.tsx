@@ -51,7 +51,6 @@ const TracksCard = () => {
     {
       title: "Blockchain",
       svg: <BlockchainSVG height={25} width={25} />,
-      // svgBody: <BlockchainSVG height={50} width={50} className="bg-dark-purple fill-magnolia"/>,
       svgBody: <BlockchainNew height={50} width={50} />,
       headStyling:
         selectedTrack === "Blockchain"
@@ -90,11 +89,10 @@ const TracksCard = () => {
       svg: <EnvironmentTrackSVG height={25} width={25} />,
       svgBody: <EnvironmentTrackBodySVG height={50} width={50} />,
       headStyling:
-        selectedTrack === "Environment"
-          ? "gradient-bg text-magnolia active invert "
-          : "bg-violet hover:gradient-bg hover:text-magnolia hover:invert transition-all duration-300",
-      bodyStyling:
-        "gradient-bg text-magnolia invert transition-all duration-300",
+    selectedTrack === "Environment"
+      ? "env-animate text-magnolia active"
+      : "env-animate text-magnolia hover:opacity-90 transition-opacity duration-300",
+      bodyStyling: "gradient-bg text-magnolia invert transition-all duration-300",
       description:
         "Think Green, Code Clean at DeerHack. Dive into the world of climate-positive innovation. Turn environmental challenges into elegant, scalable, and sustainable tech solutions.",
     },
@@ -104,32 +102,31 @@ const TracksCard = () => {
   const handleTrackSelection = (title: string) => {
     setSelectedTrack(title);
     setAnimKey((prev) => prev + 1);
-    resetAutoSwitchTimer();
   };
 
-  // Auto switch logic
-  const resetAutoSwitchTimer = () => {
-    if (autoSwitchTimer.current) clearTimeout(autoSwitchTimer.current);
+  // // Auto switch logic
+  // const resetAutoSwitchTimer = () => {
+  //   if (autoSwitchTimer.current) clearTimeout(autoSwitchTimer.current);
 
-    autoSwitchTimer.current = setTimeout(() => {
-      const currentIndex = trackData.findIndex(
-        (track) => track.title === selectedTrack
-      );
-      const nextIndex = (currentIndex + 1) % trackData.length;
-      setSelectedTrack(trackData[nextIndex].title);
-      setAnimKey((prev) => prev + 1);
-      resetAutoSwitchTimer(); // schedule next switch
-    }, 10000); // 8 seconds
-  };
+  //   autoSwitchTimer.current = setTimeout(() => {
+  //     const currentIndex = trackData.findIndex(
+  //       (track) => track.title === selectedTrack
+  //     );
+  //     const nextIndex = (currentIndex + 1) % trackData.length;
+  //     setSelectedTrack(trackData[nextIndex].title);
+  //     setAnimKey((prev) => prev + 1);
+  //     resetAutoSwitchTimer(); // schedule next switch
+  //   }, 10000); // 8 seconds
+  // };
 
-  // Start auto-switch when component mounts
-  useEffect(() => {
-    resetAutoSwitchTimer();
-    return () => {
-      if (autoSwitchTimer.current) clearTimeout(autoSwitchTimer.current);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedTrack]);
+  // // Start auto-switch when component mounts
+  // useEffect(() => {
+  //   resetAutoSwitchTimer();
+  //   return () => {
+  //     if (autoSwitchTimer.current) clearTimeout(autoSwitchTimer.current);
+  //   };
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [selectedTrack]);
 
   return (
     <div className="lg:w-[70.36rem] mx-5 lg:mx-auto transition-all duration-300 ease-in">
