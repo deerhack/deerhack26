@@ -35,7 +35,7 @@ const Faq = () => {
         {
           question: "How long will DeerHack last?",
           answer:
-            "While DeerHack is a 48-Hour program, DeerHack also has a lot of other fun, team-building events lined up for the participants which will take place from 11th to 13th June 6 making DeerHack a 3-Day event collectively.",
+            "While DeerHack is a 48-Hour program, DeerHack also has a lot of other fun, team-building events lined up for the participants which will take place from 12th to 14th June making DeerHack a 3-Day event collectively.",
         },
         {
           question: "Who can Participate in DeerHack?",
@@ -57,7 +57,7 @@ const Faq = () => {
         {
           question: "What should I bring to DeerHack?",
           answer:
-            "You should bring any necessary equipment or tools for your project, such as a laptop or hardware components. Additionally, you may also want to bring a water bottle, and comfortable clothing for the long hours of relrentless innovation.",
+            "You should bring any necessary equipment or tools for your project, such as a laptop or hardware components. Additionally, you may also want to bring a water bottle, and comfortable clothing for the long hours of relentless innovation.",
         },
         {
           question: "Will foods and drinks be provided at DeerHack?",
