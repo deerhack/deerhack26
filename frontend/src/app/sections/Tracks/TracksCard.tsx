@@ -91,9 +91,9 @@ const TracksCard = () => {
       svgBody: <EnvironmentTrackBodySVG height={50} width={50} />,
       headStyling:
     selectedTrack === "Environment"
-      ? `${styles.envAnimate} text-magnolia active`
-      : `${styles.envAnimate} text-magnolia hover:opacity-90 transition-opacity duration-300`,
-      bodyStyling: "gradient-bg text-magnolia invert transition-all duration-300",
+      ? `gradient-bg text-magnolia active invert`
+      : `${styles.envAnimate} text-magnolia hover:opacity-90 transition-opacity duration-500`,
+      bodyStyling: "gradient-bg text-magnolia invert transition-all duration-500",
       description:
         "Think Green, Code Clean at DeerHack. Dive into the world of climate-positive innovation. Turn environmental challenges into elegant, scalable, and sustainable tech solutions.",
     },
