@@ -55,24 +55,24 @@ const TracksCard = () => {
       svgBody: <BlockchainNew height={50} width={50} />,
       headStyling:
         selectedTrack === "Blockchain"
-          ? "bg-magnolia text-dark-purple active"
-          : "bg-violet hover:bg-magnolia hover:text-dark-purple transition-all duration-300",
-      bodyStyling: "bg-magnolia text-dark-purple",
-      description:
-        "Embrace Decentralization with DeerHack. Explore smart contracts, secure transactions, and reshape industries at the forefront of innovation.",
-    },
-    {
-      title: "Open Innovation",
-      svg: <OpenInnovationSVG height={25} width={25} />,
-      svgBody: <OpenInnovationNew height={50} width={50} />,
-      headStyling:
-        selectedTrack === "Open Innovation"
           ? "bg-secondary text-dark-purple active"
           : "bg-violet hover:bg-secondary hover:text-dark-purple transition-all duration-300",
       bodyStyling: "bg-secondary text-dark-purple",
       description:
-        "Transforming Challenges into Opportunities at DeerHack. Be part of the solution, forging a brighter future for all.",
+        "Embrace Decentralization with DeerHack. Explore smart contracts, secure transactions, and reshape industries at the forefront of innovation.",
     },
+    // {
+    //   title: "Open Innovation",
+    //   svg: <OpenInnovationSVG height={25} width={25} />,
+    //   svgBody: <OpenInnovationNew height={50} width={50} />,
+    //   headStyling:
+    //     selectedTrack === "Open Innovation"
+    //       ? "bg-secondary text-dark-purple active"
+    //       : "bg-violet hover:bg-secondary hover:text-dark-purple transition-all duration-300",
+    //   bodyStyling: "bg-secondary text-dark-purple",
+    //   description:
+    //     "Transforming Challenges into Opportunities at DeerHack. Be part of the solution, forging a brighter future for all.",
+    // },
     {
       title: "Ed-Tech",
       svg: <EdTechSVG height={25} width={25} />,
