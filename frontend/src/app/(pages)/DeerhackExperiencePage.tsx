@@ -1,11 +1,19 @@
 "use client"
 import { useEffect, useRef, useState } from "react"
-import PlayButton from "../assets/images/sponsors/playbutton"
+import PlayButtonExpCard from "@/app/assets/images/PlayButtonExpCard"
+import PauseButtonExpCard from "@/app/assets/images/PauseButtonExpCard"
 import MuteButton from "../assets/images/sponsors/mutebutton"
-import WhiteEllipse from "../assets/images/sponsors/WhiteEllipse"
 import BigTopComa from "../assets/images/sponsors/BigTopComa"
 import ExpStars from "../assets/images/sponsors/expStars"
 import { cabinetExtraBold } from "../utils/fonts"
+import DeerExpCardFirst from "../assets/images/DeerExpCardFirst"
+import DeerExpCardSecond from "../assets/images/DeerExpCardSecond"
+import DeerExpCardThird from "../assets/images/DeerExpCardThird"
+import SamipLamsal from "../assets/images/sponsors/SamipLamsal"
+import NischalTamang from "../assets/images/sponsors/NischalTamang"
+import UnMuteButton from "../assets/images/sponsors/UnMuteButton"
+import { MIDDLEWARE_LOCATION_REGEXP } from "next/dist/lib/constants"
+import MalaDeep from "../assets/images/sponsors/MalaDeep"
 
 export default function ExperiencePage() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -15,13 +23,13 @@ export default function ExperiencePage() {
   const iframeRef = useRef<HTMLIFrameElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
 
-  const videoId = "eC5j9NO3Lmc" 
+  const videoId = "VGlzJgzTvWg" 
 
   const postCommand = (func: string, args: any[] = []) => {
     if (iframeRef.current?.contentWindow) {
       iframeRef.current.contentWindow.postMessage(
         JSON.stringify({ event: "command", func, args }),
-        "*"
+        "https://www.youtube-nocookie.com"
       )
     }
   }
@@ -30,14 +38,14 @@ export default function ExperiencePage() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (hasLoadedOnce) {
+          if (hasLoadedOnce) {
+            if (entry.isIntersecting) {
               postCommand("playVideo")
               setIsPlaying(true)
+            } else {
+              postCommand("pauseVideo")
+              setIsPlaying(false)
             }
-          } else {
-            postCommand("pauseVideo")
-            setIsPlaying(false)
           }
         })
       },
@@ -66,13 +74,13 @@ export default function ExperiencePage() {
   }
 
   const toggleMute = (e: React.MouseEvent) => {
-    e.stopPropagation()
+    e.stopPropagation() 
     setIsMuted(!isMuted)
   }
 
   return (
     <div className="bg-dark-purple min-h-screen">
-      <div className={`${cabinetExtraBold.className} headings w-full max-w-[1640px] mx-auto text-[1.875rem] md:text-[3.5rem] mb-[3rem] text-white px-4 md:px-10`}
+      <div className={`${cabinetExtraBold.className} headings w-full max-w-[1640px] mx-auto text-[1.875rem] md:text-[3.5rem] mb-[3rem] text-white px-4 md:px-10 pt-10`}
         style={{
           background: "linear-gradient(150.54deg,#6633CC 30.7% ,rgb(245, 193, 68, 1) 70.29%)",
           WebkitBackgroundClip: "text",
@@ -81,157 +89,220 @@ export default function ExperiencePage() {
         The DeerHack Experience
       </div>
 
-      <section className="text-white py-10 md:py-20 px-4 md:px-10 flex justify-center">
-        <div className="max-w-[1640px] w-full flex flex-col lg:flex-row gap-8">
+      <section className="text-white pb-20 px-4 md:px-10 flex justify-center">
+        <div className="max-w-[1640px] w-full flex flex-col lg:flex-row gap-8 items-start">
           
           <div 
             ref={containerRef}
-            className="w-full lg:w-[467px] h-[500px] md:h-[600px] lg:h-[694px] relative rounded-3xl overflow-hidden shadow-2xl bg-black group"
+            className="w-full lg:w-[467px] aspect-[9/16] relative rounded-3xl overflow-hidden shadow-2xl bg-black group shrink-0"
           >
-
-           <div 
-            className="absolute inset-0 w-full h-full cursor-pointer z-0"
-            onClick={togglePlay}
-            >
-
-{/*<iframe
-  ref={iframeRef}
-  className={`absolute top-1/2 left-1/2 pointer-events-none transition-opacity duration-500 ${hasLoadedOnce ? 'opacity-100' : 'opacity-0'}`}
-  style={{ 
-    width: '100%', 
-    height: '100%', 
-    border: 'none',
-    transform: 'translate(-50%, -50%) scale(1.5, 2.8)', 
-    transformOrigin: 'center',
-    objectFit: 'cover'
-  }}
-  src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${videoId}&iv_load_policy=3&disablekb=1`}
-  allow="autoplay; encrypted-media"
-/> */}
-
-            {<iframe
-              ref={iframeRef}
-              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full aspect-video pointer-events-none transition-opacity duration-500 ${hasLoadedOnce ? 'opacity-100' : 'opacity-0'}`}
-              style={{ 
-              border: 'none',
-               }}
-               src={`https://www.youtube.com/embed/${videoId}?enablejsapi=1&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${videoId}&iv_load_policy=3`}
-              allow="autoplay; encrypted-media"
-              />                }
-
-          {!hasLoadedOnce && (
-             <div className="absolute inset-0 flex items-center justify-center z-10">
-                  <div className="transition-transform group-hover:scale-110">
-                     <PlayButton isPlaying={false} />
-                   </div>
+           <div className="absolute inset-0 w-full h-full cursor-pointer z-0" onClick={togglePlay}>
+              
+              {hasLoadedOnce ? (
+                <iframe
+                  ref={iframeRef}
+                  className="absolute inset-0 w-full h-full pointer-events-none"
+                  style={{ border: 'none' }}
+                  src={`https://www.youtube-nocookie.com/embed/${videoId}?enablejsapi=1&autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&iv_load_policy=3`}
+                  allow="autoplay; encrypted-media"
+                />
+              ) : (
+                <div 
+                  className="absolute inset-0 w-full h-full bg-cover bg-center"
+                  style={{ backgroundImage: `url(https://img.youtube.com/vi/${videoId}/maxresdefault.jpg)` }}
+                >
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/10 transition-all">
+                    <div className="transition-transform group-hover:scale-110">
+                       <PlayButtonExpCard />
+                     </div>
+                  </div>
                 </div>
               )}
             </div>
 
-            <div className="absolute bottom-0 left-0 w-full h-[142px] z-10" style={{ background: 'rgba(0, 0, 0, 0.48)',}} />
-            
-            <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between z-20">
-              <div className="flex items-center">
-                <button onClick={togglePlay} className="flex items-center justify-center transition-all active:scale-95">
-                  <PlayButton isPlaying={isPlaying} />
-                </button>
-                <div className="ml-3 md:ml-4">
-                  <p className="font-extrabold text-lg md:text-2xl">Moments of Deerhack</p>
-                  <p className="text-sm opacity-80">2025</p>
+            <div className="absolute bottom-0 left-0 w-full z-20 bg-black/60 backdrop-blur-md border-t border-white/10">
+              <div className="flex items-center justify-between px-6 py-6 md:px-8">
+                <div className="flex items-center gap-4">
+                  <button onClick={togglePlay} className="flex items-center justify-center transition-all hover:scale-105 active:scale-95">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      {isPlaying ? <PauseButtonExpCard /> : <PlayButtonExpCard />}
+                    </div>
+                  </button>
+                  <div className="flex flex-col">
+                    <p className="font-extrabold text-lg md:text-xl leading-tight">Moments of Deerhack</p>
+                    <p className="text-xs md:text-sm opacity-60 font-medium text-white/70">2025</p>
+                  </div>
                 </div>
+        
+                <button onClick={toggleMute} className="transition-all hover:scale-110 active:scale-90 shrink-0">
+                  <div className="w-10 h-10 flex items-center justify-center text-white">
+                    { isMuted ? <UnMuteButton/>: <MuteButton />} 
+                  </div>
+                </button>
               </div>
-              <button onClick={toggleMute} className="transition-all active:scale-90">
-                <MuteButton isMuted={isMuted} />
-              </button>
             </div>
           </div>
 
+          <div className="flex-1 flex flex-col gap-6 self-stretch">
+            <div className="bg-[rgba(33,24,68,1)] p-6 md:p-10 rounded-[25px] flex-1 relative border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-xl">
+              <div className="flex items-center gap-8 md:gap-1 mb-4">
+                <div className="w-18 h-20 md:w-24 md:h-24 flex-shrink-0"><MalaDeep/></div>
+                <div>
+                  <h3 className="text-xl md:text-4xl font-bold leading-tight text-white">Mala Deep Upadhaya</h3>
+                  <p className="text-sm md:text-base opacity-60 text-white font-medium text-white/60">Mentor</p>
+                </div>
+                <div className="hidden md:block ml-auto w-6 md:w-12 md:w-16 opacity-40"><BigTopComa /></div>
+              </div>
+              <p className="mt-2 mb-5 md:text-lg font-bold text-white">
+                “Mentoring at DeerHack was an incredibly fulfilling experience. <span className="text-yellow-400">The participants brought great energy, creativity, and a genuine eagerness to learn,</span>,while the volunteers ensured everything ran smoothly with their constant dedication. The welcoming and collaborative environment made <span className="text-yellow-400">it easy to connect, share ideas, and build together</span>, it’s truly an inspiring community to be part of.”
+              </p>
 
-          <div className="flex-1 flex flex-col gap-6">
+              <div className="mt-6 text-yellow-500"><ExpStars /></div>
+            </div>
 
-  <div className="bg-[rgba(33,24,68,1)] p-6 md:p-10 rounded-[25px] min-h-[300px] relative border border-white/10 flex flex-col justify-between">
-    <div>
-      <div className="flex items-center gap-3 mb-5">
-        <div className="w-11 h-12 md:w-12 lg:w-20">
-          <WhiteEllipse />
-        </div>
-        <div>
-          <h3 className="text-xl md:text-[27.68px] font-cabinet-light font-extrabold leading-tight text-white">Alex Ford</h3>
-          <p className="text-xs opacity-60 text-white">CEO</p>
-        </div>
-        <div className="ml-auto w-8 md:w-16 lg:w-20 opacity-60">
-          <BigTopComa />
-        </div>
-      </div>
-      <p className="text-lg md:text-xl font-extrabold leading-relaxed text-white">
-        “ Hi i am Alex Ford the <span className="text-yellow-400">CEO of World Bank</span> I really enjoyed the deerhack 2025 and want to be a part of it next year <span className="text-yellow-400">DeerHack</span> is really the best hackathon”
-      </p>
-    </div>
-    <div className="mt-6 text-yellow-500 text-xl md:text-2xl">
-      <ExpStars />
-    </div>
-  </div>
+            <div className="hidden md:grid md:grid-cols-2 gap-6">
+              <div className="bg-[rgba(36,26,74)] p-6 md:p-8 rounded-[20px] border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-lg">
+                <div className="flex items-center gap-5 mb-4">
+                  <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0"><NischalTamang/></div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-bold text-white">Nischal Tamang</h4>
+                    <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-base md:text-lg font-bold text-white">
+                  “One of the best hackathons<span className="text-yellow-400"> and the event management was very good.</span>”
+                </p>
+                <div className="text-yellow-500"><ExpStars /></div>
+              </div>
 
+              <div className="bg-[rgba(36,26,74)] p-6 md:p-8 rounded-[20px] border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-lg">
+                <div className="flex items-center gap-5 mb-4">
+                  <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0"><SamipLamsal/></div>
+                  <div>
+                    <h4 className="text-lg md:text-xl font-extrabold text-white">Samip Lamsal</h4>
+                    <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
+                  </div>
+                </div>
+              <p className="mt-4 text-base md:text-lg font-bold text-white">
+                “ DeerHack was my third national hackathon<span className="text-yellow-400"> and by far the best organized and managed one I've attended. </span> ”
+              </p>
+                <div className="mt-5 text-yellow-500"><ExpStars /></div>
+              </div>
+            </div>
 
-  <div className="hidden md:grid md:grid-cols-2 gap-6">
-    
-
-    <div className="bg-[rgba(36,26,74)] opacity-[0.87] p-6 rounded-[12px] border border-white/10 flex flex-col justify-between">
-      <div>
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-12 h-12">
-            <WhiteEllipse />
-          </div>
-          <div>
-            <h4 className="text-lg font-extrabold text-white">Ryan Hood</h4>
-            <p className="text-[10px] opacity-60 text-white">Manager</p>
-          </div>
-        </div>
-        <p className="text-base md:text-lg font-extrabold leading-tight text-white">
-          “ Hi i am Ryan Hood <span className="text-yellow-400">Manager at Supabase</span> the deerhack 2025 is what i had never seen and want to be a part of it next year! ”
-        </p>
-      </div>
-      <div className="mt-4 text-yellow-500 text-sm">
-        <ExpStars />
-      </div>
-    </div>
-
-
-    <div className="bg-[rgba(36,26,74)] opacity-[0.87] p-6 rounded-[12px] border border-white/10 flex flex-col justify-between">
-      <div>
-        <div className="flex items-center gap-3 mb-4">
-          <div className="w-12 h-12">
-            <WhiteEllipse />
-          </div>
-          <div>
-            <h4 className="text-lg font-extrabold text-white">Amber Shorty</h4>
-            <p className="text-[10px] opacity-60 text-white">Product Manager</p>
+            <div 
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="bg-[rgb(102,51,204,0.78)] p-6 md:p-8 rounded-[25px] flex justify-center items-center hover:bg-purple-600 transition-all cursor-pointer group border border-white/5"
+            >
+              <p className="text-base md:text-xl font-semibold text-center text-white">
+                Want to create your own experience? 
+                <span className="text-yellow-400 font-bold underline ml-2 group-hover:text-white transition-colors">Join Now!</span>
+              </p>
+            </div>
           </div>
         </div>
-        <p className="text-base md:text-lg font-extrabold leading-tight text-white">
-          “ Hi i am Amber Shorty, <span className="text-yellow-400">PM at Google</span>. The atmosphere at <span className="text-yellow-400">DeerHack</span> was absolutely amazing! ”
-        </p>
-      </div>
-      <div className="mt-4 text-yellow-500 text-sm">
-        <ExpStars />
-      </div>
-    </div>
-
-  </div>
-<div 
-  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-  className="bg-[rgb(102,51,204,0.78)] p-6 md:p-8 rounded-[25px] flex justify-center items-center hover:bg-purple-600 transition-all cursor-pointer group"
->
-  <p className="text-base md:text-xl font-medium text-center text-white">
-    Want to create your own experience? 
-    <span className="text-yellow-400 font-bold underline ml-1 group-hover:text-white transition-colors">
-      Join Now!
-    </span>
-  </p>
-</div>
-</div>
-</div>
       </section>
     </div>
   )
 }
+
+
+/* OLD CODE - FOR BACKUP IN EMERGENCY */
+
+
+
+/*
+"use client"
+import { cabinetExtraBold } from "../utils/fonts"
+import leaf_right_deerhack_2025 from "@/app/assets/images/leaf_right_deerhack_2025.svg";
+import Image from "next/image"
+import ExperienceCard from "../sections/Experience/ExperienceCard"
+import { useState, useRef, useEffect } from "react"
+
+export default function ExperiencePage() {
+  const [activeCard, setActiveCard] = useState(0)
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+
+  const handleDotClick = (index: number) => {
+    setActiveCard(index)
+
+    if (scrollContainerRef.current) {
+      const cardWidth = scrollContainerRef.current.clientWidth
+      scrollContainerRef.current.scrollTo({
+        left: index * cardWidth,
+        behavior: "smooth",
+      })
+    }
+  }
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (scrollContainerRef.current) {
+        const scrollPosition = scrollContainerRef.current.scrollLeft
+        const cardWidth = scrollContainerRef.current.clientWidth
+        const newIndex = Math.round(scrollPosition / cardWidth)
+
+        if (newIndex !== activeCard && newIndex >= 0 && newIndex <= 2) {
+          setActiveCard(newIndex)
+        }
+      }
+    }
+
+    const scrollContainer = scrollContainerRef.current
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", handleScroll)
+      return () => scrollContainer.removeEventListener("scroll", handleScroll)
+    }
+  }, [activeCard])
+
+  return (
+    <div className="bg-dark-purple flex flex-col py-20 overflow-hidden relative">
+        
+        <Image
+          src={leaf_right_deerhack_2025}
+          alt="leaf"
+          height={250}
+          width={250}
+          className="absolute p-0 m-0 right-[-30px]  z-10 hidden xl:block -rotate-12"
+        />
+
+      <div className={`${cabinetExtraBold.className} headings w-[17.875rem] md:w-[45rem] md:h-[6rem] text-[1.875rem] md:text-[3.5rem] mb-[3rem]`}>
+        The DeerHack Experience
+      </div>
+
+      <div className="w-full flex flex-col">
+        <div
+          ref={scrollContainerRef}
+          className="w-full overflow-x-auto scroll-smooth snap-x snap-mandatory no-scrollbar p-2 lg:flex lg:justify-center"
+        >
+          <ExperienceCard activeIndex={activeCard} />
+        </div>
+
+        
+        <div className="flex justify-center mt-6 space-x-2  lg:hidden">
+          {[0, 1, 2].map((index) => (
+            <button
+              key={index}
+              onClick={() => handleDotClick(index)}
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                activeCard === index ? "bg-white scale-100" : "bg-white/40 hover:bg-white/60"
+              }`}
+              aria-label={`View experience card ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <Image
+        src={leaf_right_deerhack_2025}
+        alt="leaf"
+        height={250}
+        width={250}
+        style={{ transform: "scaleX(-1)" }}
+        className="absolute left-1 bottom-0 hidden lg:block"
+      />
+    </div>
+  )
+}  
+  
+*/

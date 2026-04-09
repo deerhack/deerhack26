@@ -1,0 +1,16 @@
+import React from 'react'
+
+function UnMuteButton() {
+  return (
+    <div>
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="18.975" cy="18.975" r="18.975" fill="#110C24"/>
+<path d="M22 27.5H19.2656L19.1162 27.3203L16.7656 24.5H13V14.5H16.7422L19.0928 11.209L19.2432 11H22V27.5ZM17.4072 15.291L17.2568 15.5H14V23.5H17.2344L17.3838 23.6797L19.7344 26.5H21V12H19.7578L17.4072 15.291Z" fill="#FBF7FF"/>
+<line x1="10.3536" y1="11.6464" x2="26.3536" y2="27.6464" stroke="white"/>
+</svg>
+
+    </div>
+  )
+}
+
+export default UnMuteButton
