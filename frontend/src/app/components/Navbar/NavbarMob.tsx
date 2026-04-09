@@ -10,6 +10,7 @@ import hamburgerIcon from "@/app/assets/icons/hamburger.svg";
 import hamburgerBorder from "@/app/assets/icons/rounded.svg";
 
 import organizersIcon from "@/app/assets/icons/organizers.svg";
+import homeIcon from "@/app/assets/icons/homeIcon.svg";
 import legacyIcon from "@/app/assets/icons/legacy.svg";
 import judgingIcon from "@/app/assets/icons/judging-criteria.svg";
 import cocIcon from "@/app/assets/icons/code-of-conduct.svg";
@@ -17,6 +18,7 @@ import selectionIcon from "@/app/assets/icons/selection-criteria.svg";
 import fbIcon from "@/app/assets/icons/facebook.svg";
 import instaIcon from "@/app/assets/icons/instagram.svg";
 import linkedinIcon from "@/app/assets/icons/linkedin.svg";
+import SidebarButton from "./SidebarButton";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +39,7 @@ const Navbar = () => {
         {!isOpen && (
           <div
             onClick={() => setIsOpen(true)}
-            className="fixed left-0 top-6 z-[60] cursor-pointer animate-in fade-in duration-300"
+            className="fixed left-0 top-10 z-[60] cursor-pointer animate-in fade-in duration-300"
           >
             <div className={btnContainer}>
               <Image
@@ -87,7 +89,6 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Sidebar Content */}
           <div
             className={`flex flex-col h-full w-full p-8 md:p-12 pt-12 transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0"}`}
           >
@@ -104,16 +105,17 @@ const Navbar = () => {
               </div>
             </div>
 
-            {/* <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
-              <SidebarButton
+            <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
+              <SidebarButton href="/" route="/" label="Home" icon={homeIcon} />
+              {/* <SidebarButton
                 href="/organizers"
                 label="Organizers"
                 icon={organizersIcon}
               />
-              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
-            </nav> */}
+              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} /> */}
+            </nav>
 
-            <div className="flex flex-col gap-4">
+            <div className="mt-10 flex flex-col gap-4">
               <div className="relative flex items-center mb-1">
                 <span className="text-[11px] text-gray-400 pr-3 uppercase tracking-widest font-bold">
                   Resources
@@ -129,11 +131,13 @@ const Navbar = () => {
                 href="/code-of-conduct"
                 label="Code of Conduct"
                 icon={cocIcon}
+                route="/code-of-conduct"
               />
               <SidebarButton
                 href="/selection-criteria"
                 label="Selection Criteria"
                 icon={selectionIcon}
+                route="/selection-criteria"
               />
             </div>
 
@@ -164,28 +168,6 @@ const Navbar = () => {
           />
         )}
       </div>
-
-      <div className="hidden lg:flex fixed top-8 left-1/2 -translate-x-1/2 z-50 items-center justify-between w-[95%] max-w-7xl">
-        <Link
-          href="/"
-          className="hover:scale-105 transition-transform bg-[#110C24CC] p-2 rounded-2xl border border-white/10 backdrop-blur-md"
-        >
-          <Image src={DeerhackLogo} alt="Logo" width={45} height={45} />
-        </Link>
-
-        <div
-          className={`flex items-center gap-8 bg-[#110C24CC] backdrop-blur-md border border-[#646265] px-12 py-4 rounded-full shadow-2xl ${cabinetMedium.className}`}
-        >
-          <NavLink href="/organizers">Organizers</NavLink>
-          <NavLink href="/legacy">Legacy</NavLink>
-          <NavLink href="/judging-criteria">Judging</NavLink>
-          <NavLink href="/code-of-conduct">Conduct</NavLink>
-        </div>
-
-        <div className="bg-[#110C24CC] backdrop-blur-md border border-[#646265] p-2 px-4 rounded-2xl shadow-2xl">
-          <Counter_wrapper />
-        </div>
-      </div>
     </nav>
   );
 };
@@ -206,25 +188,6 @@ const NavLink = ({
   </Link>
 );
 
-const SidebarButton = ({
-  href,
-  label,
-  icon,
-}: {
-  href: string;
-  label: string;
-  icon: any;
-}) => (
-  <Link
-    href={href}
-    className="flex items-center gap-5 px-6 py-5 rounded-2xl bg-[#1A1438] hover:bg-[#251C4D] border border-white/5 transition-all text-white/90 group"
-  >
-    <div className="w-6 h-6 relative flex-shrink-0 opacity-70 group-hover:opacity-100 transition-opacity">
-      <Image src={icon} alt={label} width={24} height={24} />
-    </div>
-    <span className="text-base md:text-lg font-medium">{label}</span>
-  </Link>
-);
 
 const SocialLink = ({
   href,
