@@ -9,6 +9,7 @@ export default function CardMini({
   customClass,
   border,
   className = "",
+  isExtra = false,
 }: {
   svg: ReactElement;
   title: string;
@@ -16,6 +17,7 @@ export default function CardMini({
   customClass?: string;
   border?: boolean;
   className?: string;   // ← pass any height/sizing class from outside
+  isExtra?: boolean;
 }) {
   return (
     <div
@@ -35,7 +37,7 @@ export default function CardMini({
         </p>
         <CountUpAnimation
           target={numbers}
-          isExtra={false}
+          isExtra={isExtra}
           className="text-[45px] text-[rgba(245,193,68,1)]"
           time={4}
         />

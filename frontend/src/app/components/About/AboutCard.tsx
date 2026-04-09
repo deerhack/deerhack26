@@ -134,7 +134,7 @@ export default function AboutCard({
         </div>
 
         <div
-          className={` text-magnolia text-[12px] md:text-base text-left lg:text-[20px] ${satoshiRegular.className} leading-5 tracking-tighter md:tracking-wide md:pr-24`}
+          className={` text-magnolia text-[12px] md:text-[16px] text-left lg:text-[20px] ${satoshiRegular.className} leading-7 sm:leading-8 tracking-tighter md:tracking-wide md:pr-24 `}
         >
           <p>{description}</p>
         </div>

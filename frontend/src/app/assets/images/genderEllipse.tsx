@@ -35,10 +35,15 @@ export default function GenderEllipseSVG({
   }, [hasAnimated]);
 
   useEffect(() => {
-    if (hasAnimated) {
-      const id = setTimeout(() => setShowChart(true), 50);
-      return () => clearTimeout(id);
-    }
+    if (!hasAnimated) return;
+    let raf1: number, raf2: number;
+    raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => setShowChart(true));
+    });
+    return () => {
+      cancelAnimationFrame(raf1);
+      cancelAnimationFrame(raf2);
+    };
   }, [hasAnimated]);
 
   const handleToggle = (gender: "male" | "female") => {
@@ -75,6 +80,8 @@ export default function GenderEllipseSVG({
   const options: ChartOptions<"doughnut"> = {
     animation: {
       duration: 2000,
+      animateRotate: true,
+      animateScale: true,
     },
     rotation: 90,
     maintainAspectRatio: false,
@@ -108,9 +115,11 @@ export default function GenderEllipseSVG({
 
   return (
     <div ref={containerRef} style={{ width, height }} className={className}>
-      {showChart && (
-        <Doughnut key="animated" ref={chartRef} data={data} options={options} />
-      )}
+      {showChart &&
+        containerRef.current &&
+        containerRef.current.getBoundingClientRect().width > 0 && (
+          <Doughnut key="animated" ref={chartRef} data={data} options={options} />
+        )}
     </div>
   );
 }
