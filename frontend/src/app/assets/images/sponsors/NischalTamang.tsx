@@ -3,7 +3,7 @@ import React from 'react'
 function NischalTamang() {
   return (
     <div>
-      <svg width="68" height="68" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='rounded rounded-full'>
+      <svg width="68" height="68" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='rounded-full'>
 <rect width="200" height="200" fill="url(#pattern0_3_3)"/>
 <defs>
 <pattern id="pattern0_3_3" patternContentUnits="objectBoundingBox" width="1" height="1">
