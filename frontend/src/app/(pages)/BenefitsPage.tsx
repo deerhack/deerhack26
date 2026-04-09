@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function BenefitsPage() {
   return (
-    <div className=" bg-dark-purple flex flex-col py-20  overflow-hidden relative">
+    <div className=" bg-dark-purple flex flex-col py-20 overflow-hidden relative">
       <div className="relative">
         <Image
           src={leaf_prizes_right}
