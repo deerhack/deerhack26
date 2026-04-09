@@ -8,21 +8,17 @@ import DataScienceSVG from "@/app/assets/icons/DataScience";
 import DataScienceNew from "@/app/assets/icons/DataScienceNew";
 import BlockchainSVG from "@/app/assets/icons/Blockchain";
 import BlockchainNew from "@/app/assets/icons/BlockChainNew";
-import OpenInnovationSVG from "@/app/assets/icons/OpenInnovation";
-import OpenInnovationNew from "@/app/assets/icons/OpenInnovationNew";
 import EdTechSVG from "@/app/assets/icons/EdTech";
 import EdTechNew from "@/app/assets/icons/EdTechNew";
 import EnvironmentTrackSVG from "@/app/assets/icons/EnvironmentTrack";
 import EnvironmentTrackBodySVG from "@/app/assets/icons/EnvironmentTrackBody";
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 const TracksCard = () => {
   const [selectedTrack, setSelectedTrack] = useState<string>(
-    "Interactive Technology"
+    "Interactive Technology",
   );
   const [animKey, setAnimKey] = useState(0);
-
-  const autoSwitchTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const trackData = [
     {
@@ -90,10 +86,11 @@ const TracksCard = () => {
       svg: <EnvironmentTrackSVG height={25} width={25} />,
       svgBody: <EnvironmentTrackBodySVG height={50} width={50} />,
       headStyling:
-    selectedTrack === "Environment"
-      ? `gradient-bg text-magnolia active invert`
-      : `${styles.envAnimate} text-magnolia hover:opacity-90 transition-opacity duration-500`,
-      bodyStyling: "gradient-bg text-magnolia invert transition-all duration-500",
+        selectedTrack === "Environment"
+          ? `gradient-bg text-magnolia active invert`
+          : `${styles.envAnimate} text-magnolia hover:opacity-90 transition-opacity duration-500`,
+      bodyStyling:
+        "gradient-bg text-magnolia invert transition-all duration-500",
       description:
         "Think Green, Code Clean at DeerHack. Dive into the world of climate-positive innovation. Turn environmental challenges into elegant, scalable, and sustainable tech solutions.",
     },
@@ -148,10 +145,7 @@ const TracksCard = () => {
       {trackData.map(
         (track, index) =>
           selectedTrack === track.title && (
-            <div
-              key={animKey}
-              className="animate-track-fade-in"
-            >
+            <div key={animKey} className="animate-track-fade-in">
               <TracksBodyCard
                 key={index}
                 svg={track.svgBody}
@@ -160,7 +154,7 @@ const TracksCard = () => {
                 bodyStyling={track.bodyStyling}
               />
             </div>
-          )
+          ),
       )}
     </div>
   );
