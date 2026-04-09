@@ -13,7 +13,7 @@ const AboutTheEventCards = () => {
     },
     software: {
       svg: <CodeSVG height={40} width={40} />,
-      title: "Software Club",
+      title: "DWIT Software Club",
       description:
         "The Software Club of Deerwalk Institute of Technology is a student-led organization dedicated to promoting a culture of technology, innovation, and collaboration through workshops and events. Additionally, it is the core team responsible for building Deerhack. Whether it's late-night debugging sessions or organizing large-scale hackathons, we're focused on bridging the gap between classroom theory and the grit of the tech industry.",
     },
