@@ -34,11 +34,11 @@ const TracksCard = () => {
         "Enter the World of IoT with DeerHack. Explore connectivity, innovation, and the future of global interaction.",
     },
     {
-      title: "Machine Learning / AI",
+      title: "Machine Learning / Artificial Intelligence",
       svg: <DataScienceSVG height={25} width={25} />,
       svgBody: <DataScienceNew height={50} width={50} />,
       headStyling:
-        selectedTrack === "Machine Learning / AI"
+        selectedTrack === "Machine Learning / Artificial Intelligence"
           ? "bg-purpures text-magnolia active"
           : "bg-violet hover:bg-purpures hover:text-magnolia transition-all duration-300",
       bodyStyling: "bg-purpures text-magnolia",
@@ -127,7 +127,7 @@ const TracksCard = () => {
   // }, [selectedTrack]);
 
   return (
-    <div className="lg:w-[70.36rem] mx-5 lg:mx-auto transition-all duration-300 ease-in">
+    <div className="lg:w-[69.25rem] mx-5 lg:mx-auto transition-all duration-300 ease-in">
       <div
         className={`flex lg:justify-center items-start text-magnolia lg:gap-[12px] md:gap-6 gap-3 overflow-x-auto no-scrollbar justify-evenly px-3`}
       >
