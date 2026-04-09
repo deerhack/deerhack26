@@ -145,8 +145,8 @@ export default function ExperiencePage() {
 
           <div className="h-full flex-1 flex flex-col gap-7">
             <div className="bg-[rgba(33,24,68,1)] p-6 md:p-10 rounded-[25px] flex-1 relative border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-xl">
-              <div className="flex items-center gap-8 md:gap-1 mb-4">
-                <div className="w-18 h-20 md:w-24 md:h-24 flex-shrink-0"><MalaDeep/></div>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0"><MalaDeep/></div>
                 <div>
                   <h3 className="text-xl md:text-4xl font-bold leading-tight text-white">Mala Deep Upadhaya</h3>
                   <p className="text-sm md:text-base opacity-60 text-white font-medium text-white/60">Mentor</p>
@@ -157,7 +157,7 @@ export default function ExperiencePage() {
                 “Mentoring at DeerHack was an incredibly fulfilling experience. <span className="text-yellow-400">The participants brought great energy, creativity, and a genuine eagerness to learn,</span>,while the volunteers ensured everything ran smoothly with their constant dedication. The welcoming and collaborative environment made <span className="text-yellow-400">it easy to connect, share ideas, and build together</span>, it’s truly an inspiring community to be part of.”
               </p>
 
-              <div className="mt-6 text-yellow-500"><ExpStars /></div>
+              <div className="mt-2 text-yellow-500"><ExpStars /></div>
             </div>
 
             <div className="hidden md:grid md:grid-cols-2 gap-6">
