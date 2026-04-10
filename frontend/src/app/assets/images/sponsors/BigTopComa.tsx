@@ -1,0 +1,11 @@
+import React from 'react'
+
+function BigTopComa() {
+  return (
+    <svg viewBox="0 0 97 80" fill="none" xmlns="http://www.w3.org/2000/svg" className='w-full h-full'>
+      <path d="M55.09 80C72.2787 78.7917 96.9864 76.0464 97 42.3704V0H58.6443V45.3333H71.3802C72.187 57.4381 62.2231 60.5637 51.3879 62.963L55.09 80ZM3.70233 80C20.891 78.7917 45.5987 76.0463 45.6122 42.3704V0H7.25642V45.3333H19.9923C20.7993 57.4381 10.8352 60.5637 0 62.963L3.70233 80Z" fill="#FCF7FF" fillOpacity="0.62"/>
+    </svg>
+  )
+}
+
+export default BigTopComa

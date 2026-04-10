@@ -20,8 +20,9 @@ export default function StatsSection() {
           svg={<ProjectsSVG />}
           title="Total Projects"
           border={true}
-          numbers={33}
-          className="h-[200px]"          
+          numbers={50}
+          className="h-[200px]"    
+          isExtra={true}      
         />
       </div>
       <div className="w-80 lg:w-[24rem]">
