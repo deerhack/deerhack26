@@ -143,56 +143,56 @@ export default function ExperiencePage() {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col gap-6 self-stretch">
+          <div className="h-full flex-1 flex flex-col gap-7">
             <div className="bg-[rgba(33,24,68,1)] p-6 md:p-10 rounded-[25px] flex-1 relative border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-xl">
-              <div className="flex items-center gap-8 md:gap-1 mb-4">
-                <div className="w-18 h-20 md:w-24 md:h-24 flex-shrink-0"><MalaDeep/></div>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0"><MalaDeep/></div>
                 <div>
                   <h3 className="text-xl md:text-4xl font-bold leading-tight text-white">Mala Deep Upadhaya</h3>
                   <p className="text-sm md:text-base opacity-60 text-white font-medium text-white/60">Mentor</p>
                 </div>
-                <div className="hidden md:block ml-auto w-6 md:w-12 md:w-16 opacity-40"><BigTopComa /></div>
+                <div className="hidden md:block ml-auto w-6 md:w-12 opacity-40"><BigTopComa /></div>
               </div>
-              <p className="mt-2 mb-5 md:text-lg font-bold text-white">
+              <p className="mt-2 mb-5 md:text-base font-bold text-white">
                 “Mentoring at DeerHack was an incredibly fulfilling experience. <span className="text-yellow-400">The participants brought great energy, creativity, and a genuine eagerness to learn,</span>,while the volunteers ensured everything ran smoothly with their constant dedication. The welcoming and collaborative environment made <span className="text-yellow-400">it easy to connect, share ideas, and build together</span>, it’s truly an inspiring community to be part of.”
               </p>
 
-              <div className="mt-6 text-yellow-500"><ExpStars /></div>
+              <div className="mt-2 text-yellow-500"><ExpStars /></div>
             </div>
 
             <div className="hidden md:grid md:grid-cols-2 gap-6">
-              <div className="bg-[rgba(36,26,74)] p-6 md:p-8 rounded-[20px] border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-lg">
-                <div className="flex items-center gap-5 mb-4">
+              <div className="min-h-[261px] bg-[rgba(36,26,74)] p-6 md:p-8 rounded-[20px] border border-white/10 border-t-2 border-t-yellow-400 flex flex-col items-start justify-center shadow-lg gap-5">
+                <div className="flex items-center gap-5">
                   <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0"><NischalTamang/></div>
                   <div>
                     <h4 className="text-lg md:text-xl font-bold text-white">Nischal Tamang</h4>
                     <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
                   </div>
                 </div>
-                <p className="mt-4 text-base md:text-lg font-bold text-white">
-                  “One of the best hackathons<span className="text-yellow-400"> and the event management was very good.</span>”
+                <p className="text-base md:text-base font-bold text-white mb-2">
+                  “One of the best hackathons<span className="text-yellow-400"> and the event management was very good</span> and truly exceeded all expectations.”
                 </p>
                 <div className="text-yellow-500"><ExpStars /></div>
               </div>
 
-              <div className="bg-[rgba(36,26,74)] p-6 md:p-8 rounded-[20px] border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-between shadow-lg">
-                <div className="flex items-center gap-5 mb-4">
+              <div className="min-h-[261px] bg-[rgba(36,26,74)] p-6 md:p-8 rounded-[20px] border border-white/10 border-t-2 border-t-yellow-400 flex flex-col justify-center shadow-lg gap-5">
+                <div className="flex items-center gap-5">
                   <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0"><SamipLamsal/></div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-extrabold text-white">Samip Lamsal</h4>
+                    <h4 className="text-lg md:text-xl font-bold text-white">Samip Lamsal</h4>
                     <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
                   </div>
                 </div>
-              <p className="mt-4 text-base md:text-lg font-bold text-white">
+                <p className="text-base md:text-base font-bold text-white mb-2">
                 “ DeerHack was my third national hackathon<span className="text-yellow-400"> and by far the best organized and managed one I've attended. </span> ”
               </p>
-                <div className="mt-5 text-yellow-500"><ExpStars /></div>
+                <div className="text-yellow-500"><ExpStars /></div>
               </div>
             </div>
 
             <div 
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="bg-[rgb(102,51,204,0.78)] p-6 md:p-8 rounded-[25px] flex justify-center items-center hover:bg-purple-600 transition-all cursor-pointer group border border-white/5"
+              className="bg-[rgb(102,51,204,0.78)] p-6 md:p-6 rounded-[25px] flex justify-center items-center hover:bg-purple-600 transition-all cursor-pointer group border border-white/5"
             >
               <p className="text-base md:text-xl font-semibold text-center text-white">
                 Want to create your own experience? 
