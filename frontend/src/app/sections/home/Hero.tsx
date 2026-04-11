@@ -10,77 +10,50 @@ import Flicker from "@/app/components/Flicker/flicker";
 import { useState, useCallback } from "react";
 
 
-
 const Hero = () => {
   const [isGlowing, setIsGlowing] = useState(true);
 
-const handleGlowChange = useCallback((allGlowing: boolean) => {
-  setIsGlowing(allGlowing);
-}, []);
+  const handleGlowChange = useCallback((allGlowing: boolean) => {
+    setIsGlowing(allGlowing);
+  }, []);
+  
   return (
     <div
-      className={` ${styles.hero_background_container} flex justify-center w-full `}
+      className={`${styles.hero_background_container} flex justify-center items-center w-full min-h-screen`}
       id="hero_container"
     >
-    {/*Original div --> <div className={` px-10 py-10 lg:py-8 lg:px-14 text-center  rounded-3xl border-2 border-secondary  absolute lg:top-48 lg:w-[427px] lg:h-[447px] w-[304px] h-[319px] top-48 ${styles.muted_color} md:w-[500px] md:h-[500px] md:top-72 `}> */}
-   <div
-  className={`px-10 py-10 lg:py-8 lg:px-14 text-center rounded-3xl absolute lg:top-60 lg:w-[427px] w-[304px] top-[260px] sm:top-48 ${styles.muted_color} md:w-[500px] h-fit md:top-72`}
-  style={{
-    border: isGlowing ? "2px solid #FFB401" : "2px solid #B98402",
-    transition: "border 0.1s ease, box-shadow 0.1s ease",
-    boxShadow: isGlowing
-      ? "0 0 10px rgba(245,193,68,0.9), inset 0 0 10px rgba(102,51,204,0.8)"
-      : "0 0 6px rgba(245,193,68,0.2), inset 0 0 6px rgba(102,51,204,0.2)",
-  }}
-
->
-   <Flicker onGlowChange={handleGlowChange} />
-    <p
-          className={`  text-2xl md:text-4xl lg:text-3xl font-bold text-center text-heropage-gradient ${cabinetBold.className}`}
-        >
-             12th - 14th June
+      <div
+        className={`px-10 py-10 lg:py-8 lg:px-14 text-center rounded-3xl w-[304px] sm:w-[427px] md:w-[500px] h-fit ${styles.muted_color}`}
+        style={{
+          border: isGlowing ? "2px solid #FFB401" : "2px solid #B98402",
+          transition: "border 0.1s ease, box-shadow 0.1s ease",
+          boxShadow: isGlowing
+            ? "0 0 10px rgba(245,193,68,0.9), inset 0 0 10px rgba(102,51,204,0.8)"
+            : "0 0 6px rgba(245,193,68,0.2), inset 0 0 6px rgba(102,51,204,0.2)",
+        }}
+      >
+        <Flicker onGlowChange={handleGlowChange} />
+        
+        <p className={`text-2xl md:text-4xl lg:text-3xl font-bold text-center text-heropage-gradient ${cabinetBold.className}`}>
+          12th - 14th June
         </p>
+        
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
-        {/* <div
-          className="apply-button"
-          data-hackathon-slug="deerhack24"
-          data-button-theme="light"
-          style={{ height: "44px", width: "312px" }}
-        ></div> */}
-         <Link
-          href="https://deerhack-25.devfolio.co/"
-          className="w-fit mx-auto"
-          target="_blank"
-        >
-          {/* <div className="flex flex-row justify-center items-center gap-2 py-3 px-5 bg-[#3670FF] w-[228px] h-[46px] md:w-[350px] md:h-[60px] lg:w-[321px] lg:h-[61px] rounded-md text-white mx-auto mt-9 transform transition-transform duration-300 hover:scale-105">
-            <Devfolio />
-            <p className={`text-white ${cabinetMedium.className}  text-[15px] md:text-xl lg:text-[23px] text-bold  `}>
-              Explore With Devfolio
-            </p>
-          </div> */}
-            {/* <div className="flex flex-row w-[182px] h-[47px] lg:w-[256px] lg:h-[67px]  md:w-[280px] md:h-[60px] justify-center items-center gap-2 p-4 rounded-xl text-black mx-auto mt-7 hover:bg-[#FACA16] bg-[#FFBF00] transition-ease in out duration-200 transform transition-transform hover:scale-105">
-            <p className={`text-black ${satoshiBlack.className} text-bold text-xs md:text-xl lg:text-xl `}>
-              Pre-Register Now
-            </p>
-          </div> */}
-          
-        </Link>
-
+        
         <Link
           href="https://discord.com/invite/56PAU7sBgZ"
           className="inline-block"
           target="_blank"
         >
-          <div className="flex flex-row w-[182px] h-[47px] lg:w-[256px] lg:h-[67px]  md:w-[280px] md:h-[60px] justify-center items-center gap-2 p-4 border-4 border-grape hover:bg-transparent  rounded-xl text-white mx-auto mt-7 bg-grape">
+          <div className="flex flex-row w-[182px] h-[47px] lg:w-[256px] lg:h-[67px] md:w-[280px] md:h-[60px] justify-center items-center gap-2 p-4 border-4 border-grape hover:bg-transparent rounded-xl text-white mx-auto mt-7 bg-grape">
             <DiscordHero />
-            <p className={`text-white ${cabinetBold.className} text-bold text-xs md:text-xl lg:text-xl `}>
+            <p className={`text-white ${cabinetBold.className} text-bold text-xs md:text-xl lg:text-xl`}>
               Join Our Discord!
             </p>
           </div>
-          </Link>
+        </Link>
       </div>
-      </div>
-    
+    </div>
   );
 };
 export default Hero;
