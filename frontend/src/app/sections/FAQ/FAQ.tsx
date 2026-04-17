@@ -150,7 +150,7 @@ const Faq = () => {
         </div>
         <div
           ref={containerRef}
-          className="flex flex-row  mx-auto static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto md:overflow-hidden no-scrollbar md:mb-20 mb-8 "
+          className="flex flex-row  mx-auto static sm:w-[70%] md:w-[70%] w-[90%] md:flex-col overflow-x-auto md:overflow-hidden no-scrollbar md:mb-[1px] "
         >
           {sections.map((section, index) => (
             <FAQSectionTitle
