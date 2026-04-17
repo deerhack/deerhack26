@@ -53,6 +53,9 @@ const NavbarPC = () => {
                       <li className="pt-4 px-6 mb-4">
                         <Link href="/code-of-conduct" className="hover:text-secondary">Code Of Conduct</Link>
                       </li>
+                      <li className="pt-4 px-6 mb-4">
+                        <Link href="/judging-criteria" className="hover:text-secondary">Judging Criteria</Link>
+                      </li>
                     </ul>
                   </div>
                 )}
