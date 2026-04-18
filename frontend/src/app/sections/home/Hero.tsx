@@ -3,7 +3,7 @@ import DiscordHero from "@/app/assets/icons/DiscordHero";
 import Devfolio from "@/app/assets/icons/Devfolio"; 
 import styles from "./styles.module.css";
 import DeerHack26Logo from "@/app/assets/icons/Deerhack26";
-import { cabinetBold, cabinetMedium, satoshiBlack, satoshiBold } from "@/fonts";
+import { cabinetBold,cabinetExtraBold, cabinetMedium, satoshiBlack, satoshiBold } from "@/fonts";
 import Link from "next/link";
 // import { useState, useEffect } from "react";
 import Flicker from "@/app/components/Flicker/flicker";
@@ -39,19 +39,31 @@ const Hero = () => {
         </p>
         
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
-        
-        <Link
-          href="https://discord.com/invite/56PAU7sBgZ"
-          className="inline-block"
-          target="_blank"
-        >
-          <div className="flex flex-row w-[182px] h-[47px] lg:w-[256px] lg:h-[67px] md:w-[280px] md:h-[60px] justify-center items-center gap-2 p-4 border-4 border-grape hover:bg-transparent rounded-xl text-white mx-auto mt-7 bg-grape">
-            <DiscordHero />
-            <p className={`text-white ${cabinetBold.className} text-bold text-xs md:text-xl lg:text-xl`}>
-              Join Our Discord!
-            </p>
-          </div>
-        </Link>
+        <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7 w-full">
+          <Link 
+            href="https://forms.gle/2dhBc9DEN5a43qVY9"
+            className="w-full flex justify-center items-center"
+            target="_blank"
+          >
+            <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[80%] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary">
+<p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl transition-transform duration-200 hover:scale-110`}>
+                Pre-Register Now
+              </p>
+            </div>
+          </Link>
+          <Link 
+            href="https://discord.com/invite/56PAU7sBgZ"
+            className="inline-block"
+            target="_blank"
+          >
+            <div className="flex flex-row w-[175px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[238.30857849121094px] justify-center items-center gap-2 px-4 lg:px-6 py-3 border-[1px] border-magnolia  hover:bg-[#6633CCD9]  transition-all duration-150 rounded-xl text-white bg-[#6633CC2E]">
+              <DiscordHero className="w-6 h-6 lg:w-[30px] lg:h-[30px]" />
+              <p className={`text-white ${satoshiBold.className} text-xs md:text-xl lg:text-[17px]`}>
+                Join Our Discord
+              </p>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

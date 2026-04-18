@@ -16,50 +16,8 @@ export default function GenderEllipseSVG({
 }): ReactElement {
   const [visible, setVisible] = useState({ male: true, female: true });
   const [hasAnimated, setHasAnimated] = useState(false);
-  const [showChart, setShowChart] = useState(false);
   const chartRef = useRef<ChartJS<"doughnut">>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (containerRef.current) observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, [hasAnimated]);
-
-  useEffect(() => {
-    if (!hasAnimated) return;
-    let raf1: number, raf2: number;
-    raf1 = requestAnimationFrame(() => {
-      raf2 = requestAnimationFrame(() => setShowChart(true));
-    });
-    return () => {
-      cancelAnimationFrame(raf1);
-      cancelAnimationFrame(raf2);
-    };
-  }, [hasAnimated]);
-
-  const handleToggle = (gender: "male" | "female") => {
-    const chart = chartRef.current;
-    if (!chart) return;
-
-    if (gender === "male") {
-      chart.toggleDataVisibility(0);
-      setVisible((prev) => ({ ...prev, male: !prev.male }));
-    } else {
-      chart.toggleDataVisibility(1);
-      chart.toggleDataVisibility(2);
-      setVisible((prev) => ({ ...prev, female: !prev.female }));
-    }
-    chart.update();
-  };
 
   const data = {
     labels: ["Male", "Female", "+10%"],
@@ -77,9 +35,53 @@ export default function GenderEllipseSVG({
     ],
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  useEffect(() => {
+    if (!hasAnimated) return;
+    const chart = chartRef.current;
+    if (!chart) return;
+
+    chart.config.options!.animation = {
+      duration: 1500,
+      easing: "easeInOutQuart",
+      animateRotate: true,
+      animateScale: true,
+    };
+    chart.data = data;
+    chart.update();
+  }, [hasAnimated]);
+
+  const handleToggle = (gender: "male" | "female") => {
+    const chart = chartRef.current;
+    if (!chart) return;
+
+    if (gender === "male") {
+      chart.toggleDataVisibility(0);
+      setVisible((prev) => ({ ...prev, male: !prev.male }));
+    } else {
+      chart.toggleDataVisibility(1);
+      chart.toggleDataVisibility(2);
+      setVisible((prev) => ({ ...prev, female: !prev.female }));
+    }
+    chart.update();
+  };
+
   const options: ChartOptions<"doughnut"> = {
     animation: {
-      duration: 2000,
+      duration: 1500,
       animateRotate: true,
       animateScale: true,
     },
@@ -115,11 +117,7 @@ export default function GenderEllipseSVG({
 
   return (
     <div ref={containerRef} style={{ width, height }} className={className}>
-      {showChart &&
-        containerRef.current &&
-        containerRef.current.getBoundingClientRect().width > 0 && (
-          <Doughnut key="animated" ref={chartRef} data={data} options={options} />
-        )}
+      <Doughnut ref={chartRef} data={{ labels: [], datasets: [] }} options={options} />
     </div>
   );
 }

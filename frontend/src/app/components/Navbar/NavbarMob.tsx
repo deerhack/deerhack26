@@ -122,11 +122,12 @@ const Navbar = () => {
                 </span>
                 <div className="flex-1 border-t border-dashed border-gray-700/50"></div>
               </div>
-              {/* <SidebarButton
+              <SidebarButton
                 href="/judging-criteria"
                 label="Judging Criteria"
                 icon={judgingIcon}
-              /> */}
+                route="/judging-criteria"
+              />
               <SidebarButton
                 href="/code-of-conduct"
                 label="Code of Conduct"
