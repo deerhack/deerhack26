@@ -76,7 +76,7 @@ const TracksCard = () => {
       headStyling:
         selectedTrack === "Ed-Tech"
           ? "gradient-bg text-magnolia active"
-          : "bg-violet hover:gradient-bg hover:text-magnolia transition-all duration-300",
+          : "bg-violet hover:gradient-bg hover:text-magnolia transition-all duration-1000",
       bodyStyling: "gradient-bg text-magnolia",
       description:
         "Reimagining education at DeerHack through smart, interactive, and personalized tech",
