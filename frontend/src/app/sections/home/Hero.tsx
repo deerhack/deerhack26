@@ -3,7 +3,7 @@ import DiscordHero from "@/app/assets/icons/DiscordHero";
 import Devfolio from "@/app/assets/icons/Devfolio"; 
 import styles from "./styles.module.css";
 import DeerHack26Logo from "@/app/assets/icons/Deerhack26";
-import { cabinetBold, cabinetMedium, satoshiBlack, satoshiBold } from "@/fonts";
+import { cabinetBold,cabinetExtraBold, cabinetMedium, satoshiBlack, satoshiBold } from "@/fonts";
 import Link from "next/link";
 // import { useState, useEffect } from "react";
 import Flicker from "@/app/components/Flicker/flicker";
@@ -45,9 +45,9 @@ const Hero = () => {
             className="w-full flex justify-center items-center"
             target="_blank"
           >
-            <div className="border-[1.03px] border-[#FDE7B3] opacity-90 hover:opacity-100 transition-bg duration-150 flex h-[42px] md:h-[48px] w-[80%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary">
-              <p className={`text-[#311863] ${cabinetBold.className} font-extrabold text-xs md:text-xl`}>
-                Pre Register Now
+            <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[80%] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary">
+<p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl transition-transform duration-200 hover:scale-110`}>
+                Pre-Register Now
               </p>
             </div>
           </Link>
@@ -56,7 +56,7 @@ const Hero = () => {
             className="inline-block"
             target="_blank"
           >
-            <div className="flex flex-row w-[182px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[238.30857849121094px] justify-center items-center gap-2 px-4 lg:px-6 py-3 border-4 border-grape hover:bg-transparent transition-all duration-150 rounded-xl text-white bg-grape">
+            <div className="flex flex-row w-[175px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[238.30857849121094px] justify-center items-center gap-2 px-4 lg:px-6 py-3 border-4 border-grape hover:bg-transparent transition-all duration-150 rounded-xl text-white bg-grape">
               <DiscordHero />
               <p className={`text-white ${satoshiBold.className} text-xs md:text-xl lg:text-[17px]`}>
                 Join Our Discord

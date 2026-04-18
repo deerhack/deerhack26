@@ -33,8 +33,8 @@ export default function Home() {
       <Judges />
       <Mentors />
       <FAQ />
-      <SponsorPage />
-      <RegisterPage />
+      {/* <SponsorPage /> */}
+      {/* <RegisterPage /> */}
       <Footer />
     </>
   );
