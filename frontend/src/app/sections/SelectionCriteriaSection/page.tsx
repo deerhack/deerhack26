@@ -8,7 +8,7 @@ const page = () => {
     
       <div className={`${cabinetRegular.className} text-base md:text-lg`}>
         <div className="text-white px-6 md:px-24">
-          <h1 className={`headings ${cabinetExtraBold.className} text-3xl md:text-5xl mb-6 md:mb-10 pt-32 md:pt-32`}>
+          <h1 className={`headings ${cabinetExtraBold.className} text-3xl md:text-5xl mb-6 md:mb-10 pt-24 lg:pt-32 md:pt-32`}>
             Selection Criteria
           </h1>
           <p className={`${satoshiRegular.className} leading-7 md:leading-9 mb-6 text-gray-300`}>
