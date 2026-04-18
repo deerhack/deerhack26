@@ -27,14 +27,14 @@ export default function Home() {
       <TrackPage />
       {/* <ExpectationsPage /> */}
       <ExpectationPageV2 />
-      {/* <DeerhackStatsPage /> */}
+      <DeerhackStatsPage />
       <ImageCarouselPage />
       <ExperiencePage />
       <Judges />
       <Mentors />
       <FAQ />
-      <SponsorPage />
-      <RegisterPage />
+      {/* <SponsorPage /> */}
+      {/* <RegisterPage /> */}
       <Footer />
     </>
   );

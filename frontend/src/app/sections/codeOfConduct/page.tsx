@@ -4,7 +4,7 @@ import { cabinetExtraBold, cabinetRegular } from "@/app/utils/fonts"
 const codeOfConduct = () => {
   return (
     <div className={`${cabinetRegular.className} md:text-lg `}>
-      <h1 className={`headings ${cabinetExtraBold.className} text-5xl mb-16 pt-32 `}>Code Of Conduct</h1>
+      <h1 className={`headings ${cabinetExtraBold.className} text:3xl lg:text-5xl mb-16 lg:pt-32 pt-24 `}>Code Of Conduct</h1>
       <div className="flex flex-col text-white md:px-24 px-10 text-wrap">
           <p className="mb-20 leading-loose">
             Nepal&apos;s developer community is constantly developing. We see it

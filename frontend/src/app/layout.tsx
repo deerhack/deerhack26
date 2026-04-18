@@ -12,10 +12,10 @@ export const metadata = {
     default: "DeerHack 2026 - Fawning Over Innovation",
   },
   description:
-    "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
+    "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 48-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
   keywords: [
     "Hackathon in Nepal",
-    " 36 Hours Hackathon",
+    " 48 Hours Hackathon",
     " Upcoming Hackathons in Nepal",
     "Deerwalk Hackathon",
     " Deerwalk Institute Of Technology",
@@ -27,7 +27,7 @@ export const metadata = {
   openGraph: {
     title: "DeerHack 2026 - Fawning over Innovation",
     description:
-      "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
+      "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 48-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
     url: "https://deerhack.deerwalk.edu.np",
     siteName: "DeerHack 2026 - Fawning Over Innovation",
     images: [
@@ -45,7 +45,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "DeerHack 2026",
     description:
-      "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 36-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
+      "DeerHack 2026 is the brainchild of a small team to unleash the potential of young innovators through a 48-hour hackathon in which developers, designers, students, entrepreneurs, educators, and mentors collaborate to create solutions that tackle real-world problems. When people from many backgrounds collaborate, they do more than merely do good; they become a force for global change",
     images: ["/banner.webp"],
   },
   category: "technology",

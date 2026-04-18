@@ -25,8 +25,8 @@ const NavbarPC = () => {
   }, [isResourceOpen])
 
   return (
-    <div className="hidden lg:flex w-full justify-center">
-      <header className="bg-[#110C24A6] w-[95%] mt-7 rounded-xl fixed isolate z-50 shadow-lg backdrop-blur-sm">
+    <div className="hidden lg:flex w-full justify-center z-[100] relative">
+      <header className="bg-[#110C24A6] w-[95%] mt-7 relativerounded-xl fixed isolate shadow-lg backdrop-blur-sm">
         <nav className="flex items-center justify-between h-[6rem] py-4 px-20">
           <div className="flex items-center gap-[7.5rem]">
             <Link href="/" className="flex-shrink-0 flex items-center">
@@ -52,6 +52,9 @@ const NavbarPC = () => {
                       </li>
                       <li className="pt-4 px-6 mb-4">
                         <Link href="/code-of-conduct" className="hover:text-secondary">Code Of Conduct</Link>
+                      </li>
+                      <li className="pt-4 px-6 mb-4">
+                        <Link href="/judging-criteria" className="hover:text-secondary">Judging Criteria</Link>
                       </li>
                     </ul>
                   </div>
