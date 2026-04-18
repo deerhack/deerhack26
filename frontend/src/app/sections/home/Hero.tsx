@@ -39,14 +39,14 @@ const Hero = () => {
         </p>
         
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
-        <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7">
+        <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7 w-full">
           <Link 
-            href=" " 
-            className="inline-block"
+            href="https://forms.gle/2dhBc9DEN5a43qVY9"
+            className="w-full flex justify-center items-center"
             target="_blank"
           >
-            <div className="border-[1.03px] border-[#FDE7B3] hover:bg-[#FDE7B3] transition-bg duration-150 flex h-[42px] md:h-[48px] w-[150px] md:w-[207px] justify-center items-center px-6 py-4 rounded-[3px] text-[#311863] bg-secondary">
-              <p className={`text-[#311863] ${cabinetBold.className} text-xs md:text-xl`}>
+            <div className="border-[1.03px] border-[#FDE7B3] opacity-90 hover:opacity-100 transition-bg duration-150 flex h-[42px] md:h-[48px] w-[80%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary">
+              <p className={`text-[#311863] ${cabinetBold.className} font-extrabold text-xs md:text-xl`}>
                 Pre Register Now
               </p>
             </div>
@@ -56,10 +56,10 @@ const Hero = () => {
             className="inline-block"
             target="_blank"
           >
-            <div className="flex flex-row w-[182px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[256px] justify-center items-center gap-2 p-4 border-4 border-grape hover:bg-transparent transition-all duration-150 rounded-xl text-white bg-grape">
+            <div className="flex flex-row w-[182px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[238.30857849121094px] justify-center items-center gap-2 px-4 lg:px-6 py-3 border-4 border-grape hover:bg-transparent transition-all duration-150 rounded-xl text-white bg-grape">
               <DiscordHero />
-              <p className={`text-white ${cabinetBold.className} text-xs md:text-xl lg:text-xl`}>
-                Join Our Discord!
+              <p className={`text-white ${satoshiBold.className} text-xs md:text-xl lg:text-[17px]`}>
+                Join Our Discord
               </p>
             </div>
           </Link>
