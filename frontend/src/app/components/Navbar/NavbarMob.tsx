@@ -111,8 +111,8 @@ const Navbar = () => {
                 href="/organizers"
                 label="Organizers"
                 icon={organizersIcon}
-              />
-              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} /> */}
+              />*/}
+              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
             </nav>
 
             <div className="mt-10 flex flex-col gap-4">

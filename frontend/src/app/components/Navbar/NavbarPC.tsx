@@ -61,6 +61,7 @@ const NavbarPC = () => {
                 )}
               </div>
               {/* <Link href="/winners" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Winners</Link> */}
+              <Link href="/legacy" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Legacy</Link>
             </div>
             <Counter_wrapper />
           </div>
