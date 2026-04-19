@@ -112,7 +112,7 @@ const Navbar = () => {
                 label="Organizers"
                 icon={organizersIcon}
               />*/}
-              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
+              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} route="/legacy"/>
             </nav>
 
             <div className="mt-10 flex flex-col gap-4">
