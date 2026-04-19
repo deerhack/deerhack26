@@ -14,7 +14,7 @@ export default function LegacyPage(){
             <div className="pb-[10rem] flex items-center justify-center">
                 <HistorySection />
             </div>
-            <div className={`headings ${cabinetBold.className} text-left lg:p-16 sm:text-justify px-10`}>
+            <div className={`text-3xl lg:text-4xl text-main-title w-fit ${cabinetBold.className} text-left lg:px-16 sm:text-center px-10`}>
                 Honoring the legacy of DeerHack by honoring its Essence, Evolving its vision and passing it with a purpose every year.
             </div>
             <Footer/>
