@@ -40,7 +40,7 @@ const QuotesCard: React.FC<QuotesCardDetails> = ({
                                     )}
                                     </div>
 
-                                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50 bg-[#110C24] flex justify-start h-fit w-[90%] rounded-[1rem] px-3 py-2">
+                                    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-40 bg-[#110C24] flex justify-start h-fit w-[90%] rounded-[1rem] px-3 py-2">
                                         <div className="flex flex-col">
                                             <div className={`${cabinetBold.className} text-[1.125rem] h-fit`}>
                                                 {name}
