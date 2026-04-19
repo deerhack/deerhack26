@@ -7,7 +7,7 @@ import CarouselImage from "@/app/components/Legacy/CarouselImage";
 import { deerhack24 as data } from "../teams";
 import {quotes24 as quotes} from "../quotes"
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
-import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
+import DeerhackIconPhone from "@/app/assets/icons/DeerhackIconMobile";
 
 export default function WinnersOf24() {
     const [index, setIndex] = useState(0);
@@ -97,7 +97,7 @@ export default function WinnersOf24() {
                 </div>
 
                 <DeerHack24Legacy
-                    logo={<DeerhackLogo width="138" height="138" />}
+                    logo={<DeerhackIconPhone width={138} height={138} />}
                     title="Team Solo"
                     description="DeerHack 2024 Overall Winners"
                 />

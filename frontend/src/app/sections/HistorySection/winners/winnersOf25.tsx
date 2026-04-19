@@ -9,6 +9,7 @@ import {quotes25 as quotes} from "../quotes"
 import ArrowSVG from "@/app/assets/icons/ArrowSVG";
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo";
 import DeerHack25Legacy from "@/app/components/Legacy/DeerHack25Legacy";
+import DeerhackIconPhone from "@/app/assets/icons/DeerhackIconMobile";
 
 export default function WinnersOf25() {
     const [index, setIndex] = useState(0);
@@ -98,7 +99,7 @@ export default function WinnersOf25() {
                 </div>
 
                 <DeerHack25Legacy
-                    logo={<DeerhackLogo width="138" height="138" />}
+                    logo={<DeerhackIconPhone width={138} height={138} />}
                     title="SAGEA"
                     description="DeerHack 2025 Overall Winners"
                 />
