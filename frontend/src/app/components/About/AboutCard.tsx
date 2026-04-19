@@ -12,6 +12,7 @@ import Software from "@/app/assets/icons/SoftwareClub";
 import AboutSoftware from "@/app/assets/icons/AboutSoftware";
 import CollegeInfo from "@/app/assets/icons/CollegeInfo";
 import AboutCollege from "@/app/assets/icons/AboutCollege";
+import DeerhackIconPhone from "@/app/assets/icons/DeerhackIconMobile";
 
 type TabKey = "deerhack" | "software" | "college";
 
@@ -39,7 +40,7 @@ export default function AboutCard({
       height?: number;
     }>;
   }[] = [
-    { key: "deerhack", Icon: DeerhackLogo },
+    { key: "deerhack", Icon: DeerhackIconPhone },
     { key: "software", Icon: Software },
     { key: "college", Icon: CollegeInfo },
   ];
@@ -86,8 +87,8 @@ export default function AboutCard({
               >
                 <Icon
                   isActive={isActive}
-                  width={32}
-                  height={32}
+                  width={22}
+                  height={22}
                   className="w-8 h-8 md:w-12 md:h-12 scale-x-[-1]"
                 />
               </button>
@@ -134,7 +135,7 @@ export default function AboutCard({
         </div>
 
         <div
-          className={` text-magnolia text-[12px] md:text-base text-left lg:text-[20px] ${satoshiRegular.className} leading-5 tracking-tighter md:tracking-wide md:pr-24`}
+          className={` text-magnolia text-[12px] md:text-[16px] text-left lg:text-[20px] ${satoshiRegular.className} leading-7 sm:leading-8 tracking-tighter md:tracking-wide md:pr-24 `}
         >
           <p>{description}</p>
         </div>

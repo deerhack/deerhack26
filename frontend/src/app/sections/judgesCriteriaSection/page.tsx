@@ -17,11 +17,11 @@ const page = () => {
   return (
     <div className={`${cabinetRegular.className} text-lg`}>
       <br /><br /><br />
-      <h1 className={`headings ${cabinetExtraBold.className} lg:text-[3.5rem] mb-24 pt-32`}>
+      <h1 className={`headings ${cabinetExtraBold.className} lg:text-[3.5rem] mb-24 lg:pt-32`}>
         {data.title}
       </h1>
       
-      <div className={`${satoshiRegular.className} flex flex-col text-white md:px-24 px-10 text-justify text-wrap font-[400]`}>
+      <div className={`${satoshiRegular.className} flex flex-col text-white md:px-24 px-10 lg:text-justify  text-wrap font-[400]`}>
         {data.sections.map((section, sectionIndex) => (
           <div key={section.title}>
             <h2 className={`lg:text-[2.25rem] headings ${cabinetExtraBold.className} mb-10`}>

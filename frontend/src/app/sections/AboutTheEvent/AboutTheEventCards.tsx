@@ -7,13 +7,13 @@ const AboutTheEventCards = () => {
   const tabs = {
     deerhack: {
       svg: <DeerhackLogo height={50} width={50} />,
-      title: "Deerhack 2026",
+      title: "DeerHack 2026",
       description:
         "DeerHack 2026 is a 48-hour hackathon where developers, designers, students, entrepreneurs, educators, and mentors work together to build ideas that solve real-world complications. DeerHack provides an opportunity for individuals to sharpen their teamwork, communication, leadership skills, and networking in a risk-free and comfortable environment.",
     },
     software: {
       svg: <CodeSVG height={40} width={40} />,
-      title: "Software Club",
+      title: "DWIT Software Club",
       description:
         "The Software Club of Deerwalk Institute of Technology is a student-led organization dedicated to promoting a culture of technology, innovation, and collaboration through workshops and events. Additionally, it is the core team responsible for building Deerhack. Whether it's late-night debugging sessions or organizing large-scale hackathons, we're focused on bridging the gap between classroom theory and the grit of the tech industry.",
     },
