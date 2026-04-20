@@ -4,6 +4,7 @@ import DeerHackStats from "../sections/DeerhackStats/DeerhackStats";
 import Image from "next/image";
 
 import leaf_deerhack2023_right from "@/app/assets/images/leaf_deerhack2023_right.svg";
+import StatsSection from "../components/DeerhackStats/page";
 
 export default function DeerhackStatsPage(): ReactElement {
   return (
@@ -20,7 +21,8 @@ export default function DeerhackStatsPage(): ReactElement {
         DeerHack Till Now
       </div>
       <div className="flex justify-center mt-10">
-        <DeerHackStats />
+        {/* <DeerHackStats /> */}
+        <StatsSection />
       </div>
     </div>
   );

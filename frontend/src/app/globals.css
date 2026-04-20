@@ -58,6 +58,9 @@
   .exp-gradient-background {
   background: linear-gradient(270deg, #F5C144 0%, #6633CC 100%);
   }
+  .blockchain-background {
+  background: linear-gradient(60deg, #6633CC 0%,#F5C144 150%);
+  }
 
   .text-primary-gradient-color {
     @apply bg-gradient-to-r from-primary from-1% to-secondary bg-clip-text text-transparent;
@@ -86,6 +89,9 @@
 
 .gradient-bg {
   background: linear-gradient(105.53deg, #6633CC 20.77%, #823FBD 60.21%, #9D4BAD 99.65%);
+}
+.about-section-button{
+   background: linear-gradient(180deg, #6633CC 0%, #331A66 100%);
 }
 
   .font-cabinet-light {

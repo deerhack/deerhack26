@@ -1,36 +1,123 @@
-import { ReactElement } from "react";
+"use client"
+import { ReactElement, useEffect, useRef, useState } from "react";
+import { ChartOptions, Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export default function GenderEllipseSVG({
   height = 315,
   width = 315,
+  className = "",
 }: {
   height?: number;
   width?: number;
+  className?: string;
 }): ReactElement {
-  return (
-    <svg 
-     height={`${height}`}
-    width={`${width}`}
-     viewBox="0 0 315 315" 
-     fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-<path d="M314.697 157.649C314.697 244.288 244.462 314.522 157.823 314.522C71.1841 314.522 0.949463 244.288 0.949463 157.649C0.949463 71.0101 71.1841 0.775391 157.823 0.775391C244.462 0.775391 314.697 71.0101 314.697 157.649ZM63.6989 157.649C63.6989 209.632 105.84 251.773 157.823 251.773C209.806 251.773 251.947 209.632 251.947 157.649C251.947 105.666 209.806 63.5248 157.823 63.5248C105.84 63.5248 63.6989 105.666 63.6989 157.649Z" fill="#6633CC" fill-opacity="0.17"/>
-<path d="M250.031 30.7355C272.624 47.1507 290.426 69.2996 301.598 94.8949C312.77 120.49 316.906 148.604 313.58 176.332L251.277 168.859C253.273 152.222 250.791 135.354 244.088 119.997C237.385 104.639 226.704 91.35 213.148 81.5009L250.031 30.7355Z" fill="#FFDD8A"/>
-<path d="M250.031 30.7356C270.316 45.4733 286.772 64.8585 298.022 87.2666C309.271 109.675 314.985 134.453 314.685 159.524L251.94 158.774C252.12 143.731 248.692 128.864 241.942 115.42C235.193 101.975 225.319 90.3435 213.148 81.5009L250.031 30.7356Z" fill="#F5C144"/>
-</svg>
+  const [visible, setVisible] = useState({ male: true, female: true });
+  const [hasAnimated, setHasAnimated] = useState(false);
+  const chartRef = useRef<ChartJS<"doughnut">>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-     
-    
-    // <svg 
-    // height={`${height}`}
-    // width={`${width}`}
-    // viewBox="0 0 315 315"
-    // fill="none"
-    //    xmlns="http://www.w3.org/2000/svg">
-    // <path d="M314.674 157.649C314.674 244.288 244.439 314.522 157.801 314.522C71.1617 314.522 0.927002 244.288 0.927002 157.649C0.927002 71.0101 71.1617 0.775391 157.801 0.775391C244.439 0.775391 314.674 71.0101 314.674 157.649ZM63.6764 157.649C63.6764 209.632 105.817 251.773 157.801 251.773C209.784 251.773 251.925 209.632 251.925 157.649C251.925 105.666 209.784 63.5248 157.801 63.5248C105.817 63.5248 63.6764 105.666 63.6764 157.649Z" fill="#6633CC" fill-opacity="0.17"/>
-    // <path d="M250.009 30.7356C280.659 53.0048 302.216 85.6143 310.695 122.54C319.174 159.465 314.003 198.212 296.138 231.622L240.803 202.033C251.522 181.987 254.625 158.739 249.537 136.583C244.45 114.428 231.516 94.8625 213.125 81.5009L250.009 30.7356Z" fill="#F5C144"/>
-    // <path d="M250.009 30.7356C270.293 45.4733 286.75 64.8585 297.999 87.2666C309.248 109.675 314.963 134.453 314.663 159.524L251.918 158.774C252.098 143.731 248.669 128.864 241.92 115.42C235.17 101.975 225.296 90.3435 213.125 81.5009L250.009 30.7356Z" fill="#9D4BAD"/>
-    // </svg>
-    
+  const data = {
+    labels: ["Male", "Female", "+10%"],
+    datasets: [
+      {
+        data: [75, 15, 10],
+        backgroundColor: [
+          "rgba(117, 51, 204, 0.77)",
+          "rgba(157, 75, 173, 1)",
+          "rgba(235, 140, 253, 1)",
+        ],
+        hoverBackgroundColor: ["#3B267B", "#E08CF5", "rgba(157, 75, 173, 1)"],
+        borderWidth: 0,
+      },
+    ],
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [hasAnimated]);
+
+  useEffect(() => {
+    if (!hasAnimated) return;
+    const chart = chartRef.current;
+    if (!chart) return;
+
+    chart.config.options!.animation = {
+      duration: 1500,
+      easing: "easeInOutQuart",
+      animateRotate: true,
+      animateScale: true,
+    };
+    chart.data = data;
+    chart.update();
+  }, [hasAnimated]);
+
+  const handleToggle = (gender: "male" | "female") => {
+    const chart = chartRef.current;
+    if (!chart) return;
+
+    if (gender === "male") {
+      chart.toggleDataVisibility(0);
+      setVisible((prev) => ({ ...prev, male: !prev.male }));
+    } else {
+      chart.toggleDataVisibility(1);
+      chart.toggleDataVisibility(2);
+      setVisible((prev) => ({ ...prev, female: !prev.female }));
+    }
+    chart.update();
+  };
+
+  const options: ChartOptions<"doughnut"> = {
+    animation: {
+      duration: 1500,
+      animateRotate: true,
+      animateScale: true,
+    },
+    rotation: 90,
+    maintainAspectRatio: false,
+    cutout: "60%",
+    plugins: {
+      legend: { display: false },
+      tooltip: {
+        enabled: true,
+        backgroundColor: "#110C24",
+        titleColor: "#fff",
+        bodyColor: "#fff",
+        borderColor: "#D977F2",
+        borderWidth: 1,
+        displayColors: false,
+        callbacks: {
+          title: (context) => {
+            const index = context[0].dataIndex;
+            if (index === 1 || index === 2) return "Female";
+            return "Male";
+          },
+          label: (context) => {
+            if (context.dataIndex === 1 || context.dataIndex === 2) {
+              return "25%";
+            }
+            return `75%`;
+          },
+        },
+      },
+    },
+  };
+
+  return (
+    <div ref={containerRef} style={{ width, height }} className={className}>
+      <Doughnut ref={chartRef} data={{ labels: [], datasets: [] }} options={options} />
+    </div>
   );
 }
