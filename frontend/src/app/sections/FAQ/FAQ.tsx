@@ -106,7 +106,7 @@ const Faq = () => {
       ),
     },
     {
-      title: "Other",
+      title: "Others",
       questions: [
         {
           question: "What about APIs?",
