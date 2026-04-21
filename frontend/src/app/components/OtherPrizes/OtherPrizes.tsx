@@ -16,7 +16,7 @@ export default function OtherPrizes({
           className={`${cabinetExtraBold.className} text-primary-gradient-color text-2xl sm:text-2xl md:text-2xl lg:text-4xl text-start w-[8rem] sm:w-[8rem] md:w-[8rem] lg:text-end lg:h-full lg:w-full lg:top-[3rem] relative right-[4.3rem] top-[1.3rem] leading-none text-[1.701rem]`}
         >
           Tons of Gifts & <br />
-          Merch for Everyone !
+          Merch for Everyone 
         </div>
       </div>
     </div>
