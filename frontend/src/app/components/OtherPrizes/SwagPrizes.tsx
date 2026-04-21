@@ -25,7 +25,7 @@ export default function SwagPrizes({ scrollProgress }: { scrollProgress: number 
         <div
           className={`${cabinetExtraBold.className} flex items-center lg:text-center text-start text-primary-gradient-color h-[7.875rem] w-[10.375rem] leading-none text-[1.701rem] sm:text-[1.701rem] md:text-[2.01rem] lg:text-[2.5rem] py-4 sm:w-[10.375rem] md:w-[10.375rem] lg:w-[20rem] lg:items-center`}
         >
-          Swags and Freebies!
+          Swags and Freebies
         </div>
         <div className="flex justify-center lg:w-full md:w-[150px] w-[100px] h-fit">
           <Lottie
