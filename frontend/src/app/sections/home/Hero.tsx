@@ -40,13 +40,14 @@ const Hero = () => {
 
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
         <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7 w-full">
-         <Link
+          <Link
             href="https://deerhack-25.devfolio.co"
             className="w-full flex justify-center items-center"
             target="_blank"
           >
-            <div className="opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[80%] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-[#3670FF]">
-              <p className={`text-white ${cabinetExtraBold.className}  text-sm md:text-2xl transition-transform duration-200 hover:scale-110`}>
+            <div className="opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[85%] w-[100%] justify-center items-center py-5 md:py-8 hover:scale-105 transition-transform bg-[#3670FF] rounded-lg">
+              <Devfolio className="w-6 h-6 lg:w-[30px] lg:h-[30px] shrink-0" />
+              <p className={`text-white ${cabinetExtraBold.className} text-sm md:text-2xl ml-2`}>
                 Apply with Devfolio
               </p>
             </div>
