@@ -13,7 +13,7 @@ const FAQ = () => {
         style={{ transform: "scaleX(-1)" }}
         className="absolute left-1 top-46 hidden xl:block"
       />
-      <h1 className={`headings mb-[3rem] ${cabinetExtraBold.className}`}>FAQ</h1>
+      <h1 className={`headings mb-[3rem] ${cabinetExtraBold.className}`}>FAQs</h1>
       <Faq />
     </div>
   );
