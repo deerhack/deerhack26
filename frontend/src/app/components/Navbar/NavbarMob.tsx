@@ -103,12 +103,18 @@ const Navbar = () => {
                 <Counter_wrapper />
               </div>
             </div>
+
             <div className="flex flex-col gap-4">
-              <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 hover:scale-110 transition-all duration-200 flex h-[60px] justify-center items-center py-4 md:py-7 rounded-[15px] text-[#311863] bg-secondary cursor-pointer">
-                <p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl`}>
-                  Pre-Register Now
-                </p>
-              </div>
+              <Link
+                href="https://forms.gle/2dhBc9DEN5a43qVY9"
+                target="_blank"
+              >
+                <div className="border-[1.03px] border-[#FDE7B3] opacity-100 flex h-[60px] justify-center items-center py-4 rounded-[15px] text-[#311863] bg-secondary">
+                  <p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl`}>
+                    Pre-Register Now
+                  </p>
+                </div>
+              </Link>
 
               <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
 
@@ -169,14 +175,16 @@ const Navbar = () => {
           </div>
         </aside>
 
-        {isOpen && (
-          <div
-            className="fixed inset-0 bg-black/30 backdrop-blur-[3px] z-40"
-            onClick={() => setIsOpen(false)}
-          />
-        )}
-      </div>
-    </nav>
+        {
+          isOpen && (
+            <div
+              className="fixed inset-0 bg-black/30 backdrop-blur-[3px] z-40"
+              onClick={() => setIsOpen(false)}
+            />
+          )
+        }
+      </div >
+    </nav >
   );
 };
 
