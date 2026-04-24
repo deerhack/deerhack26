@@ -41,7 +41,7 @@ const Hero = () => {
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
         <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7 w-full">
           <Link
-            href="https://deerhack-25.devfolio.co"
+            href="https://deerhack26.devfolio.co/"
             className="w-full flex justify-center items-center"
             target="_blank"
           >
