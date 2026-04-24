@@ -10,13 +10,13 @@ export default function Sponsor({
   url: string;
 }) {
   return (
-    <div className="flex flex-row  justify-center items-center w-[11rem] h-[11rem]  rounded-full mb-10">
+    <div className="flex flex-row  justify-center items-center w-[15rem] h-[11rem]  rounded-full mb-10">
       <Link href={url} target="_blank">
         <Image
           src={image}
           alt={alt}
-          width={100}
-          height={100}
+          width={150}
+          height={150}
           loading="lazy"
           className="object-cover w-full h-full"
         />

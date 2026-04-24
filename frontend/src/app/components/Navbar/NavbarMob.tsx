@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { cabinetMedium } from "@/app/utils/fonts";
+import { cabinetMedium, cabinetExtraBold } from "@/app/utils/fonts";
 import Counter_wrapper from "../counter/Counter";
 
 import DeerhackLogo from "@/app/assets/icons/DeerHackLogoMob.svg";
@@ -62,10 +62,9 @@ const Navbar = () => {
 
         <aside
           className={`fixed top-0 bottom-0 z-50 bg-[#110C24CC] backdrop-blur-[12px] border-r border-[#646265] flex flex-col shadow-2xl transition-all duration-500 ease-in-out
-            ${
-              isOpen
-                ? "left-0 w-[85vw] md:w-[450px] opacity-100"
-                : "left-[-500px] w-[85vw] md:w-[450px] opacity-0 pointer-events-none"
+            ${isOpen
+              ? "left-0 w-[85vw] md:w-[450px] opacity-100"
+              : "left-[-500px] w-[85vw] md:w-[450px] opacity-0 pointer-events-none"
             }`}
         >
           <div
@@ -105,15 +104,29 @@ const Navbar = () => {
               </div>
             </div>
 
-            <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
-              <SidebarButton href="/" route="/" label="Home" icon={homeIcon} />
-              {/* <SidebarButton
+            <div className="flex flex-col gap-4">
+              <Link
+                href="https://forms.gle/2dhBc9DEN5a43qVY9"
+                target="_blank"
+              >
+                <div className="border-[1.03px] border-[#FDE7B3] opacity-100 flex h-[60px] justify-center items-center py-4 rounded-[15px] text-[#311863] bg-secondary">
+                  <p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl`}>
+                    Pre-Register Now
+                  </p>
+                </div>
+              </Link>
+
+              <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
+
+                <SidebarButton href="/" route="/" label="Home" icon={homeIcon} />
+                {/* <SidebarButton
                 href="/organizers"
                 label="Organizers"
                 icon={organizersIcon}
               />
               <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} /> */}
-            </nav>
+              </nav>
+            </div>
 
             <div className="mt-10 flex flex-col gap-4">
               <div className="relative flex items-center mb-1">
@@ -162,14 +175,16 @@ const Navbar = () => {
           </div>
         </aside>
 
-        {isOpen && (
-          <div
-            className="fixed inset-0 bg-black/30 backdrop-blur-[3px] z-40"
-            onClick={() => setIsOpen(false)}
-          />
-        )}
-      </div>
-    </nav>
+        {
+          isOpen && (
+            <div
+              className="fixed inset-0 bg-black/30 backdrop-blur-[3px] z-40"
+              onClick={() => setIsOpen(false)}
+            />
+          )
+        }
+      </div >
+    </nav >
   );
 };
 
