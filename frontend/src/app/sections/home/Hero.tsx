@@ -1,9 +1,9 @@
 "use client";
 import DiscordHero from "@/app/assets/icons/DiscordHero";
-import Devfolio from "@/app/assets/icons/Devfolio"; 
+import Devfolio from "@/app/assets/icons/Devfolio";
 import styles from "./styles.module.css";
 import DeerHack26Logo from "@/app/assets/icons/Deerhack26";
-import { cabinetBold,cabinetExtraBold, cabinetMedium, satoshiBlack, satoshiBold } from "@/fonts";
+import { cabinetBold, cabinetExtraBold, cabinetMedium, satoshiBlack, satoshiBold } from "@/fonts";
 import Link from "next/link";
 // import { useState, useEffect } from "react";
 import Flicker from "@/app/components/Flicker/flicker";
@@ -16,7 +16,7 @@ const Hero = () => {
   const handleGlowChange = useCallback((allGlowing: boolean) => {
     setIsGlowing(allGlowing);
   }, []);
-  
+
   return (
     <div
       className={`${styles.hero_background_container} flex justify-center items-center w-full min-h-screen`}
@@ -33,25 +33,26 @@ const Hero = () => {
         }}
       >
         <Flicker onGlowChange={handleGlowChange} />
-        
+
         <p className={`text-2xl md:text-4xl lg:text-3xl font-bold text-center text-heropage-gradient ${cabinetBold.className}`}>
           12th - 14th June
         </p>
-        
+
         <DeerHack26Logo className="mt-3 h-auto w-full md:mt-6" width={309} height={130} />
         <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7 w-full">
-          <Link 
-            href="https://forms.gle/2dhBc9DEN5a43qVY9"
+          <Link
+            href="https://deerhack-25.devfolio.co"
             className="w-full flex justify-center items-center"
             target="_blank"
           >
-            <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[80%] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary">
-<p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl transition-transform duration-200 hover:scale-110`}>
-                Pre-Register Now
+            <div className="opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[85%] w-[100%] justify-center items-center py-5 md:py-8 hover:scale-105 transition-transform bg-[#3670FF] rounded-lg">
+              <Devfolio className="w-6 h-6 lg:w-[30px] lg:h-[30px] shrink-0" />
+              <p className={`text-white ${cabinetExtraBold.className} text-sm md:text-2xl ml-2`}>
+                Apply with Devfolio
               </p>
             </div>
           </Link>
-          <Link 
+          <Link
             href="https://discord.com/invite/56PAU7sBgZ"
             className="inline-block"
             target="_blank"

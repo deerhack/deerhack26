@@ -8,7 +8,7 @@ export default function SponsorPage(): ReactElement {
  
   return (
      <>
-     {/*
+     
     <div className="overflow-hidden py-20">
       <div className="relative">
         <Image
@@ -22,7 +22,7 @@ export default function SponsorPage(): ReactElement {
         <SponsorsSection />
       </div>
     </div>
-    */}
+   
      </>
   );
 
