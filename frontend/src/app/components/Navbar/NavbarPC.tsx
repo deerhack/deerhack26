@@ -2,8 +2,9 @@
 import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import DeerhackLogo from "@/app/assets/icons/DeerhackLogo"
-import { cabinetBold, cabinetMedium } from "@/app/utils/fonts"
+import { cabinetBold, cabinetMedium, cabinetExtraBold } from "@/app/utils/fonts"
 import Counter_wrapper from "../counter/Counter"
+
 
 const NavbarPC = () => {
   const [isResourceOpen, setIsResourceOpen] = useState(false)
@@ -28,16 +29,17 @@ const NavbarPC = () => {
     <div className="hidden lg:flex w-full justify-center z-[100] relative">
       <header className="bg-[#110C24A6] w-[95%] mt-7 relativerounded-xl fixed isolate shadow-lg backdrop-blur-sm">
         <nav className="flex items-center justify-between h-[6rem] py-4 px-20">
-          <div className="flex items-center gap-[7.5rem]">
+          <div className="flex items-center gap-[48px]">
             <Link href="/" className="flex-shrink-0 flex items-center">
               <DeerhackLogo width={50} height={50} />
             </Link>
+            <Counter_wrapper />
           </div>
 
           <div className="flex items-center gap-[3rem]">
             <div className="flex items-center gap-8 text-magnolia">
               <div className="relative" ref={resourceRef}>
-                <span 
+                <span
                   className={`hover:text-secondary cursor-pointer block text-base ${cabinetBold.className}`}
                   onClick={handleResourceClick}
                 >
@@ -62,7 +64,18 @@ const NavbarPC = () => {
               </div>
               {/* <Link href="/winners" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Winners</Link> */}
             </div>
-            <Counter_wrapper />
+            {/* <Counter_wrapper /> */}
+            <Link
+              href="https://forms.gle/2dhBc9DEN5a43qVY9"
+              className="w-full flex justify-center items-center"
+              target="_blank"
+            >
+              <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[60px] md:h-[60px] lg:w-[250px] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary">
+                <p className={`text-[#311863]  ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl transition-transform duration-200 hover:scale-110`}>
+                  Pre-Register Now
+                </p>
+              </div>
+            </Link>
           </div>
         </nav>
       </header>
