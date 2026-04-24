@@ -47,7 +47,7 @@ const Hero = () => {
           >
             <div className="opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[85%] w-[100%] justify-center items-center py-5 md:py-8 hover:scale-105 transition-transform bg-[#3670FF] rounded-lg">
               <Devfolio className="w-6 h-6 lg:w-[30px] lg:h-[30px] shrink-0" />
-              <p className={`text-white ${cabinetExtraBold.className} text-sm md:text-2xl ml-2`}>
+              <p className={`text-white ${cabinetMedium.className} text-sm md:text-2xl ml-2`}>
                 Apply with Devfolio
               </p>
             </div>
