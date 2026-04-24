@@ -62,51 +62,51 @@ const sponsors: SponsorType[] = [
   //     },
   //   ],
   // },
-  {
-    name: "Platinum Sponsor",
-    sponsors: [
-        {
-            name: "NIMB Ltd.",
-            url: "https://www.nimb.com.np/en/personal-banking",
-            image: NimbLogo,
-            imageAlt: "Nimb Logo",
-        },
-    ],
-  },
+  // {
+  //   name: "Platinum Sponsor",
+  //   sponsors: [
+  //       {
+  //           name: "NIMB Ltd.",
+  //           url: "https://www.nimb.com.np/en/personal-banking",
+  //           image: NimbLogo,
+  //           imageAlt: "Nimb Logo",
+  //       },
+  //   ],
+  // },
 
   {
-    name: "Gold Sponsors",
+    name: "Platform Sponser",
     sponsors: [
-      {
-          name: "Annapurna Post",
-          url: "https://www.annapurnapost.com",
-          image: AnnapurnaLogo,
-          imageAlt: "Annapurna Post Logo",
-        },
-      {
-        name: "Hamro CSIT",
-        url: "https://hamrocsit.com",
-        image: HamroCSITLogo,
-        imageAlt: "HamroCSIT Logo",
-      },
-     {
-        name: "Mero Style",
-        url: "https://merostyle.com/",
-        image: MeroStyle,
-        imageAlt: "Mero Style Logo",
-      },
+    //   {
+    //       name: "Annapurna Post",
+    //       url: "https://www.annapurnapost.com",
+    //       image: AnnapurnaLogo,
+    //       imageAlt: "Annapurna Post Logo",
+    //     },
+    //   {
+    //     name: "Hamro CSIT",
+    //     url: "https://hamrocsit.com",
+    //     image: HamroCSITLogo,
+    //     imageAlt: "HamroCSIT Logo",
+    //   },
+    //  {
+    //     name: "Mero Style",
+    //     url: "https://merostyle.com/",
+    //     image: MeroStyle,
+    //     imageAlt: "Mero Style Logo",
+    //   },
       {
         name: "Devfolio",
         url: "https://devfolio.co",
         image: DevfolioLogo,
         imageAlt: "DEVFOLIO LOGO",
       },
-      {
-        name: "YOLO Shoes",
-        url: "https://www.instagram.com/yolobrand_/?hl=en",
-        image: YOLO,
-        imageAlt: "YOLO LOGO",
-      },
+      // {
+      //   name: "YOLO Shoes",
+      //   url: "https://www.instagram.com/yolobrand_/?hl=en",
+      //   image: YOLO,
+      //   imageAlt: "YOLO LOGO",
+      // },
 
       
         
@@ -147,170 +147,170 @@ const sponsors: SponsorType[] = [
 //       // },
 //     ],
 //   // },
-  {
-    name: "Bronze Sponsors",
-    sponsors: [
-      {
-        name: "Leapfrog Technologies",
-        url: "https://www.lftechnology.com",
-        image: leapfrog,
-        imageAlt: "Leapfrog Logo",
-      },
-      {
-        name: "Ultima Lifestyle",
-        url: "https://ultima.com.np/",
-        image: ultima,
-        imageAlt: "ultima",
-      }, 
-      {
-        name: "Github Education",
-        url: "https://github.com/education",
-        image: GithubEducation,
-        imageAlt: "GithubEucation logo",
-      },
-      {
-        name: "Suito Teas",
-        url: "https://suiroteas.com/",
-        image: suiro,
-        imageAlt: "Suiro Teas Logo",
-      },
-    ],
-  },
-  {
-    name: "ED Tech Partner",
-    sponsors: [
-      {
-        name: "HamroNotes",
-        url: "https://hamrocsit.com",
-        image: HamroNotesLogo,
-        imageAlt: "HamroNotesogo",
-      },
-    ],
-  },
-  {
-    name: "Data Science And Machine Learning Partner",
-    sponsors: [
-      {
-        name: "TingTing",
-        url: "https://www.tingting.io/",
-        image: TingTing,
-        imageAlt: "TingTingLogo",
-      },
-    ],
-  },
-  {
-    name: "Hospitality Partner",
-    sponsors: [
-      {
-        name: "Hotel Association of Bhaktapur",
-        url: "https://www.facebook.com/hotelsbkt/",
-        image: HotelAssociation,
-        imageAlt: "HotelAssociationLogo",
-      },
-    ],
-  },
+//   {
+//     name: "Bronze Sponsors",
+//     sponsors: [
+//       {
+//         name: "Leapfrog Technologies",
+//         url: "https://www.lftechnology.com",
+//         image: leapfrog,
+//         imageAlt: "Leapfrog Logo",
+//       },
+//       {
+//         name: "Ultima Lifestyle",
+//         url: "https://ultima.com.np/",
+//         image: ultima,
+//         imageAlt: "ultima",
+//       }, 
+//       {
+//         name: "Github Education",
+//         url: "https://github.com/education",
+//         image: GithubEducation,
+//         imageAlt: "GithubEucation logo",
+//       },
+//       {
+//         name: "Suito Teas",
+//         url: "https://suiroteas.com/",
+//         image: suiro,
+//         imageAlt: "Suiro Teas Logo",
+//       },
+//     ],
+//   },
+//   {
+//     name: "ED Tech Partner",
+//     sponsors: [
+//       {
+//         name: "HamroNotes",
+//         url: "https://hamrocsit.com",
+//         image: HamroNotesLogo,
+//         imageAlt: "HamroNotesogo",
+//       },
+//     ],
+//   },
+//   {
+//     name: "Data Science And Machine Learning Partner",
+//     sponsors: [
+//       {
+//         name: "TingTing",
+//         url: "https://www.tingting.io/",
+//         image: TingTing,
+//         imageAlt: "TingTingLogo",
+//       },
+//     ],
+//   },
+//   {
+//     name: "Hospitality Partner",
+//     sponsors: [
+//       {
+//         name: "Hotel Association of Bhaktapur",
+//         url: "https://www.facebook.com/hotelsbkt/",
+//         image: HotelAssociation,
+//         imageAlt: "HotelAssociationLogo",
+//       },
+//     ],
+//   },
 
-  {
-    name: "Coffee Partner",
-    sponsors: [
-      {
-        name: "Mountain Java",
-        url: "https://www.instagram.com/mountain_java_coffee/",
-        image: NewMountainJava,
-        imageAlt: "Mountain Java Logo",
-      },
-    ],
-  },
+//   {
+//     name: "Coffee Partner",
+//     sponsors: [
+//       {
+//         name: "Mountain Java",
+//         url: "https://www.instagram.com/mountain_java_coffee/",
+//         image: NewMountainJava,
+//         imageAlt: "Mountain Java Logo",
+//       },
+//     ],
+//   },
   
-  {
-    name: "Confectionary Partner",
-    sponsors: [
-      {
-        name: "The Cookie Factory",
-        url: "https://www.instagram.com/thecookiefactorynepal/?hl=en",
-        image: CookieFactory,
-        imageAlt: "The Cookie Factory Logo",
-      },
-    ],
-  },
+//   {
+//     name: "Confectionary Partner",
+//     sponsors: [
+//       {
+//         name: "The Cookie Factory",
+//         url: "https://www.instagram.com/thecookiefactorynepal/?hl=en",
+//         image: CookieFactory,
+//         imageAlt: "The Cookie Factory Logo",
+//       },
+//     ],
+//   },
 
-  {
-    name: "Career Partner",
-    sponsors: [
-        {
-           name: "Mero Job",
-           url: "https://merojob.com/",
-           image: MeroJobLogo,
-           imageAlt: "Mero Job Logo",
-        },
-    ],
-  },
+//   {
+//     name: "Career Partner",
+//     sponsors: [
+//         {
+//            name: "Mero Job",
+//            url: "https://merojob.com/",
+//            image: MeroJobLogo,
+//            imageAlt: "Mero Job Logo",
+//         },
+//     ],
+//   },
 
 
 
-  {
-    name: "Supported By",
-    sponsors: [
-      {
-        name: "Citizens Bank",
-        url: "https://www.ctznbank.com/",
-        image: CitizensBank,
-        imageAlt: "Citizens Bank Logo",
-      },
-      {
-        name: "Pimbahal Chips",
-        url: "https://www.instagram.com/pimbahalfreshpotatochipscorner/",
-        image: PimbahalChipsLogo,
-        imageAlt: "PimbahalChipsLogo",
-      },
-      {
-        name: "Programiz",
-        url: "https://www.programiz.com/",
-        image: ProgramizLogo,
-        imageAlt: "ProgramizLogo",
-      },
-      {
-          name: "Himalayan Bank ltd.",
-          url: "https://www.himalayanbank.com/en/",
-          image: HimalayanBankLogo,
-          imageAlt: "HimalayanBank Logo",
-      },
-    ],
-  },
+//   {
+//     name: "Supported By",
+//     sponsors: [
+//       {
+//         name: "Citizens Bank",
+//         url: "https://www.ctznbank.com/",
+//         image: CitizensBank,
+//         imageAlt: "Citizens Bank Logo",
+//       },
+//       {
+//         name: "Pimbahal Chips",
+//         url: "https://www.instagram.com/pimbahalfreshpotatochipscorner/",
+//         image: PimbahalChipsLogo,
+//         imageAlt: "PimbahalChipsLogo",
+//       },
+//       {
+//         name: "Programiz",
+//         url: "https://www.programiz.com/",
+//         image: ProgramizLogo,
+//         imageAlt: "ProgramizLogo",
+//       },
+//       {
+//           name: "Himalayan Bank ltd.",
+//           url: "https://www.himalayanbank.com/en/",
+//           image: HimalayanBankLogo,
+//           imageAlt: "HimalayanBank Logo",
+//       },
+//     ],
+//   },
     
-//   // {
-//   //   name: "Open Innovation Track Partner",
-//   //   sponsors: [
-//   //     {
-//   //       name: "Cedar Gate Technologies",
-//   //       url: "https://www.cedargate.com",
-//   //       image: cedargate,
-//   //       imageAlt: "Cedar Gate Logo",
-//   //     },
-//   //   ],
-//   // },
-//   // {
-//   //   name: "Banking Partners",
-//   //   sponsors: [
-//   //     {
-//   //       name: "Jyoti Bikas Bank Ltd.",
-//   //       url: "https://jbbl.com.np",
-//   //       image: Jyotilogo,
-//   //       imageAlt: "Jyoti Bikas Bank logo",
-//   //     },
-//   //   ],
-//   // },
-  {
-    name: "App Partner",
-    sponsors: [
-      {
-        name: "Hamro Patro",
-        url: "https://www.hamropatro.com",
-        image: HamroPatroLogo,
-        imageAlt: "HamroPatro Logo",
-      },
-    ],
-  },
+// //   // {
+// //   //   name: "Open Innovation Track Partner",
+// //   //   sponsors: [
+// //   //     {
+// //   //       name: "Cedar Gate Technologies",
+// //   //       url: "https://www.cedargate.com",
+// //   //       image: cedargate,
+// //   //       imageAlt: "Cedar Gate Logo",
+// //   //     },
+// //   //   ],
+// //   // },
+// //   // {
+// //   //   name: "Banking Partners",
+// //   //   sponsors: [
+// //   //     {
+// //   //       name: "Jyoti Bikas Bank Ltd.",
+// //   //       url: "https://jbbl.com.np",
+// //   //       image: Jyotilogo,
+// //   //       imageAlt: "Jyoti Bikas Bank logo",
+// //   //     },
+// //   //   ],
+// //   // },
+//   {
+//     name: "App Partner",
+//     sponsors: [
+//       {
+//         name: "Hamro Patro",
+//         url: "https://www.hamropatro.com",
+//         image: HamroPatroLogo,
+//         imageAlt: "HamroPatro Logo",
+//       },
+//     ],
+//   },
 
   
   
