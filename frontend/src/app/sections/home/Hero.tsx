@@ -57,7 +57,7 @@ const Hero = () => {
             className="inline-block"
             target="_blank"
           >
-            <div className="flex flex-row w-[175px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[238.30857849121094px] justify-center items-center gap-2 px-4 lg:px-6 py-3 border-[1px] border-magnolia  hover:bg-[#6633CCD9]  transition-all duration-150 rounded-xl bg-[#2F1B5FE6] text-white lg:bg-[#6633CC2E]">
+            <div className="flex flex-row w-[175px] h-[47px] md:w-[280px] md:h-[64px] lg:w-[238.30857849121094px] justify-center items-center gap-2 px-4 lg:px-6 py-3 border-[1px] border-magnolia  bg-[#6633CCD9]  transition-all duration-150 rounded-xl hover:bg-[#2F1B5FE6] text-white ">
               <DiscordHero className="w-6 h-6 lg:w-[30px] lg:h-[30px]" />
               <p className={`text-white ${satoshiBold.className} text-xs md:text-xl lg:text-[17px]`}>
                 Join Our Discord
