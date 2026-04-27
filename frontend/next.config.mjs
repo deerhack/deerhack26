@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  distDir: "out",
   images: {
     unoptimized: true,
     domains: ["localhost", "deerwalk.edu.np", "54.164.230.35"],
