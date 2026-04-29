@@ -2,6 +2,7 @@
 import DiscordHero from "@/app/assets/icons/DiscordHero";
 import styles from "./styles.module.css";
 import DeerHack26Logo from "@/app/assets/icons/Deerhack26";
+import Devfolio from "@/app/assets/icons/Devfolio";
 import {
   cabinetBold,
   cabinetMedium,
@@ -70,14 +71,28 @@ const Hero = () => {
         <div className="flex flex-col justify-center items-center gap-4 md:gap-6 mx-auto mt-7 w-full">
           
           {/* Devfolio Apply Button */}
-          <div
+          {/* <div
           className="apply-button w-full max-w-[320px] sm:max-w-[360px] md:max-w-[420px]"
           data-hackathon-slug="deerhack26"
           data-button-theme="light"
             style={{
           height: "48px",
           width: "100%",
-    }}></div>
+    }}></div> */}
+
+      <Link
+            href="https://deerhack26.devfolio.co/"
+            className="w-full flex justify-center items-center"
+            target="_blank"
+          >
+            <div className="opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[85%] w-[100%] justify-center items-center py-5 md:py-8 hover:scale-105 transition-transform bg-[#3670FF] rounded-lg">
+              <Devfolio className="w-6 h-6 lg:w-[30px] lg:h-[30px] shrink-0" />
+              <p className={`text-white ${cabinetMedium.className} text-sm md:text-2xl ml-2`}>
+                Apply with Devfolio
+              </p>
+            </div>
+          </Link>
+
 
           {/* Discord Button */}
           <Link
@@ -103,15 +118,3 @@ const Hero = () => {
 export default Hero;
 
 
-//  <Link
-//             href="https://deerhack26.devfolio.co/"
-//             className="w-full flex justify-center items-center"
-//             target="_blank"
-//           >
-//             <div className="opacity-100 hover:opacity-90 transition-bg duration-150 flex h-[48px] md:h-[48px] lg:w-[85%] w-[100%] justify-center items-center py-5 md:py-8 hover:scale-105 transition-transform bg-[#3670FF] rounded-lg">
-//               <Devfolio className="w-6 h-6 lg:w-[30px] lg:h-[30px] shrink-0" />
-//               <p className={`text-white ${cabinetMedium.className} text-sm md:text-2xl ml-2`}>
-//                 Apply with Devfolio
-//               </p>
-//             </div>
-//           </Link>
