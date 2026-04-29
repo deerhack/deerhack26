@@ -71,11 +71,13 @@ const Hero = () => {
           
           {/* Devfolio Apply Button */}
           <div
-            className="apply-button flex justify-center"
-            data-hackathon-slug="deerhack26"
-            data-button-theme="light"
-            style={{ height: "44px", width: "100%" }}
-          ></div>
+          className="apply-button w-full max-w-[320px] sm:max-w-[360px] md:max-w-[420px]"
+          data-hackathon-slug="deerhack26"
+          data-button-theme="light"
+            style={{
+          height: "48px",
+          width: "100%",
+    }}></div>
 
           {/* Discord Button */}
           <Link
