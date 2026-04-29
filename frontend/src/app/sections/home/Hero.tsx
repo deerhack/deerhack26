@@ -73,7 +73,7 @@ const Hero = () => {
           <div
             className="apply-button flex justify-center"
             data-hackathon-slug="deerhack26"
-            data-button-theme="dark"
+            data-button-theme="light"
             style={{ height: "44px", width: "100%" }}
           ></div>
 
