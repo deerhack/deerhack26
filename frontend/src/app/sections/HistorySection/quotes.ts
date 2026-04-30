@@ -9,7 +9,7 @@ export const quotes23 = [
             " and we made it possible”",
         name: "Prayatna Mishra",
         position: "President, Software Club",
-        photo: "legacy/deerhack23/prayatna_mishra.png",
+        photo: "https://enkoki.github.io/static_images/deerhack23/prayatna_mishra.jpeg",
     },
     {
         id: 2,
@@ -46,7 +46,7 @@ export const quotes24 = [
             "for innovation to thrive”",
         name: "Sampanna Gautam",
         position: "Vice President, Software Club",
-        photo: "/legacy/deerhack24/sampanna_gautam.png",
+        photo: "https://enkoki.github.io/static_images/deerhack24/sampanna_gautam.jpg",
     },
 ];
 

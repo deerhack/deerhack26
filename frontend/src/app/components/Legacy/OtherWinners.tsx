@@ -19,7 +19,7 @@ export default function OtherWinners() {
             id: 1,
             title: "Code Crusaders",
             description: "DeerHack 2023 Open Innovation Track Winner",
-            svg: <LightBulbSVG />,
+            svg: <LightBulbSVG className="inline-block relative right-2 "/>,
         },
         {
             id: 2,
