@@ -1,0 +1,109 @@
+"use client";
+import { useState } from "react";
+import { cabinetExtraBold } from "@/app/utils/fonts";
+import QuotesCard from "@/app/components/Quotes/QuotesCard";
+import DeerHack24Legacy from "@/app/components/Legacy/DeerHack24Legacy";
+import CarouselImage from "@/app/components/Legacy/CarouselImage";
+import { deerhack24 as data } from "../teams";
+import {quotes24 as quotes} from "../quotes"
+import ArrowSVG from "@/app/assets/icons/ArrowSVG";
+import DeerhackIconPhone from "@/app/assets/icons/DeerhackIconMobile";
+
+export default function WinnersOf24() {
+    const [index, setIndex] = useState(0);
+    const quotesData = quotes[index];
+
+    const handlePrev = () => {
+        const newIndex = (index - 1 + quotes.length) % quotes.length;
+        setIndex(newIndex);
+    };
+
+    const handleNext = () => {
+        const newIndex = (index + 1) % quotes.length;
+        setIndex(newIndex);
+    };
+
+    return(
+
+        <div className="w-full px-4 lg:px-0 lg:w-[1171px] text-white flex flex-col lg:gap-10 md:gap-10 gap-1 mx-auto">
+            <h1
+                className={`headings ${cabinetExtraBold.className} text-5xl mb-16 pt-32`}
+            >
+                Deerhack 2024
+            </h1>
+
+            <div className="flex flex-row justify-center items-center">
+                <QuotesCard
+                    title_front={quotesData.titleFront}
+                    title_highlight={quotesData.titleHighlight}
+                    title_back={quotesData.titleBack}
+                    description={quotesData.description}
+                    name={quotesData.name}
+                    position={quotesData.position}
+                    photo={quotesData.photo}
+                />
+
+                <div className="flex gap-4 mt-4 flex-wrap ">
+                    <button
+                        onClick={handleNext}
+                        className=" bg-yellow-500 rounded-[100px] hover:bg-gray-400 text-black h-fit lg:block md:block hidden"
+                    >
+                        <ArrowSVG />
+                    </button>
+                </div>
+
+            </div>
+
+              <div className="flex gap-4 flex-wrap">
+                    <button
+                        onClick={handleNext}
+                        className=" bg-yellow-500 rounded-[100px] hover:bg-gray-400 text-black h-fit lg:hidden md:hidden block ml-[10vw] "
+                    >
+                        <ArrowSVG />
+                    </button>
+                </div>
+
+            
+                <div className="flex justify-center mt-4 gap-2">
+                    {quotes.map((_, i) => (
+                        <div
+                            key={i}
+                            onClick={() => setIndex(i)}
+                            className={`w-2 h-2 rounded-full cursor-pointer transition-all duration-300 ${i === index ? "bg-white scale-110" : "bg-gray-500"
+                                }`}
+                        />
+                    ))}
+                </div>
+
+            <div className="flex flex-col gap-4">
+
+                <div className="flex flex-row">
+                    <div className="text-primary-gradient-color">Participating Teams:</div>
+                    <div className="w-full inline-flex flex-nowrap overflow-hidden bg-[#1B133854] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+                        {[...Array(2)].map((_, j) => (
+                            <ul
+                                key={j}
+                                className="flex items-center justify-center md:justify-start [&_li]:mx-2 [&_img]:max-w-none animate-infinite-scroll"
+                            >
+                                {data.map((e, i) => (
+                                    <div className="flex items-center" key={`${j}-${i}`}>
+                                        <CarouselImage text={`${e.text}`} />
+                                        <div className="font-bold text-[1rem]">&middot;</div>
+                                    </div>
+                                ))}
+                            </ul>
+                        ))}
+                    </div>
+                </div>
+
+                <DeerHack24Legacy
+                    logo={<DeerhackIconPhone width={138} height={138} />}
+                    title="Team Solo"
+                    description="DeerHack 2024 Overall Winners"
+                />
+            </div>
+            </div>
+
+    );
+
+}

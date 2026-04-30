@@ -109,11 +109,11 @@ const Navbar = () => {
                 href="https://forms.gle/2dhBc9DEN5a43qVY9"
                 target="_blank"
               >
-                <div className="border-[1.03px] border-[#FDE7B3] opacity-100 flex h-[60px] justify-center items-center py-4 rounded-[15px] text-[#311863] bg-secondary">
+                {/* <div className="border-[1.03px] border-[#FDE7B3] opacity-100 flex h-[60px] justify-center items-center py-4 rounded-[15px] text-[#311863] bg-secondary">
                   <p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl`}>
                     Pre-Register Now
                   </p>
-                </div>
+                </div> */}
               </Link>
 
               <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>

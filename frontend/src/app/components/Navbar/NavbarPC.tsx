@@ -63,6 +63,7 @@ const NavbarPC = () => {
                 )}
               </div>
               {/* <Link href="/winners" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Winners</Link> */}
+              <Link href="/legacy" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Legacy</Link>
             </div>
             {/* <Counter_wrapper /> */}
             <Link
@@ -70,11 +71,11 @@ const NavbarPC = () => {
               className="w-full flex justify-center items-center"
               target="_blank"
             >
-              <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 hover:scale-110 transition-all duration-200 flex h-[60px] md:h-[60px] lg:w-[250px] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary cursor-pointer">
+              {/* <div className="border-[1.03px] border-[#FDE7B3] opacity-100 hover:opacity-90 hover:scale-110 transition-all duration-200 flex h-[60px] md:h-[60px] lg:w-[250px] w-[95%] justify-center items-center py-4 md:py-7 rounded-[8px] text-[#311863] bg-secondary cursor-pointer">
                 <p className={`text-[#311863] ${cabinetExtraBold.className} font-extrabold text-xm md:text-xl`}>
                   Pre-Register Now
                 </p>
-              </div>
+              </div> */}
             </Link>
           </div>
         </nav>
