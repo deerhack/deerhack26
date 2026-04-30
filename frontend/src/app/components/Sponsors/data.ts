@@ -75,7 +75,7 @@ const sponsors: SponsorType[] = [
   // },
 
   {
-    name: "Platform Sponser",
+    name: "Platform Sponsor",
     sponsors: [
     //   {
     //       name: "Annapurna Post",

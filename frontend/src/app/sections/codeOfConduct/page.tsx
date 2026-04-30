@@ -204,7 +204,7 @@ const codeOfConduct = () => {
 
           <p className="leading-loose">
           If you have questions regarding your application, contact:<br/>
-          Drsihya Karki : <a href="tel:">9863832524</a> <br/>
+          Drishya Karki : <a href="tel:">9863832524</a> <br/>
           Shreyansh Pokharel :  <a href = "tel:">9865365714</a>
           </p>
       </div>
