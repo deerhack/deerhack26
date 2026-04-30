@@ -15,7 +15,7 @@ export default function LegacyPage(){
                 <HistorySection />
             </div>
             <div className={`text-3xl lg:text-4xl text-main-title w-fit ${cabinetBold.className} text-left lg:px-16 sm:text-center px-10`}>
-                Honoring the legacy of DeerHack by honoring its Essence, Evolving its vision and passing it with a purpose every year.
+“Each year, we honor DeerHack’s legacy by embracing its essence, advancing its vision, and passing the torch with intent.”
             </div>
             <Footer/>
         </>
