@@ -128,14 +128,14 @@ export default function AboutCard({
           </div>
 
           <h1
-            className={`text-[16px] md:text-[32px] lg:text-6xl text-main-title w-fit  text-primary-gradient-color ${cabinetExtraBold.className} lg:text-[36px] leading-normal tracking-normal text-start`}
+            className={`text-[32px] md:text-[32px] lg:text-6xl text-main-title w-fit text-primary-gradient-color ${cabinetExtraBold.className} lg:text-[36px] leading-normal tracking-normal text-start`}
           >
             {title}
           </h1>
         </div>
 
         <div
-          className={` text-magnolia text-[12px] md:text-[16px] text-left lg:text-[20px] ${satoshiRegular.className} leading-7 sm:leading-8 tracking-tighter md:tracking-wide md:pr-24 `}
+          className={` text-magnolia text-[16px] md:text-[16px] text-left lg:text-[20px] ${satoshiRegular.className} leading-7 sm:leading-8 tracking-tighter md:tracking-wide md:pr-24 `}
         >
           <p>{description}</p>
         </div>
