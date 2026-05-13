@@ -1,9 +1,10 @@
 import SponsorType from "@/app/types/sponsorType";
 import AnnapurnaLogo from "@/app/assets/images/sponsors/Annapurna_Logo.png"
-// import DeerholdLogo from "@/app/assets/images/sponsors/deerhold.png";
+import DeerholdLogo from "@/app/assets/images/sponsors/deerhold.png";
 // import MountStradaLogo from "@/app/assets/images/sponsors/mount_strada.png";
 // import SegwayLogo from "@/app/assets/images/sponsors/segway.png";
 import DevfolioLogo from "@/app/assets/images/sponsors/Devfolio_Logo-White.svg";
+import RedBullLogo from "@/app/assets/images/sponsors/RedBull_Logo.png";
 // import ETHIndiaLogo from "@/app/assets/images/sponsors/ethindia-light.svg";
 // import PolygonLogo from "@/app/assets/images/sponsors/Polygon_Logo-White.svg";
 import HamroCSITLogo from "@/app/assets/images/sponsors/hamro_csit_logo_black.png";
@@ -12,7 +13,7 @@ import NimbLogo from "@/app/assets/images/sponsors/NimbLogo.svg";
 import HimalayanBankLogo from "@/app/assets/images/sponsors/HimalayanBankLogo.svg";
 import MeroJobLogo from "@/app/assets/images/sponsors/MeroJobLogo.svg";
 import PimbahalChipsLogo from "@/app/assets/images/sponsors/PimbahalChipsLogo.svg"; 
-import HamroNotesLogo from "@/app/assets/images/sponsors/HamroNotesLogo.svg";
+import HamroNotesLogo from "@/app/assets/images/sponsors/HamroNotes_Logo.svg";
 import MeroStyle from "@/app/assets/images/sponsors/MeroStyle.svg";
 import GithubEducation from "@/app/assets/images/sponsors/GithubEducation.svg";
 import NewMountainJava from "@/app/assets/images/sponsors/NewMountainJava.svg";
@@ -21,6 +22,8 @@ import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"
 import CitizensBank from "@/app/assets/images/sponsors/CitizensBank.svg"  
 // import MountainJavaLogo from "@/app/assets/images/sponsors/MountainJavaLogo.svg";
 import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg";
+import HimalogicLogo from "@/app/assets/images/sponsors/Himalogic.svg"
+import PrixaLogo from "@/app/assets/images/sponsors/Prixa_White_Logo.png"
 // import Programiz from "@/app/assets/images/sponsors/Programiz.svg";
 // import trainingcenter from "@/app/assets/images/sponsors/trainingcenter.png";
 // import Jyotilogo from "@/app/assets/images/sponsors/Jyotilogo.png";
@@ -30,6 +33,7 @@ import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg";
 // import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
 import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import ultima from "@/app/assets/images/sponsors/ultima.svg";
+import PeaksLogo from "@/app/assets/images/sponsors/8Peaks_BW_Logo.svg";
 // import VT from "@/app/assets/images/sponsors/VT.png";
 // import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 // import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
@@ -48,7 +52,15 @@ import ultima from "@/app/assets/images/sponsors/ultima.svg";
 import suiro from "@/app/assets/images/sponsors/suiro.png";
 import YOLO from "@/app/assets/images/sponsors/yolo.png";
 import HotelAssociation from "@/app/assets/images/sponsors/hotelassociation.png";
-
+import BigBracketsLogo from "@/app/assets/images/sponsors/BigBrackets_White_logo.png";
+import DailoKrishiLogo from "@/app/assets/images/sponsors/DailoKrishi_Logo.png";
+import KathmanduKoKathaLogo from "@/app/assets/images/sponsors/KathmanduKoKatha_Logo.png";
+import PomeloLogo from "@/app/assets/images/sponsors/Pomelo_Logo.png";
+import TingTingLogo from "@/app/assets/images/sponsors/TingTing_White_Logo.png";
+import SpeakUpNepalLogo from "@/app/assets/images/sponsors/SpeakUpNepal_Colored_Logo.png";
+import SnowBerryLogo from "@/app/assets/images/sponsors/SnowBerry_Logo.png";
+import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
+import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 
 const sponsors: SponsorType[] = [
   // {
@@ -62,71 +74,108 @@ const sponsors: SponsorType[] = [
   //     },
   //   ],
   // },
-  // {
-  //   name: "Platinum Sponsor",
-  //   sponsors: [
-  //       {
-  //           name: "NIMB Ltd.",
-  //           url: "https://www.nimb.com.np/en/personal-banking",
-  //           image: NimbLogo,
-  //           imageAlt: "Nimb Logo",
-  //       },
-  //   ],
-  // },
-
-  {
-    name: "Platform Sponsor",
+    {
+    name: "Title Sponsor",
     sponsors: [
-    //   {
-    //       name: "Annapurna Post",
-    //       url: "https://www.annapurnapost.com",
-    //       image: AnnapurnaLogo,
-    //       imageAlt: "Annapurna Post Logo",
-    //     },
-    //   {
-    //     name: "Hamro CSIT",
-    //     url: "https://hamrocsit.com",
-    //     image: HamroCSITLogo,
-    //     imageAlt: "HamroCSIT Logo",
-    //   },
-    //  {
-    //     name: "Mero Style",
-    //     url: "https://merostyle.com/",
-    //     image: MeroStyle,
-    //     imageAlt: "Mero Style Logo",
-    //   },
-      {
-        name: "Devfolio",
-        url: "https://devfolio.co",
-        image: DevfolioLogo,
-        imageAlt: "DEVFOLIO LOGO",
+       {
+        name: "Prixa",
+        url: "https://prixa.org/",
+        image: PrixaLogo,
+        imageAlt: "PrixaLogo",
       },
-      // {
-      //   name: "YOLO Shoes",
-      //   url: "https://www.instagram.com/yolobrand_/?hl=en",
-      //   image: YOLO,
-      //   imageAlt: "YOLO LOGO",
-      // },
-
-      
-        
+      {
+        name: "8Peaks.Cloud",
+        url: "https://www.8peaks.cloud/",
+        image: PeaksLogo,
+        imageAlt: "8Peaks Logo",
+      },
+     
     ],
   },
-//   {
-//     name: "Silver Sponsors",
-//     sponsors: [
+  {
+    name: "Platinum Sponsor",
+    sponsors: [
+        // {
+        //     name: "NIMB Ltd.",
+        //     url: "https://www.nimb.com.np/en/personal-banking",
+        //     image: NimbLogo,
+        //     imageAlt: "Nimb Logo",
+        // },
+         {
+            name: "Himalogic",
+            url: "https://himalogic.com.np/",
+            image: HimalogicLogo,
+            imageAlt: "Himalogic Logo",
+        },
+    ],
+  },
+   
+ 
+  {
+    name: "Gold Sponsors",
+    sponsors: [
+      {
+        name: "HamroNotes",
+        url: "https://hamronotes.com/",
+        image: HamroNotesLogo,
+        imageAlt: "HamroNotesLogo",
+      },
+    ]
+
+  },
+  {
+    name: "Energy Partner",
+    sponsors: [
+      {
+        name: "RedBull",
+        url: "https://redbull-nepal.com/",
+        image: RedBullLogo,
+        imageAlt: "RedBullLogo",
+      },
+    ]
+
+  },
+
+  {
+    name: "Silver Sponsors",
+    sponsors: [
+      {
+        name: "ThirdFactor",
+        url: "https://thirdfactor.ai/",
+        image: ThirdFactorLogo,
+        imageAlt: "ThirdFactorLogo",
+      },
+      {
+        name: "TingTing",
+        url: "https://thirdfactor.ai/",
+        image: TingTingLogo,
+        imageAlt: "TingTingLogo",
+      },
+      {
+        name: "Pomelo",
+        url: "https://apps.apple.com/np/app/pomelo-hrm/id1496914774",
+        image: PomeloLogo,
+        imageAlt: "PomeloLogo",
+      },
+    
+      {
+        name: "BigBrackets",
+        url: "https://bigbracketshq.com/",
+        image: BigBracketsLogo,
+        imageAlt: "BigbracketsLogo",
+      },
 //       // {
 //       //   name: "naamche",
 //       //   url: "www.naamche.com",
 //       //   image: naamche,
 //       //   imageAlt: "naamche Logo",
 //       // },
-//       // {
-//       //   name: "deerhold",
-//       //   url: "https://deerhold.com",
-//       //   image: DeerholdLogo,
-//       //   imageAlt: "DeerHold Logo",
-//       // },
+      // {
+      //   name: "deerhold",
+      //   url: "https://deerhold.com",
+      //   image: DeerholdLogo,
+      //   imageAlt: "DeerHold Logo",
+      // }
 //       // {
 //       //   name: "Polygon",
 //       //   url: "https://polygon.technology/",
@@ -145,17 +194,42 @@ const sponsors: SponsorType[] = [
 //       //   image: SifalSchool,
 //       //   imageAlt: "Sifal School LOGO",
 //       // },
-//     ],
-//   // },
-//   {
-//     name: "Bronze Sponsors",
-//     sponsors: [
-//       {
-//         name: "Leapfrog Technologies",
-//         url: "https://www.lftechnology.com",
-//         image: leapfrog,
-//         imageAlt: "Leapfrog Logo",
-//       },
+    ],
+  },
+  {
+    name: "Bronze Sponsors",
+    sponsors: [
+        {
+        name: "Snowberry",
+        url: "https://www.linkedin.com/company/snowberrycms/?originalSubdomain=np",
+        image: SnowBerryLogo,
+        imageAlt: "SnowBerryLogo",
+      },
+      
+        
+     
+      {
+        name: "Leapfrog Technologies",
+        url: "https://www.lftechnology.com",
+        image: leapfrog,
+        imageAlt: "Leapfrog Logo",
+      },
+     
+      {
+        name: "SpeakUpNepal",
+        url: "https://speakupnepal.org/",
+        image: SpeakUpNepalLogo,
+        imageAlt: "SpeakUpNepalLogo",
+      },
+     
+        
+      {
+        name: "deerhold",
+        url: "https://deerhold.com",
+        image: DeerholdLogo,
+        imageAlt: "DeerHold Logo",
+      },
+       
 //       {
 //         name: "Ultima Lifestyle",
 //         url: "https://ultima.com.np/",
@@ -174,19 +248,49 @@ const sponsors: SponsorType[] = [
 //         image: suiro,
 //         imageAlt: "Suiro Teas Logo",
 //       },
-//     ],
-//   },
-//   {
-//     name: "ED Tech Partner",
-//     sponsors: [
-//       {
-//         name: "HamroNotes",
-//         url: "https://hamrocsit.com",
-//         image: HamroNotesLogo,
-//         imageAlt: "HamroNotesogo",
-//       },
-//     ],
-//   },
+    ],
+  },
+   {
+    name: "Supported By",
+    sponsors: [
+       {
+        name: "DailoKrishi",
+        url: "https://www.dailokrishi.com/",
+        image: DailoKrishiLogo,
+        imageAlt: "DailoKrishiLogo",
+      },
+       {
+        name: "KathmanduKoKatha",
+        url: "https://www.instagram.com/kathmandu_ko_katha/",
+        image: KathmanduKoKathaLogo,
+        imageAlt: "KathmanduKoKathaLogo",
+      },
+      
+    ],
+  },
+   
+  {
+    name: "ED Tech Partner",
+    sponsors: [
+      {
+        name: "HamroCSIT",
+        url: "https://hamrocsit.com",
+        image: HamroCSITLogo,
+        imageAlt: "HamroCSITLogo",
+      },
+    ],
+  },
+  {
+    name: "Gifting Partner",
+    sponsors: [
+       {
+        name: "EcoSathi",
+        url: "https://ecosathinepal.com/",
+        image: EcoSathiLogo,
+        imageAlt: "EcoSathiLogo",
+      },
+    ]
+    },
 //   {
 //     name: "Data Science And Machine Learning Partner",
 //     sponsors: [
@@ -234,17 +338,17 @@ const sponsors: SponsorType[] = [
 //     ],
 //   },
 
-//   {
-//     name: "Career Partner",
-//     sponsors: [
-//         {
-//            name: "Mero Job",
-//            url: "https://merojob.com/",
-//            image: MeroJobLogo,
-//            imageAlt: "Mero Job Logo",
-//         },
-//     ],
-//   },
+  {
+    name: "Career Partner",
+    sponsors: [
+        {
+           name: "Mero Job",
+           url: "https://merojob.com/",
+           image: MeroJobLogo,
+           imageAlt: "Mero Job Logo",
+        },
+    ],
+  },
 
 
 
@@ -459,6 +563,44 @@ const sponsors: SponsorType[] = [
 //   //       },
 //   //   ]
 //   // },
+ {
+    name: "Platform Sponsor",
+    sponsors: [
+    //   {
+    //       name: "Annapurna Post",
+    //       url: "https://www.annapurnapost.com",
+    //       image: AnnapurnaLogo,
+    //       imageAlt: "Annapurna Post Logo",
+    //     },
+      // {
+      //   name: "Hamro CSIT",
+      //   url: "https://hamrocsit.com",
+      //   image: HamroCSITLogo,
+      //   imageAlt: "HamroCSIT Logo",
+      // },
+    //  {
+    //     name: "Mero Style",
+    //     url: "https://merostyle.com/",
+    //     image: MeroStyle,
+    //     imageAlt: "Mero Style Logo",
+    //   },
+      {
+        name: "Devfolio",
+        url: "https://devfolio.co",
+        image: DevfolioLogo,
+        imageAlt: "DEVFOLIO LOGO",
+      },
+      // {
+      //   name: "YOLO Shoes",
+      //   url: "https://www.instagram.com/yolobrand_/?hl=en",
+      //   image: YOLO,
+      //   imageAlt: "YOLO LOGO",
+      // },
+
+      
+        
+    ],
+  },
 ];
 
 export { sponsors };
