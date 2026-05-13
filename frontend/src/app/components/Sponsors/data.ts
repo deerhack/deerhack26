@@ -147,7 +147,7 @@ const sponsors: SponsorType[] = [
       },
       {
         name: "TingTing",
-        url: "https://thirdfactor.ai/",
+        url: "https://www.tingting.io/",
         image: TingTingLogo,
         imageAlt: "TingTingLogo",
       },
