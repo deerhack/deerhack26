@@ -33,7 +33,8 @@ import PrixaLogo from "@/app/assets/images/sponsors/Prixa_White_Logo.png"
 // import Luminr from "@/app/assets/images/sponsors/Luminr.svg";
 import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import ultima from "@/app/assets/images/sponsors/ultima.svg";
-import PeaksLogo from "@/app/assets/images/sponsors/8Peaks_BW_Logo.svg";
+import PeaksLogo from "@/app/assets/images/sponsors/8peaks_white_Logo.png";
+import SandukAILogo from "@/app/assets/images/sponsors/Sandukai_Logo.png";
 // import VT from "@/app/assets/images/sponsors/VT.png";
 // import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 // import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
@@ -61,6 +62,7 @@ import SpeakUpNepalLogo from "@/app/assets/images/sponsors/SpeakUpNepal_Colored_
 import SnowBerryLogo from "@/app/assets/images/sponsors/SnowBerry_Logo.png";
 import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
+import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
 
 const sponsors: SponsorType[] = [
   // {
@@ -264,6 +266,27 @@ const sponsors: SponsorType[] = [
         url: "https://www.instagram.com/kathmandu_ko_katha/",
         image: KathmanduKoKathaLogo,
         imageAlt: "KathmanduKoKathaLogo",
+      },
+      
+      //  {
+      //   name: "KathmanduKoKatha",
+      //   url: "https://www.instagram.com/kathmandu_ko_katha/",
+      //   image: KathmanduKoKathaLogo,
+      //   imageAlt: "KathmanduKoKathaLogo",
+      // },
+      
+       {
+        name: "KTMONE",
+        url: "https://ktm.one/",
+        image: KTMONELOGO,
+        imageAlt: "KTMONELOGO",
+      },
+      
+       {
+        name: "SandukAi",
+        url: "https://sanduk.ai/",
+        image: SandukAILogo,
+        imageAlt: "SandukAILogo",
       },
       
     ],
