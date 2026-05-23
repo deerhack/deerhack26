@@ -27,7 +27,7 @@ const LegacySection = () => {
 
                     <LegacyFlowerCard 
                         logo={<Deerhack24 className="w-[200px] h-[75px] lg:w-[208px] lg:h-[92px] md:h-[92px] sm:[88px]"/>}
-                        eventLead="Aasutosh Pudasaini"
+                        eventLead="Aashutosh Pudasaini"
                         eventColead="Sampanna Gautam"
                         date="May 8, 9, 10: 2024" 
                         application={786}

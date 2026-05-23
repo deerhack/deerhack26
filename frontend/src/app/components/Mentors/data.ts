@@ -35,83 +35,84 @@ import Mentors from "@/app/types/mentors"
 
 const Mentors_value: Mentors[] = [
   {
-    name: "Bishal Joshi",
-    position: "Software Engineer",
-    linkedin_url: "https://www.linkedin.com/in/bishal-joshi-7a3711203",
-    image: "https://ghostuf.github.io/static_images/bishal_joshi.jpeg",
+    name: "Shuvam Tiwari",
+    position: "Senior Blockchain Engineer/Freelancer",
+    linkedin_url: "https://www.linkedin.com/in/shubhtiwari5/",
+    image: "https://enkoki.github.io/static_images/deerhack26/Shubham_Tiwari.jpg",
   },
   {
     name: "Toshika Ojha",
-    position: "Client Success Consultant",
+    position: "Client Success Consultant(Freelance) | Expert Consultant ",
     linkedin_url: "https://www.linkedin.com/in/toshikaojha/",
     image:"https://ghostuf.github.io/static_images/toshika_ojha.jpg"
   },
   {
     name: "Luja Chitrakar",
-    position: "Blockchain Developer",
-    linkedin_url: "https://www.linkedin.com/in/luja-chitrakar/",
+    position: "Solana Developer",
+    linkedin_url: "https://www.linkedin.com/in/lujachitrakar/",
     image:"https://ghostuf.github.io/static_images/luja_chitrakar.jpeg"
   },
   {
     name: "Mala Deep Upadhaya",
-    position: "Data Consultant",
+    position: "Data Consultant / Dataksha Analytics",
     linkedin_url: "https://www.linkedin.com/in/maladeep",
-    image: "https://ghostuf.github.io/static_images/mala_deep_upadhyaya.jpg"
+    image: "https://enkoki.github.io/static_images/deerhack26/Mala_Deep_Upadhaya.PNG"
   },
   {
-    name: "Elisha Baniya",
-    position: "QA Engineer",
-    linkedin_url: "https://www.linkedin.com/in/elishabaniya",
-    image: "https://ghostuf.github.io/static_images/elisha_baniya.png"
+    name: "Aashutosh Poudel",
+    position: "Co-Founder of InfoShapers",
+    linkedin_url: "https://linkedin.com/in/aashutoshpoudel",
+    image: "https://enkoki.github.io/static_images/deerhack26/Aashutosh_Poudel.JPG"
   },
   {
-    name: "Yashaswee Sakha",
-    position: "UI/UX Engineer",
-    linkedin_url: "https://www.linkedin.com/in/yashaswee-sakha/",
-    image: "https://ghostuf.github.io/static_images/yashaswee_sakha.jpg"
+    name: "Rahul Raj Singh",
+    position: "Robotics Engineer",
+    linkedin_url: "https://www.linkedin.com/in/rahulrajshah",
+    image: "https://enkoki.github.io/static_images/deerhack26/Rahul_Raj_Shah.jpg"
   },
   {
     name: "Mamata Maharjan",
-    position: "Senior Software Engineer",
+    position: "Sr. Data Engineer",
     linkedin_url: "https://www.linkedin.com/in/mamata-maharjan-b4197b178",
-    image: "https://ghostuf.github.io/static_images/mamata_maharjan.jpg"
+    image: "https://enkoki.github.io/static_images/deerhack26/Mamata_Maharjan.jpg"
   },
   {
     name: "Sushan Shakya",
-    position: "Data Engineer",
+    position: "Sr. Software Engineer",
     linkedin_url: "https://www.linkedin.com/in/er-sushan-shakya-88b78b17b/",
     image: "https://ghostuf.github.io/static_images/sushan_shakya.jpg"
   },
   {
     name: "Prashant Malla",
-    position: "Embedded System Engineer",
-    linkedin_url: "https://www.linkedin.com/in/prashant-malla-139339b2",
+    position: "Sr. Embedded Software Engineer",
+    linkedin_url: "https://www.linkedin.com/in/prashant-malla-139339b2/",
     image: "https://ghostuf.github.io/static_images/prashant_malla.jpg"
   },
   {
     name: "Saru Manandhar",
     position: "Software Engineer",
-    linkedin_url: "https://www.linkedin.com/in/saru-manandhar-71222614a",
-    image: "https://ghostuf.github.io/static_images/saru_manandhar.jpg"
+    linkedin_url: "https://www.linkedin.com/in/saru-manandhar-71222614a/",
+    image: "https://enkoki.github.io/static_images/deerhack26/Saru_Manandhar.jpg"
   },
-  // {
-  //   name: "Labbi Karmacharya",
-  //   position: "Data Scientist & Lecturer - Equitech Futures / Islington College",
-  //   linkedin_url: "https://www.linkedin.com/in/labbi-karmacharya/",
-  //   image: "https://ghostuf.github.io/static_images/labbi_karmacharya.png"
-  // },
+    {
+    name: "Labbi Karmacharya",
+    position: "Data Research Fellow / Equitech Futures, Lecturer / Islington College",
+    linkedin_url: "https://www.linkedin.com/in/labbi-karmacharya/", 
+    image: "https://enkoki.github.io/static_images/deerhack26/Labbi.jpg"
+  },
   {
-    name: "Rojan Upreti",
-    position: "Machine Learning Engineer",
-    linkedin_url: "https://www.linkedin.com/in/rojanupreti/", // No LinkedIn URL provided
-    image: "https://ghostuf.github.io/static_images/rojan_upreti.jpg"
+    name: "Sarun Luitel",
+    position: "Owner at Dormo Solutions Pvt. Ltd.",
+    linkedin_url: "https://www.linkedin.com/in/sarunluitel/", 
+    image: "https://enkoki.github.io/static_images/deerhack26/Sarun_Luitel.jpg"
   },
    {
-    name: "Avinash Mishra",
-    position: "Lead Engineer",
-    linkedin_url: "https://www.linkedin.com/in/avinash-mishra-np/", // No LinkedIn URL provided
-    image: "https://ghostuf.github.io/static_images/avinash_mishra.png"
+    name: "Minalma Basnet",
+    position: "Customer Success Manager",
+    linkedin_url: "https://www.linkedin.com/in/minalma-basnet/", 
+    image: "https://enkoki.github.io/static_images/deerhack26/Minamla_Basnet.jpeg"
   },
+ 
 ]
 
 export { Mentors_value }
