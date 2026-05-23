@@ -5,6 +5,7 @@ import { cabinetExtraBold } from "@/fonts";
 import Laptop from "@/app/assets/icons/Laptop";
 import CoffeCup from "@/app/assets/icons/CoffeeCup";
 import DarinCup from "@/app/assets/icons/DarinCup";
+import DarinRedBull from "../assets/icons/DarinRedBull";
 import Guitar from "@/app/assets/icons/Guitar";
 
 import gsap from "gsap";
@@ -12,6 +13,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import DarinCupPhone from "../assets/icons/DarinCupPhone";
 import AboutVine from "../assets/icons/AboutVine";
+import DarinRedBullPhone from "../assets/icons/DarinRedBullPhone";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -107,13 +109,19 @@ export default function Home() {
       />
 
       {/* For Large Screens */}
-      <DarinCup
+      {/* <DarinCup
         height={843}
         width={424}
         className="darin-anim absolute z-30 -bottom-[100px] right-[-150px] hidden lg:block"
+      /> */}
+      <DarinRedBull
+        height={858}
+        width={334}
+        className="darin-anim absolute z-30 -bottom-[100px] right-[-40px] hidden lg:block"
       />
       {/* For Phone  Screens */}
-      <DarinCupPhone className="darin-anim-ph absolute z-30 right-0 bottom-[50px] block lg:hidden" />
+      {/* <DarinCupPhone className="darin-anim-ph absolute z-30 right-0 bottom-[50px] block lg:hidden" /> */}
+      <DarinRedBullPhone className="darin-anim-ph absolute z-30 right-0 bottom-[50px] block lg:hidden" />
 
       <div className="pb-[280px] pt-[100px]">
         <h1

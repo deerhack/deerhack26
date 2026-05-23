@@ -63,6 +63,7 @@ import SnowBerryLogo from "@/app/assets/images/sponsors/SnowBerry_Logo.png";
 import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
+import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg"
 
 const sponsors: SponsorType[] = [
   // {
@@ -260,6 +261,7 @@ const sponsors: SponsorType[] = [
         url: "https://www.dailokrishi.com/",
         image: DailoKrishiLogo,
         imageAlt: "DailoKrishiLogo",
+        // className: "bg-white rounded-lg"
       },
        {
         name: "KathmanduKoKatha",
@@ -281,12 +283,20 @@ const sponsors: SponsorType[] = [
         image: KTMONELOGO,
         imageAlt: "KTMONELOGO",
       },
+
+       {
+        name: "KTMONE",
+        url: "https://www.prabhubank.com",
+        image: PRABHUBANKLOGO,
+        imageAlt: "PRABHUBANKLOGO",
+      },
       
        {
         name: "SandukAi",
         url: "https://sanduk.ai/",
         image: SandukAILogo,
         imageAlt: "SandukAILogo",
+        className: "bg-white rounded-lg"
       },
       
     ],

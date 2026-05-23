@@ -6,6 +6,7 @@ type Sponsor = {
   url: string;
   image: StaticImageData;
   imageAlt: string;
+  className?: string;
 };
 
 export default Sponsor;
