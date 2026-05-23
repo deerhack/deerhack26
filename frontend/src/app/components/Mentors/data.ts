@@ -34,15 +34,41 @@
 import Mentors from "@/app/types/mentors"
 
 const Mentors_value: Mentors[] = [
+
+   {
+    name: "Mamata Maharjan",
+    position: "Sr. Data Engineer",
+    linkedin_url: "https://www.linkedin.com/in/mamata-maharjan-b4197b178",
+    image: "https://enkoki.github.io/static_images/deerhack26/Mamata_Maharjan.jpg"
+  },
+   {
+    name: "Rahul Raj Singh",
+    position: "Robotics Engineer",
+    linkedin_url: "https://www.linkedin.com/in/rahulrajshah",
+    image: "https://enkoki.github.io/static_images/deerhack26/Rahul_Raj_Shah.jpg"
+  },
+
+   {
+    name: "Mala Deep Upadhaya",
+    position: "Data Consultant / Dataksha Analytics",
+    linkedin_url: "https://www.linkedin.com/in/maladeep",
+    image: "https://ghostuf.github.io/static_images/mala_deep_upadhyaya.jpg"
+  },
+   {
+    name: "Aashutosh Poudel",
+    position: "Co-Founder of InfoShapers",
+    linkedin_url: "https://linkedin.com/in/aashutoshpoudel",
+    image: "https://enkoki.github.io/static_images/deerhack26/Aashutosh_Poudel.JPG"
+  },
   {
     name: "Shuvam Tiwari",
-    position: "Senior Blockchain Engineer/Freelancer",
+    position: "Sr. Blockchain Engineer",
     linkedin_url: "https://www.linkedin.com/in/shubhtiwari5/",
     image: "https://enkoki.github.io/static_images/deerhack26/Shubham_Tiwari.jpg",
   },
   {
     name: "Toshika Ojha",
-    position: "Client Success Consultant(Freelance) | Expert Consultant ",
+    position: "Client Success Consultant ",
     linkedin_url: "https://www.linkedin.com/in/toshikaojha/",
     image:"https://ghostuf.github.io/static_images/toshika_ojha.jpg"
   },
@@ -52,30 +78,10 @@ const Mentors_value: Mentors[] = [
     linkedin_url: "https://www.linkedin.com/in/lujachitrakar/",
     image:"https://ghostuf.github.io/static_images/luja_chitrakar.jpeg"
   },
-  {
-    name: "Mala Deep Upadhaya",
-    position: "Data Consultant / Dataksha Analytics",
-    linkedin_url: "https://www.linkedin.com/in/maladeep",
-    image: "https://enkoki.github.io/static_images/deerhack26/Mala_Deep_Upadhaya.PNG"
-  },
-  {
-    name: "Aashutosh Poudel",
-    position: "Co-Founder of InfoShapers",
-    linkedin_url: "https://linkedin.com/in/aashutoshpoudel",
-    image: "https://enkoki.github.io/static_images/deerhack26/Aashutosh_Poudel.JPG"
-  },
-  {
-    name: "Rahul Raj Singh",
-    position: "Robotics Engineer",
-    linkedin_url: "https://www.linkedin.com/in/rahulrajshah",
-    image: "https://enkoki.github.io/static_images/deerhack26/Rahul_Raj_Shah.jpg"
-  },
-  {
-    name: "Mamata Maharjan",
-    position: "Sr. Data Engineer",
-    linkedin_url: "https://www.linkedin.com/in/mamata-maharjan-b4197b178",
-    image: "https://enkoki.github.io/static_images/deerhack26/Mamata_Maharjan.jpg"
-  },
+ 
+ 
+ 
+ 
   {
     name: "Sushan Shakya",
     position: "Sr. Software Engineer",
@@ -92,17 +98,17 @@ const Mentors_value: Mentors[] = [
     name: "Saru Manandhar",
     position: "Software Engineer",
     linkedin_url: "https://www.linkedin.com/in/saru-manandhar-71222614a/",
-    image: "https://enkoki.github.io/static_images/deerhack26/Saru_Manandhar.jpg"
+    image: "https://ghostuf.github.io/static_images/saru_manandhar.jpg"
   },
     {
     name: "Labbi Karmacharya",
-    position: "Data Research Fellow / Equitech Futures, Lecturer / Islington College",
+    position: "Data Research Fellow / Equitech Futures, Lecturer ",
     linkedin_url: "https://www.linkedin.com/in/labbi-karmacharya/", 
     image: "https://enkoki.github.io/static_images/deerhack26/Labbi.jpg"
   },
   {
     name: "Sarun Luitel",
-    position: "Owner at Dormo Solutions Pvt. Ltd.",
+    position: "Software Dev Dormo Solutions Pvt. Ltd.",
     linkedin_url: "https://www.linkedin.com/in/sarunluitel/", 
     image: "https://enkoki.github.io/static_images/deerhack26/Sarun_Luitel.jpg"
   },
