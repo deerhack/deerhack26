@@ -55,7 +55,7 @@ import YOLO from "@/app/assets/images/sponsors/yolo.png";
 import HotelAssociation from "@/app/assets/images/sponsors/hotelassociation.png";
 import BigBracketsLogo from "@/app/assets/images/sponsors/BigBrackets_White_logo.png";
 import DailoKrishiLogo from "@/app/assets/images/sponsors/DailoKrishi_Logo.png";
-import BanhLifeLogo from "@/app/assets/images/sponsors/Banh_Life_Logo.png";
+import BanhLifeLogo from "@/app/assets/images/sponsors/Banh_LIfe_Logo.png"
 import KathmanduKoKathaLogo from "@/app/assets/images/sponsors/KathmanduKoKatha_Logo.png";
 import PomeloLogo from "@/app/assets/images/sponsors/Pomelo_Logo.png";
 import TingTingLogo from "@/app/assets/images/sponsors/TingTing_White_Logo.png";
