@@ -125,6 +125,8 @@ const Navbar = () => {
                 icon={organizersIcon}
               />*/}
               <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
+              <SidebarButton href="/organizers" label="Organizers" icon={organizersIcon} />
+              
               </nav>
             </div>
 

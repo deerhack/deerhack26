@@ -34,7 +34,9 @@ const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
             <p className={`text-white font-[150] text-sm`}>{position}</p>
           </div>
           <div key="icon">
-            <Link href={linkedin_url}>
+            <Link href={linkedin_url}
+                  target="_blank"
+                   rel="noopener noreferrer">
               <LinkedInSVG />
             </Link>
           </div>
