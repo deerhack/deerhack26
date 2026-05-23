@@ -108,7 +108,7 @@ const Mentors_value: Mentors[] = [
   },
   {
     name: "Sarun Luitel",
-    position: "Software Dev Dormo Solutions Pvt. Ltd.",
+    position: "Owner at Dormo Solutions Pvt. Ltd.",
     linkedin_url: "https://www.linkedin.com/in/sarunluitel/", 
     image: "https://enkoki.github.io/static_images/deerhack26/Sarun_Luitel.jpg"
   },
