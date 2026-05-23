@@ -35,10 +35,10 @@ import Mentors from "@/app/types/mentors"
 
 const Mentors_value: Mentors[] = [
   {
-    name: "Bishal Joshi",
+    name: "Shuvam Tiwari",
     position: "Software Engineer",
     linkedin_url: "https://www.linkedin.com/in/bishal-joshi-7a3711203",
-    image: "https://ghostuf.github.io/static_images/bishal_joshi.jpeg",
+    image: "https://enkoki.github.io/static_images/deerhack26/Shubham_Tiwari.jpg",
   },
   {
     name: "Toshika Ojha",
@@ -56,25 +56,25 @@ const Mentors_value: Mentors[] = [
     name: "Mala Deep Upadhaya",
     position: "Data Consultant",
     linkedin_url: "https://www.linkedin.com/in/maladeep",
-    image: "https://ghostuf.github.io/static_images/mala_deep_upadhyaya.jpg"
+    image: "https://enkoki.github.io/static_images/deerhack26/Mala_Deep_Upadhaya.PNG"
   },
   {
-    name: "Elisha Baniya",
+    name: "Aashutosh Poudel",
     position: "QA Engineer",
     linkedin_url: "https://www.linkedin.com/in/elishabaniya",
-    image: "https://ghostuf.github.io/static_images/elisha_baniya.png"
+    image: "https://enkoki.github.io/static_images/deerhack26/Aashutosh_Poudel.JPG"
   },
   {
-    name: "Yashaswee Sakha",
+    name: "Rahul Raj Singh",
     position: "UI/UX Engineer",
     linkedin_url: "https://www.linkedin.com/in/yashaswee-sakha/",
-    image: "https://ghostuf.github.io/static_images/yashaswee_sakha.jpg"
+    image: "https://enkoki.github.io/static_images/deerhack26/Rahul_Raj_Shah.jpg"
   },
   {
     name: "Mamata Maharjan",
     position: "Senior Software Engineer",
     linkedin_url: "https://www.linkedin.com/in/mamata-maharjan-b4197b178",
-    image: "https://ghostuf.github.io/static_images/mamata_maharjan.jpg"
+    image: "https://enkoki.github.io/static_images/deerhack26/Mamata_Maharjan.jpg"
   },
   {
     name: "Sushan Shakya",
@@ -92,26 +92,27 @@ const Mentors_value: Mentors[] = [
     name: "Saru Manandhar",
     position: "Software Engineer",
     linkedin_url: "https://www.linkedin.com/in/saru-manandhar-71222614a",
-    image: "https://ghostuf.github.io/static_images/saru_manandhar.jpg"
+    image: "https://enkoki.github.io/static_images/deerhack26/Saru_Manandhar.jpg"
   },
-  // {
-  //   name: "Labbi Karmacharya",
-  //   position: "Data Scientist & Lecturer - Equitech Futures / Islington College",
-  //   linkedin_url: "https://www.linkedin.com/in/labbi-karmacharya/",
-  //   image: "https://ghostuf.github.io/static_images/labbi_karmacharya.png"
-  // },
-  {
-    name: "Rojan Upreti",
-    position: "Machine Learning Engineer",
-    linkedin_url: "https://www.linkedin.com/in/rojanupreti/", // No LinkedIn URL provided
-    image: "https://ghostuf.github.io/static_images/rojan_upreti.jpg"
-  },
-   {
-    name: "Avinash Mishra",
+    {
+    name: "Labbi",
     position: "Lead Engineer",
     linkedin_url: "https://www.linkedin.com/in/avinash-mishra-np/", // No LinkedIn URL provided
-    image: "https://ghostuf.github.io/static_images/avinash_mishra.png"
+    image: "https://enkoki.github.io/static_images/deerhack26/Labbi.jpg"
   },
+  {
+    name: "Sarun Luitel",
+    position: "Machine Learning Engineer",
+    linkedin_url: "https://www.linkedin.com/in/rojanupreti/", // No LinkedIn URL provided
+    image: "https://enkoki.github.io/static_images/deerhack26/Sarun_Luitel.jpg"
+  },
+   {
+    name: "Minalma Basnet",
+    position: "Lead Engineer",
+    linkedin_url: "https://www.linkedin.com/in/avinash-mishra-np/", // No LinkedIn URL provided
+    image: "https://enkoki.github.io/static_images/deerhack26/Minamla_Basnet.jpeg"
+  },
+ 
 ]
 
 export { Mentors_value }
