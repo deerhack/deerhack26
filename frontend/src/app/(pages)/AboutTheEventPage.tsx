@@ -4,6 +4,7 @@ import AboutTheEventCards from "../sections/AboutTheEvent/AboutTheEventCards";
 import { cabinetExtraBold } from "@/fonts";
 import Laptop from "@/app/assets/icons/Laptop";
 import CoffeCup from "@/app/assets/icons/CoffeeCup";
+import CAN from "@/app/assets/icons/Can";
 import DarinCup from "@/app/assets/icons/DarinCup";
 import DarinRedBull from "../assets/icons/DarinRedBull";
 import Guitar from "@/app/assets/icons/Guitar";
@@ -102,7 +103,7 @@ export default function Home() {
         width={354}
         className="phone-event-icon z-30 lg:event-icon absolute bottom-[120px] md:bottom-[7%] md:left-[28px] lg:-left-[5px] lg:bottom-[8%] w-[137px] h-[118px] md:w-[200px] md:h-[200px] lg:w-[354px] lg:h-[306px]"
       />
-      <CoffeCup
+      <CAN
         height={170}
         width={124}
         className="z-30 md:z-0 lg:z-30 phone-event-icon md:event-icon absolute bottom-[230px] md:bottom-[22.5%] lg:left-[38px] lg:bottom-[38%] w-[48px] h-[56px] md:w-[80px] md:h-[100px] lg:w-[124px] lg:h-[170px]"

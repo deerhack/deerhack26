@@ -80,7 +80,7 @@ const sponsors: SponsorType[] = [
   //   ],
   // },
     {
-    name: "Title Sponsor",
+    name: "Title Sponsors",
     sponsors: [
        {
         name: "Prixa",
@@ -117,7 +117,7 @@ const sponsors: SponsorType[] = [
    
  
   {
-    name: "Gold Sponsors",
+    name: "Gold Sponsor",
     sponsors: [
       {
         name: "HamroNotes",
