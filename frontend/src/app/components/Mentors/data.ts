@@ -104,7 +104,7 @@ const Mentors_value: Mentors[] = [
     name: "Labbi Karmacharya",
     position: "Data Research Fellow / Equitech Futures, Lecturer ",
     linkedin_url: "https://www.linkedin.com/in/labbi-karmacharya/", 
-    image: "https://enkoki.github.io/static_images/deerhack26/Labbi.jpg"
+    image: "https://deerhack24.deerwalk.edu.np/uploads/Labbi_Karmacharya_f8d004f9e8.jfif"
   },
   {
     name: "Sarun Luitel",
