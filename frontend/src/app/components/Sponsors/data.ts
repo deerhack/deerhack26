@@ -35,6 +35,7 @@ import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import ultima from "@/app/assets/images/sponsors/ultima.svg";
 import PeaksLogo from "@/app/assets/images/sponsors/8peaks_white_Logo.png";
 import SandukAILogo from "@/app/assets/images/sponsors/Sandukai_Logo.png";
+import JunctionHubLogo from "@/app/assets/images/sponsors/JunctionHub_Logo.jpeg";
 // import VT from "@/app/assets/images/sponsors/VT.png";
 // import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 // import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
@@ -55,7 +56,7 @@ import YOLO from "@/app/assets/images/sponsors/yolo.png";
 import HotelAssociation from "@/app/assets/images/sponsors/hotelassociation.png";
 import BigBracketsLogo from "@/app/assets/images/sponsors/BigBrackets_White_logo.png";
 import DailoKrishiLogo from "@/app/assets/images/sponsors/DailoKrishi_Logo.png";
-import BanhLifeLogo from "@/app/assets/images/sponsors/Banh_LIfe_Logo.png"
+import BanhLifeLogo from "@/app/assets/images/sponsors/BanhLife_Logo.png"
 import KathmanduKoKathaLogo from "@/app/assets/images/sponsors/KathmanduKoKatha_Logo.png";
 import PomeloLogo from "@/app/assets/images/sponsors/Pomelo_Logo.png";
 import TingTingLogo from "@/app/assets/images/sponsors/TingTing_White_Logo.png";
@@ -326,13 +327,19 @@ const sponsors: SponsorType[] = [
     ]
     },
   {
-    name: "Stall Partner",
+    name: "Stall Partners",
     sponsors: [
        {
         name: "Banh Life",
         url: "https://www.instagram.com/banhlife/",
         image: BanhLifeLogo,
         imageAlt: "BanhLifeLogo",
+      },
+       {
+        name: "Junction Hub",
+        url: "https://www.tiktok.com/@thejunctionhub",
+        image: JunctionHubLogo,
+        imageAlt: "JunctionHubLogo",
       },
     ]
     },

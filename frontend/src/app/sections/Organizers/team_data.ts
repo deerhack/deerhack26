@@ -2,6 +2,7 @@
 
 import Team from "@/app/types/team";
 
+
 const teamsData: Array<Team> = [
   {
     id: 1,
@@ -29,8 +30,8 @@ const teamsData: Array<Team> = [
     organizers: [
       {
         id: 201,
-        name: "Ishan Vaidya",
-        image: "https://enkoki.github.io/static_images/deerhack26/leads/IshanVaidya.png",
+        name: "Ishan Baidya Khadgi",
+        image: "https://enkoki.github.io/static_images/deerhack26/leads/IshanVaidya.jpeg",
         linkedin_url: "https://www.linkedin.com/in/ishan-vaidya-26a5b4285/",
         position: "Technical Team",
       },
