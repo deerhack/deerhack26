@@ -67,6 +67,7 @@ import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
 import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
 import NECLogo from "@/app/assets/images/sponsors/NECBlack.png";
+import BigBytesLogo from "@/app/assets/images/sponsors/BigBytes.png";
 
 const sponsors: SponsorType[] = [
   // {
@@ -324,6 +325,13 @@ const sponsors: SponsorType[] = [
         url: "https://ecosathinepal.com/",
         image: EcoSathiLogo,
         imageAlt: "EcoSathiLogo",
+      },
+
+       {
+        name: "BigBytes",
+        url: "https://bigbyte.com.np/",
+        image: BigBytesLogo,
+        imageAlt: "BigBytesLogo",
       },
     ]
     },
