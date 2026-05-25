@@ -65,7 +65,8 @@ import SnowBerryLogo from "@/app/assets/images/sponsors/SnowBerry_Logo.png";
 import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
-import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg"
+import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
+import NECLogo from "@/app/assets/images/sponsors/NECBlack.png";
 
 const sponsors: SponsorType[] = [
   // {
@@ -615,7 +616,22 @@ const sponsors: SponsorType[] = [
 //   //       },
 //   //   ]
 //   // },
- {
+ 
+
+  {
+    name: "Education Partner",
+    sponsors: [
+      {
+        name: "NECLogo",
+        url: "https://www.nepalec.edu.np",
+        image: NECLogo,
+        imageAlt: "NECLogo",
+      },
+    ],
+  },
+
+
+  {
     name: "Platform Sponsor",
     sponsors: [
     //   {
