@@ -31,7 +31,7 @@ const teamsData: Array<Team> = [
       {
         id: 201,
         name: "Ishan Baidya Khadgi",
-        image: "https://enkoki.github.io/static_images/deerhack26/leads/IshanVaidya.jpeg",
+        image: "https://enkoki.github.io/static_images/deerhack26/leads/IshanBaidya.jpg",
         linkedin_url: "https://www.linkedin.com/in/ishan-vaidya-26a5b4285/",
         position: "Technical Team",
       },

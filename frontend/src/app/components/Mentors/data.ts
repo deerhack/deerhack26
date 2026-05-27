@@ -61,7 +61,7 @@ const Mentors_value: Mentors[] = [
     image: "https://enkoki.github.io/static_images/deerhack26/Aashutosh_Poudel.JPG"
   },
   {
-    name: "Shuvam Tiwari",
+    name: "Shubham Tiwari",
     position: "Sr. Blockchain Engineer",
     linkedin_url: "https://www.linkedin.com/in/shubhtiwari5/",
     image: "https://enkoki.github.io/static_images/deerhack26/Shubham_Tiwari.jpg",
@@ -102,7 +102,7 @@ const Mentors_value: Mentors[] = [
   },
     {
     name: "Labbi Karmacharya",
-    position: "Data Research Fellow / Equitech Futures, Lecturer ",
+    position: "Data Research Fellow and Lecturer ",
     linkedin_url: "https://www.linkedin.com/in/labbi-karmacharya/", 
     image: "https://deerhack24.deerwalk.edu.np/uploads/Labbi_Karmacharya_f8d004f9e8.jfif"
   },
