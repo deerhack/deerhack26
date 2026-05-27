@@ -61,7 +61,7 @@ const Mentors_value: Mentors[] = [
     image: "https://enkoki.github.io/static_images/deerhack26/Aashutosh_Poudel.JPG"
   },
   {
-    name: "Shuvam Tiwari",
+    name: "Shubham Tiwari",
     position: "Sr. Blockchain Engineer",
     linkedin_url: "https://www.linkedin.com/in/shubhtiwari5/",
     image: "https://enkoki.github.io/static_images/deerhack26/Shubham_Tiwari.jpg",
