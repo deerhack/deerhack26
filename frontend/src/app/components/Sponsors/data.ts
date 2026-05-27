@@ -1,4 +1,5 @@
 import SponsorType from "@/app/types/sponsorType";
+import AtherLogo from "@/app/assets/images/sponsors/MobilityPartner.png";
 import AnnapurnaLogo from "@/app/assets/images/sponsors/Annapurna_Logo.png"
 import DeerholdLogo from "@/app/assets/images/sponsors/deerhold.png";
 // import MountStradaLogo from "@/app/assets/images/sponsors/mount_strada.png";
@@ -509,24 +510,17 @@ const sponsors: SponsorType[] = [
 //   //       imageAlt: "Live bakery Logo",
 //   //     },
 //   //   ],
-//   // },
-//   // {
-//   //   name: "Mobility Partner",
-//   //   sponsors: [
-//   //     {
-//   //       name: "Segway",
-//   //       url: "https://www.segway.com",
-//   //       image: SegwayLogo,
-//   //       imageAlt: "Subway Logo",
-//   //     },
-//   //     {
-//   //       name: "Oliz Store",
-//   //       url: "https://www.olizstore.com",
-//   //       image: Oliz,
-//   //       imageAlt: "Oliz store Logo",
-//   //     },
-//   //   ],
-//   // },
+  {
+    name: "Mobility Partner",
+    sponsors: [
+      {
+        name: "Ather Energy",
+        url: "https://www.atherenergy.com.np/",
+        image: AtherLogo,
+        imageAlt: "Ather Energy Logo",
+      },
+    ],
+  },
 //   // {
 //   //   name: "Community Partners",
 //   //   sponsors: [
@@ -684,6 +678,7 @@ const sponsors: SponsorType[] = [
       
         
     ],
+    
   },
 ];
 
