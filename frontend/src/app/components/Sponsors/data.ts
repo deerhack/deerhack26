@@ -68,6 +68,7 @@ import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
 import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
 import NECLogo from "@/app/assets/images/sponsors/NECBlack.png";
 import BigBytesLogo from "@/app/assets/images/sponsors/BigBytes.png";
+import FifthAvenueLogo from "@/app/assets/images/sponsors/FifthAvenue.png";
 
 const sponsors: SponsorType[] = [
   // {
@@ -332,6 +333,13 @@ const sponsors: SponsorType[] = [
         url: "https://bigbyte.com.np/",
         image: BigBytesLogo,
         imageAlt: "BigBytesLogo",
+      },
+
+      {
+      name: "FifthAvenue",
+      url: "https://www.instagram.com/5thavenue.nepal/",
+      image: FifthAvenueLogo,
+      imageAlt: "FifthAvenueLogoAlt",
       },
     ]
     },
