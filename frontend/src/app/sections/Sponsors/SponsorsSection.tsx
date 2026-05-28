@@ -36,7 +36,7 @@ export default function SponsorsSection() {
                   image={sponsor.image}
                   alt={sponsor.imageAlt}
                   url={sponsor.url}
-                  className={sponsor.className ?? ""}
+                  className={sponsor.className ?? "pt-10"}
                 />
               </div>
             ))}
