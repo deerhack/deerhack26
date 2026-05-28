@@ -22,7 +22,7 @@ import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
 import CitizensBank from "@/app/assets/images/sponsors/CitizensBank.svg"  
 // import MountainJavaLogo from "@/app/assets/images/sponsors/MountainJavaLogo.svg";
-import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg";
+import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.png";
 import HimalogicLogo from "@/app/assets/images/sponsors/Himalogic.svg"
 import PrixaLogo from "@/app/assets/images/sponsors/Prixa_White_Logo.png"
 // import Programiz from "@/app/assets/images/sponsors/Programiz.svg";
@@ -67,7 +67,7 @@ import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
 import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
-import NECLogo from "@/app/assets/images/sponsors/NEC_Logos.svg";
+import NECLogo from "@/app/assets/images/sponsors/NECBlack.png";
 import BigBytesLogo from "@/app/assets/images/sponsors/BigBytes.png";
 import FifthAvenueLogo from "@/app/assets/images/sponsors/FifthAvenue.png";
 
@@ -474,17 +474,17 @@ const sponsors: SponsorType[] = [
 // //   //     },
 // //   //   ],
 // //   // },
-//   {
-//     name: "App Partner",
-//     sponsors: [
-//       {
-//         name: "Hamro Patro",
-//         url: "https://www.hamropatro.com",
-//         image: HamroPatroLogo,
-//         imageAlt: "HamroPatro Logo",
-//       },
-//     ],
-//   },
+  {
+    name: "App Partner",
+    sponsors: [
+      {
+        name: "Hamro Patro",
+        url: "https://www.hamropatro.com",
+        image: HamroPatroLogo,
+        imageAlt: "HamroPatro Logo",
+      },
+    ],
+  },
 
   
   
