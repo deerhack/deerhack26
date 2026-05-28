@@ -22,7 +22,7 @@ import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
 import CitizensBank from "@/app/assets/images/sponsors/CitizensBank.svg"  
 // import MountainJavaLogo from "@/app/assets/images/sponsors/MountainJavaLogo.svg";
-import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.png";
+import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatroNew.png";
 import HimalogicLogo from "@/app/assets/images/sponsors/Himalogic.svg"
 import PrixaLogo from "@/app/assets/images/sponsors/Prixa_White_Logo.png"
 // import Programiz from "@/app/assets/images/sponsors/Programiz.svg";
