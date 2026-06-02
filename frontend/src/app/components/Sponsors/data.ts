@@ -61,7 +61,7 @@ import BanhLifeLogo from "@/app/assets/images/sponsors/BanhLife_Logo.png"
 import KathmanduKoKathaLogo from "@/app/assets/images/sponsors/KathmanduKoKatha_Logo.png";
 import PomeloLogo from "@/app/assets/images/sponsors/Pomelo_Logo.png";
 import TingTingLogo from "@/app/assets/images/sponsors/TingTing_White_Logo.png";
-import SpeakUpNepalLogo from "@/app/assets/images/sponsors/SpeakUpNepal_Colored_Logo.png";
+
 import SnowBerryLogo from "@/app/assets/images/sponsors/SnowBerry_Logo.png";
 import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
@@ -224,13 +224,7 @@ const sponsors: SponsorType[] = [
         imageAlt: "Leapfrog Logo",
       },
      
-      {
-        name: "SpeakUpNepal",
-        url: "https://speakupnepal.org/",
-        image: SpeakUpNepalLogo,
-        imageAlt: "SpeakUpNepalLogo",
-      },
-     
+ 
         
       {
         name: "deerhold",
