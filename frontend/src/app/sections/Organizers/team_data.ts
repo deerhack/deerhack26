@@ -75,13 +75,7 @@ const teamsData: Array<Team> = [
         linkedin_url: "https://www.linkedin.com/in/bibisha-adhikari-5a5a55310",
         position: "Documentation",
       },
-      {
-        id: 802,
-        name: "Fayal Subedi",
-        image: "https://enkoki.github.io/static_images/deerhack26/leads/FayalSubedi.jpeg",
-        linkedin_url: "https://www.linkedin.com/in/fayal-subedi-ba9a63340",
-        position: "Outreach Team",
-      },
+     
     ],
   },
 
