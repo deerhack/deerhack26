@@ -1,11 +1,11 @@
-// import { ReactElement } from "react"
-// // import Schedule from "../schedule/page"
+import { ReactElement } from "react"
+import Schedule from "../{schedule}/page";
 
 
-// const SchedulePage = ():ReactElement => {
-//   return (
-//     <Schedule/>
-//   )
-// }
+const SchedulePage = ():ReactElement => {
+  return (
+    <Schedule/>
+  )
+}
 
-// export default SchedulePage
+export default SchedulePage
