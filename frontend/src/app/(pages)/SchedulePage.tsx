@@ -1,5 +1,5 @@
 import { ReactElement } from "react"
-import Schedule from "../{schedule}/page";
+import Schedule from "../schedule/page";
 
 
 const SchedulePage = ():ReactElement => {

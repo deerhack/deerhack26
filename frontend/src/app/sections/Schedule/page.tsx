@@ -38,17 +38,17 @@ const ScheduleSection = () => {
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "03:00 PM",
+                    time: "3:00 PM",
                     title: "Tea Break/ Coffee Visit",
                     venue: "Cafeteria & Courtyard",
                 },
                 {
-                    time: "03:30 PM",
+                    time: "3:30 PM",
                     title: "Networking",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "06:00 PM",
+                    time: "6:00 PM",
                     title: "Departure",
                     venue: "Sagarmatha Hall",
                 },
@@ -68,17 +68,17 @@ const ScheduleSection = () => {
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "01:00 PM",
+                    time: "1:00 PM",
                     title: "Lunch",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "02:00 PM",
+                    time: "2:00 PM",
                     title: "Photo Session I/T-shirt Distribution",
                     venue: "Cortyard | Half of participants",
                 },
                 {
-                    time: "03:00 PM",
+                    time: "3:00 PM",
                     title: "Coding Session-I",
                     venue: "Coding space",
                 },
@@ -103,7 +103,7 @@ const ScheduleSection = () => {
             date: "13th June | Day 2", 
             events: [
                 {
-                    time: "08:00 AM",
+                    time: "8:00 AM",
                     title: "Breakfast",
                     venue: "Cafeteria",
                 },
@@ -123,12 +123,12 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "01:30 PM",
+                    time: "1:30 PM",
                     title: "Coding Session-II",
                     venue: "Coding Space | Mentor's Assistance",
                 },
                 {
-                    time: "04:30 PM",
+                    time: "4:30 PM",
                     title: "Snacks",
                     venue: "Cafeteria",
                 },
@@ -158,7 +158,7 @@ const ScheduleSection = () => {
                     venue: "",
                 },
                 {
-                    time: "08:00 AM",
+                    time: "8:00 AM",
                     title: "Breakfast",
                     venue: "Courtyard",
                 },
@@ -202,7 +202,7 @@ const ScheduleSection = () => {
                         </span>
                     </div>
                 </div>
-                <div className=' md:p-[3.625rem] mt-10 md:mt-0 grid lg:grid-rows-4 lg:grid-flow-col grid-col-1 gap-y-10 gap-x-32'>
+                <div className='md:p-[3.625rem] mt-10 md:mt-0 grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-32'>
                     {day.events.map((event,index)=>(
                         <div key = {index} className={`flex flex-row flex-nowrap items-start justify-start sm:justify-center xl:justify-normal gap-16 mb-5`}>
                             <div className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl w-5 sm:w-24 md:w-32 `}>

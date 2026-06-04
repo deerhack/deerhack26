@@ -117,14 +117,17 @@ const Navbar = () => {
               </Link>
 
               <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
-
                 <SidebarButton href="/" route="/" label="Home" icon={homeIcon} />
+                
+                {/* ADDED: Schedule button injected into the primary sidebar routing list */}
+                <SidebarButton href="/schedule" route="/schedule" label="Schedule" icon={organizersIcon} />
+                
                 {/* <SidebarButton
                 href="/organizers"
                 label="Organizers"
                 icon={organizersIcon}
               />*/}
-              <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
+                <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
               </nav>
             </div>
 
