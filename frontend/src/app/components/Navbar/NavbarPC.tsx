@@ -37,16 +37,19 @@ const NavbarPC = () => {
           </div>
           <div className="flex items-center gap-[3rem]">
             <div className="flex items-center gap-8 text-magnolia">
-              
-              {/* Container keeping elements side-by-side */}
               <div className="relative flex items-center gap-8" ref={resourceRef}>
                 
-                {/* FIXED: Changed from span to Link component to handle route change cleanly */}
                 <Link
                   href="/schedule"
                   className={`hover:text-secondary cursor-pointer text-base ${cabinetBold.className}`}
                 >
                   Schedule
+                </Link>
+                <Link
+                  href="/organizers"
+                  className={`hover:text-secondary cursor-pointer text-base ${cabinetBold.className}`}
+                >
+                  Organizers
                 </Link>
 
                 <span

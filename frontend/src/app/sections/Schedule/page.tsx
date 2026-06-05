@@ -155,7 +155,7 @@ const ScheduleSection = () => {
                 {
                     time: "7:00 AM",
                     title: "Project Submission",
-                    venue: "",
+                    venue: "DWIT",
                 },
                 {
                     time: "8:00 AM",
