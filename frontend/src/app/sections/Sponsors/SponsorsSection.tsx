@@ -22,7 +22,7 @@ export default function SponsorsSection() {
           key={sponsorType.name}
           className="flex flex-col justify-center text-center items-center mb-[5rem] gap-10"
         >
-          <div className={`${cabinetMedium.className} text-white text-4xl font-extrabold tracking-normal mb-2`}>
+          <div className={`${cabinetMedium.className} text-heropage-gradient  text-4xl font-extrabold tracking-normal mb-2`}>
             {sponsorType.name}
           </div>
 
@@ -36,6 +36,7 @@ export default function SponsorsSection() {
                   image={sponsor.image}
                   alt={sponsor.imageAlt}
                   url={sponsor.url}
+                  className={sponsor.className ?? "pt-10"}
                 />
               </div>
             ))}

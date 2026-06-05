@@ -4,6 +4,7 @@ import teamsData from "./team_data"; // ⬅️ Now from static file
 import UserCard from "@/app/components/core/UserCard";
 import { cabinetExtraBold } from "@/app/utils/fonts";
 import VolunteerSection from "../Volunteers/VolunteerSection";
+import Footer from "@/app/components/Footer/Footer";
 
 export default function Organizers() {
   const teams = teamsData;
@@ -18,7 +19,7 @@ export default function Organizers() {
 
       {teams.map((team) => (
         <div
-          className="text-white mt-20 flex flex-col justify-center w-[100%] md:w-[85%] lg:w-[70%] xl2:w-[55%]"
+          className="text-white  flex flex-col justify-center w-[100%] md:w-[85%] lg:w-[70%] xl2:w-[55%]"
           key={team.id}
         >
           <h1 className={`headings ${cabinetExtraBold.className} text-3xl mb-10`}>
@@ -38,13 +39,27 @@ export default function Organizers() {
           </div>
         </div>
       ))}
+      <div className="w-full flex justify-center items-center mt-24 px-6">
 
-      <div className="flex justify-center items-center flex-col mt-20">
+  <div className="w-full md:w-[90%] lg:w-[75%] xl:w-[65%]">
+
+    
+
+   
+
+ 
+
+      {/* <div className="flex justify-center items-center flex-col mt-20">
         <h1 className={`headings ${cabinetExtraBold.className} text-3xl`}>
           Volunteers
         </h1>
         <VolunteerSection />
-      </div>
+      </div> */}
+
     </div>
+    </div>
+          <Footer/>
+    </div>
+    
   );
 }

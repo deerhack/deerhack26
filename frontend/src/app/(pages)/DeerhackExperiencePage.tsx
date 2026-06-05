@@ -5,7 +5,7 @@ import PauseButtonExpCard from "@/app/assets/images/PauseButtonExpCard"
 import MuteButton from "../assets/images/sponsors/mutebutton"
 import BigTopComa from "../assets/images/sponsors/BigTopComa"
 import ExpStars from "../assets/images/sponsors/expStars"
-import { cabinetExtraBold } from "../utils/fonts"
+import { cabinetExtraBold,cabinetRegular,cabinetMedium } from "../utils/fonts"
 import SamipLamsal from "../assets/images/sponsors/SamipLamsal"
 import NischalTamang from "../assets/images/sponsors/NischalTamang"
 import UnMuteButton from "../assets/images/sponsors/UnMuteButton"
@@ -84,7 +84,9 @@ export default function ExperiencePage() {
   }
 
   return (
-    <div className="bg-dark-purple min-h-screen overflow-x-hidden">
+<div
+  className={`bg-dark-purple min-h-screen overflow-x-hidden ${cabinetRegular.className}`}
+>
       <div className={`${cabinetExtraBold.className} headings w-full max-w-[1640px] mx-auto text-[1.875rem] md:text-[3.5rem] mb-[3rem] text-white px-4 md:px-10 pt-10`}
         style={{ background: "linear-gradient(150.54deg,#6633CC 30.7% ,rgb(245, 193, 68, 1) 70.29%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
         The DeerHack Experience
@@ -107,7 +109,7 @@ export default function ExperiencePage() {
               <div className="flex items-center gap-4">
                 <button onClick={togglePlay} className="w-12 h-12 flex items-center justify-center">{isPlaying ? <PauseButtonExpCard /> : <PlayButtonExpCard />}</button>
                 <div>
-                  <p className="font-extrabold text-lg">Moments of Deerhack</p>
+                 <p className={`text-lg ${cabinetExtraBold.className}`}> Moments of Deerhack</p>
                   <p className="text-xs opacity-60">2025</p>
                 </div>
               </div>
@@ -128,12 +130,16 @@ export default function ExperiencePage() {
                     <div className="flex items-center gap-4 mb-6">
                       <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0"><MalaDeep/></div>
                       <div>
-                        <h3 className="text-xl md:text-4xl font-bold leading-tight text-white">Mala Deep Upadhaya</h3>
+<h3
+  className={`text-xl md:text-4xl leading-tight text-white ${cabinetExtraBold.className}`}
+>
+  Mala Deep Upadhaya
+</h3>
                         <p className="text-sm md:text-base opacity-60 text-white/60 font-medium">Mentor</p>
                       </div>
                       <div className="hidden md:block ml-auto w-15 md:w-20 opacity-40"><BigTopComa /></div>
                     </div>
-                    <p className="md:pt-8 text-sm md:text-base lg:text-lg font-bold text-white leading-relaxed">
+                    <p className={`md:pt-8 text-sm md:text-base lg:text-lg font-medium text-white leading-relaxed ${cabinetRegular.className}`}>
                       “Mentoring at DeerHack was an incredibly fulfilling experience. The participants brought <span className="text-yellow-400">great energy</span>, creativity, and a genuine eagerness to learn, while the volunteers ensured everything ran smoothly with their constant dedication. The welcoming and collaborative environment made it easy to <span className="text-yellow-400">build together</span>; it’s truly an inspiring community to be part of.”
                     </p>
                   </div>
@@ -147,11 +153,15 @@ export default function ExperiencePage() {
                     <div className="flex items-center gap-5">
                       <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0"><NischalTamang/></div>
                       <div>
-                        <h4 className="text-lg md:text-xl font-bold text-white">Nischal Tamang</h4>
+<h4
+  className={`text-lg md:text-xl text-white ${cabinetExtraBold.className}`}
+>
+  Nischal Tamang
+</h4>
                         <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
                       </div>
                     </div>
-                    <p className="text-base md:text-base font-bold text-white mb-2 leading-relaxed">
+                    <p className={`text-base md:text-base  text-white mb-2 ${cabinetExtraBold} leading-relaxed`}>
                     “One of the <span className="text-yellow-400">best</span> hackathons and the event management was very good, providing a <span className="text-yellow-400">seamless experience</span> and a supportive atmosphere that truly exceeded all expectations.”
                     </p>
                     <div className="text-yellow-500"><ExpStars/></div>
@@ -163,7 +173,11 @@ export default function ExperiencePage() {
                     <div className="flex items-center gap-5">
                       <div className="w-14 h-14 md:w-16 md:h-16 flex-shrink-0"><SamipLamsal/></div>
                       <div>
-                        <h4 className="text-lg md:text-xl font-bold text-white">Samip Lamsal</h4>
+<h4
+  className={`text-lg md:text-xl text-white ${cabinetExtraBold.className}`}
+>
+  Samip Lamsal
+</h4>
                         <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
                       </div>
                     </div>
@@ -187,7 +201,7 @@ export default function ExperiencePage() {
             </div>
 
             <div onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="bg-[rgb(102,51,204,0.78)] p-6 rounded-[25px] flex justify-center items-center hover:bg-purple-600 transition-all cursor-pointer group border border-white/5">
-              <p className="text-[18px] md:text-xl font-semibold text-white text-center">
+              <p className={` ${cabinetMedium.className} heading text-[18px] md:text-xl  text-white text-center`}>
                 Want to create your own experience? <span className="text-yellow-400 font-bold underline ml-2 group-hover:text-white">Join Now!</span>
               </p>
             </div>

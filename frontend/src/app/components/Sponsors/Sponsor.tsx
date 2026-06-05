@@ -4,13 +4,15 @@ export default function Sponsor({
   image,
   alt,
   url,
+  className = "",
 }: {
   image: StaticImageData;
   alt: string;
   url: string;
+  className: string;
 }) {
   return (
-    <div className="flex flex-row  justify-center items-center w-[15rem] h-[11rem]  rounded-full mb-10">
+    <div className={`flex flex-row  justify-center items-center w-[15rem] h-[11rem]  rounded-full mb-10`}>
       <Link href={url} target="_blank">
         <Image
           src={image}
@@ -18,7 +20,7 @@ export default function Sponsor({
           width={150}
           height={150}
           loading="lazy"
-          className="object-cover w-full h-full"
+          className={`object-cover w-full h-full ${className}`}
         />
       </Link>
     </div>

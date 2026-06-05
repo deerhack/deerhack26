@@ -1,4 +1,5 @@
 import SponsorType from "@/app/types/sponsorType";
+import AtherLogo from "@/app/assets/images/sponsors/MobilityPartner.png";
 import AnnapurnaLogo from "@/app/assets/images/sponsors/Annapurna_Logo.png"
 import DeerholdLogo from "@/app/assets/images/sponsors/deerhold.png";
 // import MountStradaLogo from "@/app/assets/images/sponsors/mount_strada.png";
@@ -21,7 +22,7 @@ import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
 import CitizensBank from "@/app/assets/images/sponsors/CitizensBank.svg"  
 // import MountainJavaLogo from "@/app/assets/images/sponsors/MountainJavaLogo.svg";
-import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatro.svg";
+import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatroNew.png";
 import HimalogicLogo from "@/app/assets/images/sponsors/Himalogic.svg"
 import PrixaLogo from "@/app/assets/images/sponsors/Prixa_White_Logo.png"
 // import Programiz from "@/app/assets/images/sponsors/Programiz.svg";
@@ -35,6 +36,7 @@ import leapfrog from "@/app/assets/images/sponsors/leapfrog.svg";
 import ultima from "@/app/assets/images/sponsors/ultima.svg";
 import PeaksLogo from "@/app/assets/images/sponsors/8peaks_white_Logo.png";
 import SandukAILogo from "@/app/assets/images/sponsors/Sandukai_Logo.png";
+import JunctionHubLogo from "@/app/assets/images/sponsors/JunctionHub_Logo.jpeg";
 // import VT from "@/app/assets/images/sponsors/VT.png";
 // import SifalSchool from "@/app/assets/images/sponsors/SifalSchool.png";
 // import codefornepal from "@/app/assets/images/sponsors/codeForNepal.png";
@@ -55,14 +57,19 @@ import YOLO from "@/app/assets/images/sponsors/yolo.png";
 import HotelAssociation from "@/app/assets/images/sponsors/hotelassociation.png";
 import BigBracketsLogo from "@/app/assets/images/sponsors/BigBrackets_White_logo.png";
 import DailoKrishiLogo from "@/app/assets/images/sponsors/DailoKrishi_Logo.png";
+import BanhLifeLogo from "@/app/assets/images/sponsors/BanhLife_Logo.png"
 import KathmanduKoKathaLogo from "@/app/assets/images/sponsors/KathmanduKoKatha_Logo.png";
 import PomeloLogo from "@/app/assets/images/sponsors/Pomelo_Logo.png";
 import TingTingLogo from "@/app/assets/images/sponsors/TingTing_White_Logo.png";
-import SpeakUpNepalLogo from "@/app/assets/images/sponsors/SpeakUpNepal_Colored_Logo.png";
+
 import SnowBerryLogo from "@/app/assets/images/sponsors/SnowBerry_Logo.png";
 import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
+import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
+import NECLogo from "@/app/assets/images/sponsors/NECLogo.png";
+import BigBytesLogo from "@/app/assets/images/sponsors/BigBytes.png";
+import FifthAvenueLogo from "@/app/assets/images/sponsors/FifthAvenue.png";
 
 const sponsors: SponsorType[] = [
   // {
@@ -77,7 +84,7 @@ const sponsors: SponsorType[] = [
   //   ],
   // },
     {
-    name: "Title Sponsor",
+    name: "Title Sponsors",
     sponsors: [
        {
         name: "Prixa",
@@ -114,7 +121,7 @@ const sponsors: SponsorType[] = [
    
  
   {
-    name: "Gold Sponsors",
+    name: "Gold Sponsor",
     sponsors: [
       {
         name: "HamroNotes",
@@ -217,13 +224,7 @@ const sponsors: SponsorType[] = [
         imageAlt: "Leapfrog Logo",
       },
      
-      {
-        name: "SpeakUpNepal",
-        url: "https://speakupnepal.org/",
-        image: SpeakUpNepalLogo,
-        imageAlt: "SpeakUpNepalLogo",
-      },
-     
+ 
         
       {
         name: "deerhold",
@@ -260,6 +261,7 @@ const sponsors: SponsorType[] = [
         url: "https://www.dailokrishi.com/",
         image: DailoKrishiLogo,
         imageAlt: "DailoKrishiLogo",
+        // className: "bg-white rounded-lg"
       },
        {
         name: "KathmanduKoKatha",
@@ -281,12 +283,20 @@ const sponsors: SponsorType[] = [
         image: KTMONELOGO,
         imageAlt: "KTMONELOGO",
       },
+
+       {
+        name: "KTMONE",
+        url: "https://www.prabhubank.com",
+        image: PRABHUBANKLOGO,
+        imageAlt: "PRABHUBANKLOGO",
+      },
       
        {
         name: "SandukAi",
         url: "https://sanduk.ai/",
         image: SandukAILogo,
         imageAlt: "SandukAILogo",
+        className: "bg-white rounded-lg"
       },
       
     ],
@@ -311,6 +321,37 @@ const sponsors: SponsorType[] = [
         url: "https://ecosathinepal.com/",
         image: EcoSathiLogo,
         imageAlt: "EcoSathiLogo",
+      },
+
+       {
+        name: "BigBytes",
+        url: "https://bigbyte.com.np/",
+        image: BigBytesLogo,
+        imageAlt: "BigBytesLogo",
+      },
+
+      {
+      name: "FifthAvenue",
+      url: "https://www.instagram.com/5thavenue.nepal/",
+      image: FifthAvenueLogo,
+      imageAlt: "FifthAvenueLogoAlt",
+      },
+    ]
+    },
+  {
+    name: "Stall Partners",
+    sponsors: [
+       {
+        name: "Banh Life",
+        url: "https://www.instagram.com/banhlife/",
+        image: BanhLifeLogo,
+        imageAlt: "BanhLifeLogo",
+      },
+       {
+        name: "Junction Hub",
+        url: "https://www.tiktok.com/@thejunctionhub",
+        image: JunctionHubLogo,
+        imageAlt: "JunctionHubLogo",
       },
     ]
     },
@@ -427,17 +468,17 @@ const sponsors: SponsorType[] = [
 // //   //     },
 // //   //   ],
 // //   // },
-//   {
-//     name: "App Partner",
-//     sponsors: [
-//       {
-//         name: "Hamro Patro",
-//         url: "https://www.hamropatro.com",
-//         image: HamroPatroLogo,
-//         imageAlt: "HamroPatro Logo",
-//       },
-//     ],
-//   },
+  {
+    name: "App Partner",
+    sponsors: [
+      {
+        name: "Hamro Patro",
+        url: "https://www.hamropatro.com",
+        image: HamroPatroLogo,
+        imageAlt: "HamroPatro Logo",
+      },
+    ],
+  },
 
   
   
@@ -463,24 +504,17 @@ const sponsors: SponsorType[] = [
 //   //       imageAlt: "Live bakery Logo",
 //   //     },
 //   //   ],
-//   // },
-//   // {
-//   //   name: "Mobility Partner",
-//   //   sponsors: [
-//   //     {
-//   //       name: "Segway",
-//   //       url: "https://www.segway.com",
-//   //       image: SegwayLogo,
-//   //       imageAlt: "Subway Logo",
-//   //     },
-//   //     {
-//   //       name: "Oliz Store",
-//   //       url: "https://www.olizstore.com",
-//   //       image: Oliz,
-//   //       imageAlt: "Oliz store Logo",
-//   //     },
-//   //   ],
-//   // },
+  {
+    name: "Mobility Partner",
+    sponsors: [
+      {
+        name: "Ather Energy",
+        url: "https://www.atherenergy.com.np/",
+        image: AtherLogo,
+        imageAlt: "Ather Energy Logo",
+      },
+    ],
+  },
 //   // {
 //   //   name: "Community Partners",
 //   //   sponsors: [
@@ -586,7 +620,22 @@ const sponsors: SponsorType[] = [
 //   //       },
 //   //   ]
 //   // },
- {
+ 
+
+  {
+    name: "Education Partner",
+    sponsors: [
+      {
+        name: "NECLogo",
+        url: "https://www.nepalec.edu.np",
+        image: NECLogo,
+        imageAlt: "NECLogo",
+      },
+    ],
+  },
+
+
+  {
     name: "Platform Sponsor",
     sponsors: [
     //   {
@@ -623,6 +672,7 @@ const sponsors: SponsorType[] = [
       
         
     ],
+    
   },
 ];
 

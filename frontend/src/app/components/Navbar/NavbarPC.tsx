@@ -45,12 +45,6 @@ const NavbarPC = () => {
                 >
                   Schedule
                 </Link>
-                <Link
-                  href="/organizers"
-                  className={`hover:text-secondary cursor-pointer text-base ${cabinetBold.className}`}
-                >
-                  Organizers
-                </Link>
 
                 <span
                   className={`hover:text-secondary cursor-pointer text-base ${cabinetBold.className}`}
@@ -76,6 +70,8 @@ const NavbarPC = () => {
                 )}
               </div>
               {/* <Link href="/winners" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Winners</Link> */}
+              <Link href="/organizers" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Organizers</Link>
+
               <Link href="/legacy" className={`hover:text-secondary text-base ${cabinetBold.className}`}>Legacy</Link>
             </div>
             {/* <Counter_wrapper /> */}
