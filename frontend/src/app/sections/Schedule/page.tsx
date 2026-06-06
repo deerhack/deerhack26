@@ -5,137 +5,112 @@ import React from 'react'
 const ScheduleSection = () => {
     const Schedule: Schedule[] = [
         {
-            date: "9th May | Pre-event ",
+            date: "11th June | Pre-event ",
             events: [
                 {
                     time: "11:00 AM",
+                    title: "Participants arrival & Registration",
+                    venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "12:00 PM",
                     title: "Welcome Ceremony",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "12:30 PM",
-                    title: "SecurityPal Special Orientation Session",
+                    time: "12:15 PM",
+                    title: "Rules and Regulation Orientation",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "01:30 PM",
-                    title: "Ice Breaker Game",
+                    time: "12:45 PM",
+                    title: "Organizing Committee Speech",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "02:30 PM",
-                    title: "Team Formation & Registration",
-                    venue: "Sagarmatha Hall",
-                },
-                {
-                    time: "03:00 PM",
-                    title: "Snacks and Drinks",
+                    time: "1:15 PM",
+                    title: "Session by Mala Deep Upadhaya",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "03:30 PM",
-                    title: "Team Bonding Game",
+                    time: "2:15 PM",
+                    title: "Icebreaking Session with Members",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "05:00 PM",
-                    title: "Closing Off",
+                    time: "3:00 PM",
+                    title: "Tea Break/ Coffee Visit",
+                    venue: "Cafeteria & Courtyard",
+                },
+                {
+                    time: "3:30 PM",
+                    title: "Networking",
                     venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "6:00 PM",
+                    title: "Departure",
+                    venue: "Participants from out of valley head to hotel",
                 },
             ]
         },
         {
-            date: "10th May | Day 1", 
+            date: "12th June | Day 1", 
             events: [
                 {
-                    time: "02:00 PM",
-                    title: "Check-in Teams",
+                    time: "10:00 AM",
+                    title: "Arrival & Registration",
                     venue: "DWIT Complex",
                 },
                 {
-                    time: "03:00 PM",
-                    title: "Opening Ceremony",
+                    time: "12:00 PM",
+                    title: "Orientation and Opening Ceremony",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "04:00 PM",
-                    title: "Snacks and Drinks",
-                    venue: "Cafeteria",
-                },
-                {
-                    time: "05:30 PM",
-                    title: "Coding Session Starts",
-                    venue: "Coding Rooms",
-                },
-                {
-                    time: "07:00 PM",
-                    title: "Dinner",
-                    venue: "Cafeteria",
-                },
-                {
-                    time: "10:00 PM",
-                    title: "Fun Game 01",
-                    venue: "Coding Rooms",
-                },
-            ]
-        },
-        {
-            date: "11th May | Day 2", 
-            events: [
-                {
-                    time: "08:00 AM",
-                    title: "Breakfast",
-                    venue: "Cafeteria",
-                },
-                {
-                    time: "11:00 AM",
-                    title: "Github Education Workshop",
-                    venue: "Room 101 , Building 13",
-                },
-                {
-                    time: "12:30 AM",
+                    time: "1:00 PM",
                     title: "Lunch",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "03:00 PM",
-                    title: "Fun Game 02",
-                    venue: "Courtyard",
+                    time: "2:00 PM",
+                    title: "T-Shirt Distribution ",
+                    venue: "Courtyard ",
                 },
                 {
-                    time: "04:00 PM",
-                    title: "Snacks and Drinks",
-                    venue: "Cafeteria",
+                    time: "3:00 PM",
+                    title: "Coding Session-I",
+                    venue: "Coding space",
                 },
                 {
-                    time: "06:00 PM",
-                    title: "Workshop 02",
-                    venue: "Room 101 , Building 13",
+                    time: "5:00 PM",
+                    title: "Photo Session",
+                    venue: "Courtyard ",
                 },
                 {
-                    time: "07:00 PM",
+                    time: "6:00 PM",
+                    title: "Coding Session-II",
+                    venue: "Coding Space",
+                },
+                {
+                    time: "8:00 PM",
                     title: "Dinner",
                     venue: "Cafeteria",
                 },
             ]
         },
         {
-            date: "12th May | Day 3",
+            date: "13th June | Day 2", 
             events: [
                 {
-                    time: "06:30 AM",
-                    title: "Check Out | Teams",
-                    venue: "DWIT Complex",
-                },
-                {
-                    time: "08:00 AM",
+                    time: "8:00 AM",
                     title: "Breakfast",
                     venue: "Cafeteria",
                 },
                 {
-                    time: "09:30 AM",
-                    title: "First Stage Judgement",
-                    venue: "Coding Rooms",
+                    time: "8:45 AM",
+                    title: "Coding Session-I",
+                    venue: "Coding Space",
                 },
                 {
                     time: "12:00 PM",
@@ -143,14 +118,74 @@ const ScheduleSection = () => {
                     venue: "Cafeteria",
                 },
                 {
-                    time: "01:30 PM",
-                    title: "Pitching Sessions",
+                    time: "1:00 PM",
+                    title: "Coding Session-II",
+                    venue: "Coding Space | Mentor Assistance",
+                },
+                {
+                    time: "3:30 PM",
+                    title: "Workshop",
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "04:00 PM",
-                    title: "Winner Announcement & Closing Ceremony",
+                    time: "4:30 PM",
+                    title: "Snacks",
+                    venue: "Cafeteria",
+                },
+                {
+                    time: "6:00 PM",
+                    title: "Live Music",
                     venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "8:00 PM",
+                    title: "Dinner",
+                    venue: "Cafeteria",
+                },
+            ]
+        },
+        {
+            date: "14th June | Day 3",
+            events: [
+                {
+                    time: "00:45 AM",
+                    title: "WorldCup Screening",
+                    venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "7:00 AM",
+                    title: "Project Submission",
+                    venue: "DWIT",
+                },
+                {
+                    time: "8:00 AM",
+                    title: "Breakfast",
+                    venue: "Courtyard",
+                },
+                {
+                    time: "9:00 AM",
+                    title: "Judging Session",
+                    venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "11:30 AM",
+                    title: "Lunch",
+                    venue: "Cafeteria",
+                },
+                {
+                    time: "12:30 PM",
+                    title: "Project Pitching",
+                    venue: "Sagarmatha Hall",
+                },
+                {
+                    time: "3:00 PM",
+                    title: "Winner Announcement & Closing Ceremony",
+                    venue: "Courtyard",
+                },
+                {
+                    time: "4:00 PM",
+                    title: "Photoshoot & Logistical Arrangement",
+                    venue: "Courtyard",
                 },
             ]
         }
@@ -167,15 +202,15 @@ const ScheduleSection = () => {
                         </span>
                     </div>
                 </div>
-                <div className=' md:p-[3.625rem] mt-10 md:mt-0 grid lg:grid-rows-4 lg:grid-flow-col grid-col-1 gap-y-10 gap-x-32'>
-                    {day.events.map((event,index)=>(
-                        <div key = {index} className={`flex flex-row flex-nowrap items-start justify-start sm:justify-center xl:justify-normal gap-16 mb-5`}>
-                            <div className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl w-5 sm:w-24 md:w-32 `}>
+                <div className='md:p-[3.625rem] mt-10 md:mt-0 columns-1 lg:columns-2 gap-x-32 '>
+                    {day.events.map((event,index)=>(<div key = {index} className={`flex flex-row flex-nowrap items-start justify-start sm:justify-center xl:justify-normal gap-16 mb-16 break-inside-avoid`}>
+                        
+                            <div className={`${cabinetExtraBold.className} text-secondary-gradient-color-reverse mt-[2px] xl2:text-2xl  text-xl md:text-2xl w-12 sm:w-26 md:w-32 `}>
                                 {event.time}
                             </div>
-                            <div className='flex flex-col sm:w-[150px] md:w-[250px]'>
+                            <div className='flex flex-col sm:w-[150px] md:w-[250px] '>
                                 {/* w-32 md:w-[80%] */}
-                                <p className={`${cabinetExtraBold.className} xl2:text-3xl text-xl md:text-2xl mb-1`}>{event.title}</p>
+                                <p className={`${cabinetExtraBold.className} text-secondary xl2:text-2xl  text-xl md:text-2xl mb-1`}>{event.title}</p>
                                 <p className={`${cabinetLight.className} xl2:text-xl md:text-base text-sm font-medium text-[#FCF7FF] `}>Venue: {event.venue}</p>
                             </div>
                         </div>
@@ -190,3 +225,6 @@ const ScheduleSection = () => {
 }
 
 export default ScheduleSection
+
+
+// here just for commit zehahahahaha
