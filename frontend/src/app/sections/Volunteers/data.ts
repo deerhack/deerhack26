@@ -59,7 +59,7 @@ export const Volunteers_value : Volunteers[] = [
      {
         name: "Aarambha Bhattarai",
         image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Aarambha%20Bhattarai.jpg",
-        linkedin_url: "www.linkedin.com/in/aarambha-bhattarai-5682033a1",
+        linkedin_url: "https://www.linkedin.com/in/aarambha-bhattarai-5682033a1",
     },
      {
         name: "Prawal Dahal",
@@ -94,9 +94,9 @@ export const Volunteers_value : Volunteers[] = [
     {
         name: "Reason Dahal",
         image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Reason%20Dahal.jpg",
-        linkedin_url: "https://reason.com.np",
+        linkedin_url: "https://www.linkedin.com/in/reason-dahal/",
     },    
-     {
+    {
         name: "Luyash Thapa",
         image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Luyash%20Thapa.jpg",
         linkedin_url: "https://www.linkedin.com/in/luyash-thapa-b0bb30404/",
