@@ -19,6 +19,7 @@ import fbIcon from "@/app/assets/icons/facebook.svg";
 import instaIcon from "@/app/assets/icons/instagram.svg";
 import linkedinIcon from "@/app/assets/icons/linkedin.svg";
 import SidebarButton from "./SidebarButton";
+import Schedule from "@/app/schedule/page";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -119,11 +120,11 @@ const Navbar = () => {
               <nav className={`flex flex-col gap-4 ${cabinetMedium.className}`}>
 
                 <SidebarButton href="/" route="/" label="Home" icon={homeIcon} />
-                {/* <SidebarButton
-                href="/organizers"
-                label="Organizers"
-                icon={organizersIcon}
-              />*/}
+                <SidebarButton
+                href="/schedule"
+                label="Schedule"
+                icon={Schedule}
+              />
               <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
               <SidebarButton href="/organizers" label="Organizers" icon={organizersIcon} />
               

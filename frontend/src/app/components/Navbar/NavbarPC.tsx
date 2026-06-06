@@ -35,12 +35,19 @@ const NavbarPC = () => {
             </Link>
             <Counter_wrapper />
           </div>
-
           <div className="flex items-center gap-[3rem]">
             <div className="flex items-center gap-8 text-magnolia">
-              <div className="relative" ref={resourceRef}>
+              <div className="relative flex items-center gap-8" ref={resourceRef}>
+                
+                <Link
+                  href="/schedule"
+                  className={`hover:text-secondary cursor-pointer text-base ${cabinetBold.className}`}
+                >
+                  Schedule
+                </Link>
+
                 <span
-                  className={`hover:text-secondary cursor-pointer block text-base ${cabinetBold.className}`}
+                  className={`hover:text-secondary cursor-pointer text-base ${cabinetBold.className}`}
                   onClick={handleResourceClick}
                 >
                   Resources
