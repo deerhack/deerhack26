@@ -50,7 +50,7 @@ const ScheduleSection = () => {
                 {
                     time: "6:00 PM",
                     title: "Departure",
-                    venue: "Sagarmatha Hall",
+                    venue: "Participants from out of valley head to hotel",
                 },
             ]
         },
@@ -74,8 +74,8 @@ const ScheduleSection = () => {
                 },
                 {
                     time: "2:00 PM",
-                    title: "Photo Session I/T-shirt Distribution",
-                    venue: "Cortyard | Half of participants",
+                    title: "T-Shirt Distribution ",
+                    venue: "Courtyard ",
                 },
                 {
                     time: "3:00 PM",
@@ -84,8 +84,8 @@ const ScheduleSection = () => {
                 },
                 {
                     time: "5:00 PM",
-                    title: "Photo Session-II/T-Shirt Distribution",
-                    venue: "Cortyard | Remaining Participants",
+                    title: "Photo Session",
+                    venue: "Courtyard ",
                 },
                 {
                     time: "6:00 PM",
@@ -168,7 +168,7 @@ const ScheduleSection = () => {
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "11:30 PM",
+                    time: "11:30 AM",
                     title: "Lunch",
                     venue: "Cafeteria",
                 },
@@ -180,12 +180,12 @@ const ScheduleSection = () => {
                 {
                     time: "3:00 PM",
                     title: "Winner Announcement & Closing Ceremony",
-                    venue: "Cortyard",
+                    venue: "Courtyard",
                 },
                 {
                     time: "4:00 PM",
                     title: "Photoshoot & Logistical Arrangement",
-                    venue: "Cortyard",
+                    venue: "Courtyard",
                 },
             ]
         }
@@ -202,15 +202,15 @@ const ScheduleSection = () => {
                         </span>
                     </div>
                 </div>
-                <div className='md:p-[3.625rem] mt-10 md:mt-0 columns-1 lg:columns-2 gap-x-32'>
+                <div className='md:p-[3.625rem] mt-10 md:mt-0 columns-1 lg:columns-2 gap-x-32 '>
                     {day.events.map((event,index)=>(<div key = {index} className={`flex flex-row flex-nowrap items-start justify-start sm:justify-center xl:justify-normal gap-16 mb-16 break-inside-avoid`}>
                         
-                            <div className={`${cabinetExtraBold.className} xl2:text-2xl text-xl md:text-2xl w-5 sm:w-24 md:w-32 `}>
+                            <div className={`${cabinetExtraBold.className} text-secondary-gradient-color-reverse mt-[2px] xl2:text-2xl  text-xl md:text-2xl w-12 sm:w-26 md:w-32 `}>
                                 {event.time}
                             </div>
-                            <div className='flex flex-col sm:w-[150px] md:w-[250px]'>
+                            <div className='flex flex-col sm:w-[150px] md:w-[250px] '>
                                 {/* w-32 md:w-[80%] */}
-                                <p className={`${cabinetExtraBold.className} xl2:text-2xl text-xl md:text-2xl mb-1`}>{event.title}</p>
+                                <p className={`${cabinetExtraBold.className} text-secondary xl2:text-2xl  text-xl md:text-2xl mb-1`}>{event.title}</p>
                                 <p className={`${cabinetLight.className} xl2:text-xl md:text-base text-sm font-medium text-[#FCF7FF] `}>Venue: {event.venue}</p>
                             </div>
                         </div>
