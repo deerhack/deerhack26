@@ -187,11 +187,11 @@ export const Volunteers_value : Volunteers[] = [
         image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Shreesha%20Khanal.jpg",
         linkedin_url: "https://www.linkedin.com/in/shreesha-khanal-a737b8412",
     },
-    {
-        name: "Yunish Shrestha",
-        image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Yunish%20Shrestha.jpg",
-        linkedin_url: "",
-    },
+    // {
+    //     name: "Yunish Shrestha",
+    //     image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Yunish%20Shrestha.jpg",
+    //     linkedin_url: "",
+    // },
       
              
     {
@@ -204,11 +204,11 @@ export const Volunteers_value : Volunteers[] = [
         image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Suyog%20Pant.jpg",
         linkedin_url: "https://www.linkedin.com/in/suyog-pant-012424412?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },  
-    {
-        name: "Unique Shrestha",
-        image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Unique%20Shrestha.jpg",
-        linkedin_url: "https://www.linkedin.com/in/unique-shrestha-a0a086412",
-    },
+    // {
+    //     name: "Unique Shrestha",
+    //     image: "https://enkoki.github.io/static_images/deerhack26/volunteers/Unique%20Shrestha.jpg",
+    //     linkedin_url: "https://www.linkedin.com/in/unique-shrestha-a0a086412",
+    // },
      
 
     
