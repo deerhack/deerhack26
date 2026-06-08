@@ -7,7 +7,7 @@ import { Volunteers_value } from "./data";
 const VolunteerSection = async () => {
   // const volunteers = await volunteerFetcher();
   return (
-    <div className="flex flex-wrap lg:w-[70%] mt-8 gap-8 md:w-[85%] xl2:w-[55%] justify-center">
+<div className="flex flex-wrap mt-8 gap-8 justify-center w-[100%] sm:w-[350px] md:w-[1000px]">
       {Volunteers_value.map((volunteer: UserEntity) => (
         <UserCard
           key={volunteer.name}

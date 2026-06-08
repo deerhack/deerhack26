@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { cabinetBold, cabinetExtraBold } from "@/fonts";
 import UserEntity from "@/app/types/userentity";
 import UserCard from "../core/UserCard";

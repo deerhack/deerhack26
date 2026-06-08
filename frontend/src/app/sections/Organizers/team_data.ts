@@ -24,26 +24,7 @@ const teamsData: Array<Team> = [
       },
     ],
   },
-  {
-    id: 2,
-    name: "Technical Leads",
-    organizers: [
-      {
-        id: 201,
-        name: "Ishan Baidya Khadgi",
-        image: "https://enkoki.github.io/static_images/deerhack26/leads/IshanBaidya.jpg",
-        linkedin_url: "https://www.linkedin.com/in/ishan-vaidya-26a5b4285/",
-        position: "Technical Team",
-      },
-      {
-        id: 202,
-        name: "Aarush Dangol",
-        image: "https://enkoki.github.io/static_images/deerhack26/leads/AarushDangol.png",
-        linkedin_url: "https://www.linkedin.com/in/aarush-dangol-a5393836b/",
-        position: "Technical Team",
-      },
-    ],
-  },
+  
   {
     id: 3,
     name: "Creative Leads",
@@ -65,6 +46,26 @@ const teamsData: Array<Team> = [
     ],
   },
   {
+    id: 2,
+    name: "Technical Leads",
+    organizers: [
+      {
+        id: 201,
+        name: "Ishan Baidya Khadgi",
+        image: "https://enkoki.github.io/static_images/deerhack26/leads/IshanBaidya.jpg",
+        linkedin_url: "https://www.linkedin.com/in/ishan-vaidya-26a5b4285/",
+        position: "Technical Team",
+      },
+      {
+        id: 202,
+        name: "Aarush Dangol",
+        image: "https://enkoki.github.io/static_images/deerhack26/leads/AarushDangol.png",
+        linkedin_url: "https://www.linkedin.com/in/aarush-dangol-a5393836b/",
+        position: "Technical Team",
+      },
+    ],
+  },
+  {
     id: 8,
     name: "Documentation and Outreach Leads",
     organizers: [
@@ -75,13 +76,7 @@ const teamsData: Array<Team> = [
         linkedin_url: "https://www.linkedin.com/in/bibisha-adhikari-5a5a55310",
         position: "Documentation",
       },
-      {
-        id: 802,
-        name: "Fayal Subedi",
-        image: "https://enkoki.github.io/static_images/deerhack26/leads/FayalSubedi.jpeg",
-        linkedin_url: "https://www.linkedin.com/in/fayal-subedi-ba9a63340",
-        position: "Outreach Team",
-      },
+     
     ],
   },
 

@@ -49,12 +49,12 @@ export default function Organizers() {
 
  
 
-      {/* <div className="flex justify-center items-center flex-col mt-20">
+      <div className="flex justify-center items-center flex-col mt-20">
         <h1 className={`headings ${cabinetExtraBold.className} text-3xl`}>
           Volunteers
         </h1>
         <VolunteerSection />
-      </div> */}
+      </div> 
 
     </div>
     </div>
