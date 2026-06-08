@@ -20,7 +20,7 @@ import GithubEducation from "@/app/assets/images/sponsors/GithubEducationNew.png
 import NewMountainJava from "@/app/assets/images/sponsors/NewMountainJava.svg";
 import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
-import CitizensBank from "@/app/assets/images/sponsors/CitizensBank.svg"  
+import CitizensBankLogo from "@/app/assets/images/sponsors/CitizensBankNoBG.png"  
 // import MountainJavaLogo from "@/app/assets/images/sponsors/MountainJavaLogo.svg";
 import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatroNew.png";
 import HimalogicLogo from "@/app/assets/images/sponsors/Himalogic.svg"
@@ -279,7 +279,7 @@ const sponsors: SponsorType[] = [
       },
 
        {
-        name: "KTMONE",
+        name: "Prabhu Bank",
         url: "https://www.prabhubank.com",
         image: PRABHUBANKLOGO,
         imageAlt: "PRABHUBANKLOGO",
@@ -293,6 +293,12 @@ const sponsors: SponsorType[] = [
         className: "bg-white rounded-lg"
       },
       
+      {
+        name: "Citizens Bank",
+        url: "https://www.ctznbank.com/",
+        image: CitizensBankLogo,
+        imageAlt: "Citizens Bank Logo",
+      }
     ],
   },
    
@@ -420,12 +426,6 @@ const sponsors: SponsorType[] = [
 //   {
 //     name: "Supported By",
 //     sponsors: [
-//       {
-//         name: "Citizens Bank",
-//         url: "https://www.ctznbank.com/",
-//         image: CitizensBank,
-//         imageAlt: "Citizens Bank Logo",
-//       },
 //       {
 //         name: "Pimbahal Chips",
 //         url: "https://www.instagram.com/pimbahalfreshpotatochipscorner/",
