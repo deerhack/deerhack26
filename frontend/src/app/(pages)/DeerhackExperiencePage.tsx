@@ -181,7 +181,7 @@ export default function ExperiencePage() {
                         <p className="text-xs md:text-sm opacity-60 text-white/60">Participant</p>
                       </div>
                     </div>
-                    <p className="text-base md:text-base font-bold text-white mb-2 leading-relaxed">
+                    <p className="text-base md:text-base text-white mb-2 leading-relaxed">
                      “DeerHack was my third national hackathon and by far the <span className="text-yellow-400">best organized</span> and managed one I've attended, making it a truly <span className="text-yellow-400">memorable experience</span> that set a new standard for future events.”
                     </p>
                     <div className="text-yellow-500"><StarsExpCard/></div>
