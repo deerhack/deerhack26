@@ -16,11 +16,11 @@ import MeroJobLogo from "@/app/assets/images/sponsors/MeroJobLogo.svg";
 import PimbahalChipsLogo from "@/app/assets/images/sponsors/PimbahalChipsLogo.svg"; 
 import HamroNotesLogo from "@/app/assets/images/sponsors/HamroNotes_Logo.svg";
 import MeroStyle from "@/app/assets/images/sponsors/MeroStyle.svg";
-import GithubEducation from "@/app/assets/images/sponsors/GithubEducation.svg";
+import GithubEducation from "@/app/assets/images/sponsors/GithubEducationNew.png";
 import NewMountainJava from "@/app/assets/images/sponsors/NewMountainJava.svg";
 import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
-import CitizensBank from "@/app/assets/images/sponsors/CitizensBank.svg"  
+import CitizensBankLogo from "@/app/assets/images/sponsors/CitizensBankNoBG.png"  
 // import MountainJavaLogo from "@/app/assets/images/sponsors/MountainJavaLogo.svg";
 import HamroPatroLogo from "@/app/assets/images/sponsors/HamroPatroNew.png";
 import HimalogicLogo from "@/app/assets/images/sponsors/Himalogic.svg"
@@ -67,7 +67,7 @@ import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
 import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
-import NECLogo from "@/app/assets/images/sponsors/NECLogo.png";
+import NECLogo from "@/app/assets/images/sponsors/NECLogoNew.png";
 import BigBytesLogo from "@/app/assets/images/sponsors/BigBytes.png";
 import FifthAvenueLogo from "@/app/assets/images/sponsors/FifthAvenue.png";
 
@@ -233,24 +233,18 @@ const sponsors: SponsorType[] = [
         imageAlt: "DeerHold Logo",
       },
        
-//       {
-//         name: "Ultima Lifestyle",
-//         url: "https://ultima.com.np/",
-//         image: ultima,
-//         imageAlt: "ultima",
-//       }, 
-//       {
-//         name: "Github Education",
-//         url: "https://github.com/education",
-//         image: GithubEducation,
-//         imageAlt: "GithubEucation logo",
-//       },
-//       {
-//         name: "Suito Teas",
-//         url: "https://suiroteas.com/",
-//         image: suiro,
-//         imageAlt: "Suiro Teas Logo",
-//       },
+      // {
+      //   name: "Ultima Lifestyle",
+      //   url: "https://ultima.com.np/",
+      //   image: ultima,
+      //   imageAlt: "ultima",
+      // }, 
+      // {
+      //   name: "Suito Teas",
+      //   url: "",
+      //   image: suiro,
+      //   imageAlt: "Suiro Teas Logo",
+      // },
     ],
   },
    {
@@ -285,7 +279,7 @@ const sponsors: SponsorType[] = [
       },
 
        {
-        name: "KTMONE",
+        name: "Prabhu Bank",
         url: "https://www.prabhubank.com",
         image: PRABHUBANKLOGO,
         imageAlt: "PRABHUBANKLOGO",
@@ -299,6 +293,12 @@ const sponsors: SponsorType[] = [
         className: "bg-white rounded-lg"
       },
       
+      {
+        name: "Citizens Bank",
+        url: "https://www.ctznbank.com/",
+        image: CitizensBankLogo,
+        imageAlt: "Citizens Bank Logo",
+      }
     ],
   },
    
@@ -335,6 +335,13 @@ const sponsors: SponsorType[] = [
       url: "https://www.instagram.com/5thavenue.nepal/",
       image: FifthAvenueLogo,
       imageAlt: "FifthAvenueLogoAlt",
+      },
+
+      {
+        name: "Github Education",
+        url: "https://github.com/education",
+        image: GithubEducation,
+        imageAlt: "GithubEucation logo",
       },
     ]
     },
@@ -419,12 +426,6 @@ const sponsors: SponsorType[] = [
 //   {
 //     name: "Supported By",
 //     sponsors: [
-//       {
-//         name: "Citizens Bank",
-//         url: "https://www.ctznbank.com/",
-//         image: CitizensBank,
-//         imageAlt: "Citizens Bank Logo",
-//       },
 //       {
 //         name: "Pimbahal Chips",
 //         url: "https://www.instagram.com/pimbahalfreshpotatochipscorner/",
