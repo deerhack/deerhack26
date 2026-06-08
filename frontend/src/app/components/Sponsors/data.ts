@@ -233,24 +233,18 @@ const sponsors: SponsorType[] = [
         imageAlt: "DeerHold Logo",
       },
        
-      {
-        name: "Ultima Lifestyle",
-        url: "https://ultima.com.np/",
-        image: ultima,
-        imageAlt: "ultima",
-      }, 
-      {
-        name: "Github Education",
-        url: "https://github.com/education",
-        image: GithubEducation,
-        imageAlt: "GithubEucation logo",
-      },
-      {
-        name: "Suito Teas",
-        url: "https://suiroteas.com/",
-        image: suiro,
-        imageAlt: "Suiro Teas Logo",
-      },
+      // {
+      //   name: "Ultima Lifestyle",
+      //   url: "https://ultima.com.np/",
+      //   image: ultima,
+      //   imageAlt: "ultima",
+      // }, 
+      // {
+      //   name: "Suito Teas",
+      //   url: "",
+      //   image: suiro,
+      //   imageAlt: "Suiro Teas Logo",
+      // },
     ],
   },
    {
@@ -335,6 +329,13 @@ const sponsors: SponsorType[] = [
       url: "https://www.instagram.com/5thavenue.nepal/",
       image: FifthAvenueLogo,
       imageAlt: "FifthAvenueLogoAlt",
+      },
+
+      {
+        name: "Github Education",
+        url: "https://github.com/education",
+        image: GithubEducation,
+        imageAlt: "GithubEucation logo",
       },
     ]
     },
