@@ -16,7 +16,7 @@ import MeroJobLogo from "@/app/assets/images/sponsors/MeroJobLogo.svg";
 import PimbahalChipsLogo from "@/app/assets/images/sponsors/PimbahalChipsLogo.svg"; 
 import HamroNotesLogo from "@/app/assets/images/sponsors/HamroNotes_Logo.svg";
 import MeroStyle from "@/app/assets/images/sponsors/MeroStyle.svg";
-import GithubEducation from "@/app/assets/images/sponsors/GithubEducation.png";
+import GithubEducation from "@/app/assets/images/sponsors/GithubEducationNew.png";
 import NewMountainJava from "@/app/assets/images/sponsors/NewMountainJava.svg";
 import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
