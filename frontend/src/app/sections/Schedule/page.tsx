@@ -30,7 +30,7 @@ const ScheduleSection = () => {
                 {
                     time: "1:15 PM",
                     title: "Session by Mala Deep Upadhaya",
-                    venue: "Cafeteria",
+                    venue: "Sagarmatha Hall",
                 },
                 {
                     time: "2:15 PM",
@@ -125,7 +125,7 @@ const ScheduleSection = () => {
                 {
                     time: "3:30 PM",
                     title: "Workshop",
-                    venue: "Sagarmatha Hall",
+                    venue: "Rara Hall",
                 },
                 {
                     time: "4:30 PM",
