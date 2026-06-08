@@ -16,7 +16,7 @@ import MeroJobLogo from "@/app/assets/images/sponsors/MeroJobLogo.svg";
 import PimbahalChipsLogo from "@/app/assets/images/sponsors/PimbahalChipsLogo.svg"; 
 import HamroNotesLogo from "@/app/assets/images/sponsors/HamroNotes_Logo.svg";
 import MeroStyle from "@/app/assets/images/sponsors/MeroStyle.svg";
-import GithubEducation from "@/app/assets/images/sponsors/GithubEducation.svg";
+import GithubEducation from "@/app/assets/images/sponsors/GithubEducation.png";
 import NewMountainJava from "@/app/assets/images/sponsors/NewMountainJava.svg";
 import TingTing from "@/app/assets/images/sponsors/TingTing.svg"
 import CookieFactory from "@/app/assets/images/sponsors/CookieFactory.svg"  
@@ -67,7 +67,7 @@ import ThirdFactorLogo from "@/app/assets/images/sponsors/TF Logo - White.png";
 import EcoSathiLogo from "@/app/assets/images/sponsors/EcoSathi_Logo.svg";
 import KTMONELOGO from "@/app/assets/images/sponsors/Ktmone_Logo.svg";
 import PRABHUBANKLOGO from "@/app/assets/images/sponsors/PrabhuBank.svg";
-import NECLogo from "@/app/assets/images/sponsors/NECLogo.png";
+import NECLogo from "@/app/assets/images/sponsors/NECLogoNew.png";
 import BigBytesLogo from "@/app/assets/images/sponsors/BigBytes.png";
 import FifthAvenueLogo from "@/app/assets/images/sponsors/FifthAvenue.png";
 
@@ -239,24 +239,24 @@ const sponsors: SponsorType[] = [
         imageAlt: "DeerHold Logo",
       },
        
-//       {
-//         name: "Ultima Lifestyle",
-//         url: "https://ultima.com.np/",
-//         image: ultima,
-//         imageAlt: "ultima",
-//       }, 
-//       {
-//         name: "Github Education",
-//         url: "https://github.com/education",
-//         image: GithubEducation,
-//         imageAlt: "GithubEucation logo",
-//       },
-//       {
-//         name: "Suito Teas",
-//         url: "https://suiroteas.com/",
-//         image: suiro,
-//         imageAlt: "Suiro Teas Logo",
-//       },
+      {
+        name: "Ultima Lifestyle",
+        url: "https://ultima.com.np/",
+        image: ultima,
+        imageAlt: "ultima",
+      }, 
+      {
+        name: "Github Education",
+        url: "https://github.com/education",
+        image: GithubEducation,
+        imageAlt: "GithubEucation logo",
+      },
+      {
+        name: "Suito Teas",
+        url: "https://suiroteas.com/",
+        image: suiro,
+        imageAlt: "Suiro Teas Logo",
+      },
     ],
   },
    {
