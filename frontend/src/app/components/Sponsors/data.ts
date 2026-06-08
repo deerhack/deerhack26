@@ -233,18 +233,18 @@ const sponsors: SponsorType[] = [
         imageAlt: "DeerHold Logo",
       },
        
-      {
-        name: "Ultima Lifestyle",
-        url: "https://ultima.com.np/",
-        image: ultima,
-        imageAlt: "ultima",
-      }, 
-      {
-        name: "Suito Teas",
-        url: "",
-        image: suiro,
-        imageAlt: "Suiro Teas Logo",
-      },
+      // {
+      //   name: "Ultima Lifestyle",
+      //   url: "https://ultima.com.np/",
+      //   image: ultima,
+      //   imageAlt: "ultima",
+      // }, 
+      // {
+      //   name: "Suito Teas",
+      //   url: "",
+      //   image: suiro,
+      //   imageAlt: "Suiro Teas Logo",
+      // },
     ],
   },
    {
