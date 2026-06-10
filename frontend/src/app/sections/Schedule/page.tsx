@@ -39,7 +39,7 @@ const ScheduleSection = () => {
                 },
                 {
                     time: "3:00 PM",
-                    title: "Tea Break/ Coffee Visit",
+                    title: "Snacks & College Visit",
                     venue: "Cafeteria & Courtyard",
                 },
                 {
