@@ -125,6 +125,7 @@ const Navbar = () => {
                 href="/schedule"
                 label="Schedule"
                 icon={schedulesvg}
+                route="/schedule"
               />
               <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
               <SidebarButton href="/organizers" label="Organizers" icon={organizersIcon} />
