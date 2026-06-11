@@ -11,6 +11,7 @@ import hamburgerBorder from "@/app/assets/icons/rounded.svg";
 
 import organizersIcon from "@/app/assets/icons/organizers.svg";
 import homeIcon from "@/app/assets/icons/homeIcon.svg";
+import schedulesvg from "@/app/assets/icons/schedule.svg";
 import legacyIcon from "@/app/assets/icons/legacy.svg";
 import judgingIcon from "@/app/assets/icons/judging-criteria.svg";
 import cocIcon from "@/app/assets/icons/code-of-conduct.svg";
@@ -123,7 +124,7 @@ const Navbar = () => {
                 <SidebarButton
                 href="/schedule"
                 label="Schedule"
-                icon={Schedule}
+                icon={schedulesvg}
               />
               <SidebarButton href="/legacy" label="Legacy" icon={legacyIcon} />
               <SidebarButton href="/organizers" label="Organizers" icon={organizersIcon} />
