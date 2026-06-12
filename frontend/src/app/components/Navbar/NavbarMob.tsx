@@ -101,9 +101,9 @@ const Navbar = () => {
                 height={50}
                 className="md:w-[60px] md:h-[60px]"
               />
-              <div className="scale-110 origin-left">
+              {/* <div className="scale-110 origin-left">
                 <Counter_wrapper />
-              </div>
+              </div> */}
             </div>
 
             <div className="flex flex-col gap-4">
