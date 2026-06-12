@@ -25,23 +25,23 @@
 
 //     return mentors;
 //   } catch (error) {
-//     console.error("Error fetching judges");
-//     return [];
-//   }
-// };
-
+  //     console.error("Error fetching judges");
+  //     return [];
+  //   }
+  // };
+  
 // export default fetchData;
 import Mentors from "@/app/types/mentors"
 
 const Mentors_value: Mentors[] = [
 
-   {
+  {
     name: "Mamata Maharjan",
     position: "Sr. Data Engineer",
     linkedin_url: "https://www.linkedin.com/in/mamata-maharjan-b4197b178",
     image: "https://enkoki.github.io/static_images/deerhack26/Mamata_Maharjan.jpg"
   },
-   {
+  {
     name: "Rahul Raj Singh",
     position: "Robotics Engineer",
     linkedin_url: "https://www.linkedin.com/in/rahulrajshah",
@@ -54,7 +54,7 @@ const Mentors_value: Mentors[] = [
     linkedin_url: "https://www.linkedin.com/in/maladeep",
     image: "https://ghostuf.github.io/static_images/mala_deep_upadhyaya.jpg"
   },
-   {
+  {
     name: "Aashutosh Poudel",
     position: "Co-Founder of InfoShapers",
     linkedin_url: "https://linkedin.com/in/aashutoshpoudel",
@@ -78,15 +78,17 @@ const Mentors_value: Mentors[] = [
     linkedin_url: "https://www.linkedin.com/in/lujachitrakar/",
     image:"https://ghostuf.github.io/static_images/luja_chitrakar.jpeg"
   },
- 
- 
- 
- 
   {
     name: "Sushan Shakya",
     position: "Sr. Software Engineer",
     linkedin_url: "https://www.linkedin.com/in/er-sushan-shakya-88b78b17b/",
     image: "https://ghostuf.github.io/static_images/sushan_shakya.jpg"
+  },
+  {
+   name: "Anil Shrestha",
+   position: "Product Lead & ML/AI Engineer",
+   linkedin_url: "https://www.linkedin.com/in/anilkshrestha/", 
+   image: "https://enkoki.github.io/static_images/deerhack26/Anil_Shrestha.jpg"
   },
   {
     name: "Prashant Malla",
@@ -118,7 +120,6 @@ const Mentors_value: Mentors[] = [
     linkedin_url: "https://www.linkedin.com/in/minalma-basnet/", 
     image: "https://enkoki.github.io/static_images/deerhack26/Minamla_Basnet.jpeg"
   },
- 
 ]
 
 export { Mentors_value }
