@@ -17,7 +17,7 @@ const Counter = () => {
     minutes: number;
     seconds: number;
   } => {
-    const countDownDate = new Date("June 12, 2026 14:00:00").getTime();
+    const countDownDate = new Date("June 14, 2026 06:00:00").getTime();
     const now = new Date().getTime();
     const timeLeft = countDownDate - now;
     return {
@@ -45,14 +45,14 @@ const Counter = () => {
     <div className="text-magnolia">
       <div className="flex justify-center">
         <div className="flex flex-col items-center">
-          <p
+          {/* <p
             className={`text-2xl font-bold tracking-[.25rem] ${cabinetBold.className} `}
           >
             {addLeadingZero(timeLeft.days)}:
-          </p>
-          <span className={`text-[10px] mr-4 ${cabinetMedium.className}`}>
+          </p> */}
+          {/* <span className={`text-[10px] mr-4 ${cabinetMedium.className}`}>
             Days
-          </span>
+          </span> */}
         </div>
         <div className="flex flex-col items-center">
           <p

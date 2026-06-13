@@ -33,7 +33,7 @@ const NavbarPC = () => {
             <Link href="/" className="flex-shrink-0 flex items-center">
               <DeerhackLogo width={50} height={50} />
             </Link>
-            {/* <Counter_wrapper /> */}
+            <Counter_wrapper />
           </div>
           <div className="flex items-center gap-[3rem]">
             <div className="flex items-center gap-8 text-magnolia">
