@@ -13,6 +13,7 @@ const JudgesList = async () => {
           name={judge.name}
           image={judge.image}
           position={judge.position}
+          company={judge.company}
           linkedin_url={judge.linkedin_url}
         />
       ))}
