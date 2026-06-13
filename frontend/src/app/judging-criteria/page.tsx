@@ -15,24 +15,24 @@ const COD = () => {
     <>
       <Navbar />
       <div className="relative overflow-hidden">
-      <Image
+      {/* <Image
           src={NewLeafSVG}
           height={460.72593352729126}
           width={245.93094397367338}
           alt="leaf"
           className="absolute top-[31.816rem] scale-110 hidden lg:block"
-        />
+        /> */}
       
-        <Image
+        {/* <Image
           src={NewLeafSVG}
           height={460.72593352729126}
           width={245.93094397367338}
           alt="leaf"
           className="absolute top-[66.826rem] -right-3 hidden lg:block"
           style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
-        />
+        /> */}
 
-        <Image
+        {/* <Image
           src={NewLeafSVG}
           height={460.72593352729126}
           width={245.93094397367338}
@@ -47,7 +47,7 @@ const COD = () => {
           alt="leaf"
           className="absolute top-[140.214rem] -right-3 hidden lg:block"
           style={{ transform: "scaleX(-1)", WebkitTransform: "scaleX(-1)" }}
-        />
+        /> */}
      
       <JudgesCriteriaSection/>
       </div>
