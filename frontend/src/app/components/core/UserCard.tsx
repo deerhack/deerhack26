@@ -5,7 +5,7 @@ import { cabinetRegular } from "@/app/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 
-const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
+const UserCard = ({ name, position, company,image, linkedin_url }: UserEntity) => {
   return (
     <div className="mb-5 flex justify-center items-center" key="cardContainer">
       <div
@@ -31,7 +31,8 @@ const UserCard = ({ name, position, image, linkedin_url }: UserEntity) => {
             >
               {name}
             </p>
-            <p className={`text-white font-[150] text-sm`}>{position}</p>
+            <p className={`text-white font-[150] text-xs`}>{position}</p>
+            <p className={`text-white font-[150] text-xs`}>{company}</p>
           </div>
           <div key="icon">
             <Link href={linkedin_url}
