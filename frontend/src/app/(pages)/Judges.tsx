@@ -6,7 +6,6 @@ import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
 const Judges = () => {
   return (
     <>
-    {/*
     <div
       key="JudgeContainer"
       className="relative w-full m-auto py-10 bg-dark-purple"
@@ -20,12 +19,11 @@ const Judges = () => {
       />
       <div key="judgeContainer" className="flex items-center flex-col my-20">
         <h1 className={`headings ${cabinetExtraBold.className}`}>
-          Judges for DeerHack 2025
+          Judges for DeerHack 2026
         </h1>
         <JudgesSection />
       </div>
     </div>
-*/}
     </>
   );
 };

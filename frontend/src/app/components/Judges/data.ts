@@ -1,32 +1,29 @@
 import type Judges from "@/app/types/judges";
+import BhabukImg from "@/app/assets/images/judges/Bhabuk.png"
+import RikeshImg from "@/app/assets/images/judges/rikesh.png"
+import SwastikaImg from "@/app/assets/images/judges/Swastika.png"
 
 
 
 
 const Judges: Judges[] = [
   {
-    name:"Babu Ram Aryal",
-    image:"https://ghostuf.github.io/static_images/babu_ram_aryal.png",
+    name:"Bhabuk Singh Kunwar",
+    image: BhabukImg,
     linkedin_url:"https://www.linkedin.com/in/baburamaryal/",
     position:"Chairman and MD, Delta Law Firm",
   },
     {
-    name:"Binay Khadka",
-    image:"https://ghostuf.github.io/static_images/binay_khadka.png",
+    name:"Rikesh Lal Shrestha",
+    image: RikeshImg,
     linkedin_url:"https://www.linkedin.com/in/binay-khadka-100485b9/",
     position:"CEO, Khalti",
   },
   {
-    name:"Saroj Dahal",
-    image:"https://ghostuf.github.io/static_images/saroj_dahal.png",
+    name:"Swastika K.C.",
+    image: SwastikaImg,
     linkedin_url:"https://www.linkedin.com/in/isarojdahal/",
     position:"Founder/CTO, 28Softwares",
-  },
-  {
-    name:"Yasmine Bhattrai",
-    image:"https://ghostuf.github.io/static_images/yasmine_bhattrai.png",
-    linkedin_url:"https://www.linkedin.com/in/yasmine-bhattarai/",
-    position:"Cyber Security Expert ",
   },
 ];
 
