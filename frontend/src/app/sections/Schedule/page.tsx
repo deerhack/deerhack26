@@ -153,7 +153,7 @@ const ScheduleSection = () => {
                     venue: "Sagarmatha Hall",
                 },
                 {
-                    time: "7:00 AM",
+                    time: "6:00 AM",
                     title: "Project Submission",
                     venue: "DWIT",
                 },
