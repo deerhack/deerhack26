@@ -102,7 +102,7 @@ const Navbar = () => {
                 className="md:w-[60px] md:h-[60px]"
               />
               <div className="scale-110 origin-left">
-                <Counter_wrapper />
+                {/* <Counter_wrapper /> */}
               </div>
             </div>
 
